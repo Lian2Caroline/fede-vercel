@@ -1,0 +1,284 @@
+Setting up libgdk-pixbuf2.0-common (2.42.8+dfsg-1ubuntu0.5) ...
+Setting up libcairo2:amd64 (1.16.0-5ubuntu2.1) ...
+Setting up libfribidi0:amd64 (1.0.8-2ubuntu3.1) ...
+Setting up openjdk-17-jre-headless:amd64 (17.0.18+8-1~22.04.1) ...
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/java to provide /usr/bin/java (java) in auto mode
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/jpackage to provide /usr/bin/jpackage (jpackage) in auto mode
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/keytool to provide /usr/bin/keytool (keytool) in auto mode
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/rmiregistry to provide /usr/bin/rmiregistry (rmiregistry) in auto mode
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/lib/jexec to provide /usr/bin/jexec (jexec) in auto mode
+Setting up libthai-data (0.1.29-1build1) ...
+Setting up libgdk-pixbuf-2.0-0:amd64 (2.42.8+dfsg-1ubuntu0.5) ...
+Setting up libcairo-gobject2:amd64 (1.16.0-5ubuntu2.1) ...
+Setting up libgtk2.0-common (2.24.33-2ubuntu2.1) ...
+Setting up gtk-update-icon-cache (3.24.33-1ubuntu2.2) ...
+Setting up libthai0:amd64 (0.1.29-1build1) ...
+Setting up openjdk-17-jdk-headless:amd64 (17.0.18+8-1~22.04.1) ...
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/jar to provide /usr/bin/jar (jar) in auto mode
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/jarsigner to provide /usr/bin/jarsigner (jarsigner) in auto mode
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/javac to provide /usr/bin/javac (javac) in auto mode
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/javadoc to provide /usr/bin/javadoc (javadoc) in auto mode
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/javap to provide /usr/bin/javap (javap) in auto mode
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/jcmd to provide /usr/bin/jcmd (jcmd) in auto mode
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/jdb to provide /usr/bin/jdb (jdb) in auto mode
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/jdeprscan to provide /usr/bin/jdeprscan (jdeprscan) in auto mode
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/jdeps to provide /usr/bin/jdeps (jdeps) in auto mode
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/jfr to provide /usr/bin/jfr (jfr) in auto mode
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/jimage to provide /usr/bin/jimage (jimage) in auto mode
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/jinfo to provide /usr/bin/jinfo (jinfo) in auto mode
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/jlink to provide /usr/bin/jlink (jlink) in auto mode
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/jmap to provide /usr/bin/jmap (jmap) in auto mode
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/jmod to provide /usr/bin/jmod (jmod) in auto mode
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/jps to provide /usr/bin/jps (jps) in auto mode
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/jrunscript to provide /usr/bin/jrunscript (jrunscript) in auto mode
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/jshell to provide /usr/bin/jshell (jshell) in auto mode
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/jstack to provide /usr/bin/jstack (jstack) in auto mode
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/jstat to provide /usr/bin/jstat (jstat) in auto mode
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/jstatd to provide /usr/bin/jstatd (jstatd) in auto mode
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/serialver to provide /usr/bin/serialver (serialver) in auto mode
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/jhsdb to provide /usr/bin/jhsdb (jhsdb) in auto mode
+Setting up libgdk-pixbuf2.0-bin (2.42.8+dfsg-1ubuntu0.5) ...
+Setting up libpango-1.0-0:amd64 (1.50.6+ds-2ubuntu1) ...
+Setting up libpangoft2-1.0-0:amd64 (1.50.6+ds-2ubuntu1) ...
+Setting up libpangocairo-1.0-0:amd64 (1.50.6+ds-2ubuntu1) ...
+Setting up librsvg2-2:amd64 (2.52.5+dfsg-3ubuntu0.2) ...
+Setting up librsvg2-common:amd64 (2.52.5+dfsg-3ubuntu0.2) ...
+Setting up adwaita-icon-theme (41.0-1ubuntu1) ...
+update-alternatives: using /usr/share/icons/Adwaita/cursor.theme to provide /usr/share/icons/default/index.theme (x-cursor-theme) in auto mode
+Setting up libgtk2.0-0:amd64 (2.24.33-2ubuntu2.1) ...
+Setting up humanity-icon-theme (0.6.16) ...
+Setting up libgail18:amd64 (2.24.33-2ubuntu2.1) ...
+Setting up libgtk2.0-bin (2.24.33-2ubuntu2.1) ...
+Setting up libgail-common:amd64 (2.24.33-2ubuntu2.1) ...
+Setting up openjdk-17-jre:amd64 (17.0.18+8-1~22.04.1) ...
+Setting up ubuntu-mono (20.10-0ubuntu2) ...
+Setting up openjdk-17-jdk:amd64 (17.0.18+8-1~22.04.1) ...
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/jconsole to provide /usr/bin/jconsole (jconsole) in auto mode
+Processing triggers for libc-bin (2.35-0ubuntu3.10) ...
+Processing triggers for libgdk-pixbuf-2.0-0:amd64 (2.42.8+dfsg-1ubuntu0.5) ...
+
+Install workspace dependencies
+
+8s
+
+Scope: all 11 workspace projects
+Lockfile is up to date, resolution step is skipped
+Progress: resolved 1, reused 0, downloaded 0, added 0
+Packages: +1130
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Progress: resolved 1130, reused 0, downloaded 159, added 142
+Progress: resolved 1130, reused 0, downloaded 328, added 347
+Progress: resolved 1130, reused 0, downloaded 363, added 357
+Progress: resolved 1130, reused 0, downloaded 532, added 489
+Progress: resolved 1130, reused 0, downloaded 825, added 846
+Progress: resolved 1130, reused 0, downloaded 957, added 935
+Progress: resolved 1130, reused 0, downloaded 1104, added 1129
+Progress: resolved 1130, reused 0, downloaded 1104, added 1130, done
+.../esbuild@0.27.3/node_modules/esbuild postinstall$ node install.js
+.../esbuild@0.27.3/node_modules/esbuild postinstall: Done
+devDependencies:
++ prettier 3.8.1
++ typescript 5.9.3
+Done in 8.5s using pnpm v10.26.1
+
+Run expo prebuild (no install)
+
+6s
+
+- Creating native directory (./android)
+✔ Created native directory
+- Updating package.json
+✔ Updated package.json
+- Running prebuild
+Expo supports version "^5.2.0" of `sharp-cli`, current version: "1.15.0".
+If you can remove or upgrade using `npm (un)install -g sharp-cli@^5.2.0`.
+Or disable `sharp-cli` with `EXPO_IMAGE_UTILS_NO_SHARP=1`.
+- Running prebuild
+✔ Finished prebuild
+
+Install dependencies after prebuild
+
+4s
+
+Scope: all 11 workspace projects
+Progress: resolved 0, reused 1, downloaded 0, added 0
+artifacts/api-server                     |  WARN  deprecated @types/bcryptjs@3.0.0
+artifacts/capsubvention-mobile           |  WARN  deprecated @ungap/structured-clone@1.3.0
+Progress: resolved 267, reused 265, downloaded 0, added 0
+Progress: resolved 1107, reused 1104, downloaded 0, added 0
+WARN  5 deprecated subdependencies found: glob@7.2.3, inflight@1.0.6, rimraf@3.0.2, uuid@3.4.0, uuid@7.0.3
+Already up to date
+Progress: resolved 1107, reused 1104, downloaded 0, added 0, done
+Done in 3.9s using pnpm v10.26.1
+
+Build Android APK
+
+7s
+
+Downloading https://services.gradle.org/distributions/gradle-8.14.3-bin.zip
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+10%.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+20%
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+30%.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+40%.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+50%.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+60%.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+70%
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+80%.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+90%.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+100%
+Welcome to Gradle 8.14.3!
+Here are the highlights of this release:
+- Java 24 support
+- GraalVM Native Image toolchain selection
+- Enhancements to test reporting
+- Build Authoring improvements
+For more details see https://docs.gradle.org/8.14.3/release-notes.html
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.14.3/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+FAILURE: Build failed with an exception.
+* What went wrong:
+Unable to start the daemon process.
+This problem might be caused by incorrect configuration of the daemon.
+For example, an unrecognized jvm option is used.For more details on the daemon, please refer to https://docs.gradle.org/8.14.3/userguide/gradle_daemon.html in the Gradle documentation.
+Process command line: /usr/lib/jvm/java-17-openjdk-amd64/bin/java --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.prefs/java.util.prefs=ALL-UNNAMED --add-exports=jdk.compiler/com.sun.tools.javac.api=ALL-UNNAMED --add-exports=jdk.compiler/com.sun.tools.javac.util=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.prefs/java.util.prefs=ALL-UNNAMED --add-opens=java.base/java.nio.charset=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED --add-opens=java.xml/javax.xml.namespace=ALL-UNNAMED -XX:MaxMetaspaceSize=1g -XX:MaxPermSize=512m -XX:+HeapDumpOnOutOfMemoryError -Xmx4g -Dfile.encoding=UTF-8 -Duser.country=US -Duser.language=en -Duser.variant -cp /home/expo/.gradle/wrapper/dists/gradle-8.14.3-bin/cv11ve7ro1n3o1j4so8xd9n66/gradle-8.14.3/lib/gradle-daemon-main-8.14.3.jar -javaagent:/home/expo/.gradle/wrapper/dists/gradle-8.14.3-bin/cv11ve7ro1n3o1j4so8xd9n66/gradle-8.14.3/lib/agents/gradle-instrumentation-agent-8.14.3.jar org.gradle.launcher.daemon.bootstrap.GradleDaemon 8.14.3
+Please read the following process output to find out more:
+-----------------------
+Unrecognized VM option 'MaxPermSize=512m'
+Error: Could not create the Java Virtual Machine.
+Error: A fatal exception has occurred. Program will exit.
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+/bin/bash -eo pipefail /tmp/eas-build/ea73d198-b8e6-4793-9c0b-efb11023e576/steps/step-008/scripts/8566be57-dc02-487c-b52d-451b2fe36502.sh exited with non-zero code: 1
+
+Find and upload build artifacts
+
+1ms
+
+Skipped build step "Find and upload build artifacts"

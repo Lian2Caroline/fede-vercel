@@ -1,0 +1,64 @@
+{
+  "scene1": {
+    "label": "Problem",
+    "title": "Uzyskanie dotacji\nna terytoriach zamorskich",
+    "desc": "Złożony proces, czasochłonne procedury,\nwnioski odrzucane z powodu braku wsparcia."
+  },
+  "scene2": {
+    "tagline": "Oficjalna platforma 100% cyfrowa\ndo uzyskiwania bezzwrotnych dotacji"
+  },
+  "scene3": {
+    "label": "Śledzenie wniosku",
+    "title": "Śledź swój\nwniosek\nw czasie rzeczywistym",
+    "desc": "Twój dedykowany doradca\ninformuje Cię na każdym etapie.",
+    "notif_title": "Aktualizacja statusu",
+    "notif_body": "Twój wniosek jest rozpatrywany — pozostało 30 dni",
+    "status_submitted": "Wniosek złożony",
+    "status_eligible": "Kwalifikowalność zweryfikowana",
+    "status_processing": "W trakcie instrukcji",
+    "status_awaiting": "Decyzja oczekiwana",
+    "status_notified": "Przyznanie powiadomione",
+    "active_badge": "W toku"
+  },
+  "scene4": {
+    "header": "Dokumenty uzupełniające",
+    "label": "Przestrzeń dokumentów",
+    "title": "Prześlij swoje\ndokumenty\nbezpiecznie",
+    "desc": "Wszystkie Twoje dokumenty\nscentralizowane, dostępne\ni chronione 24h/24.",
+    "doc_id": "Dokument tożsamości",
+    "doc_plan": "Plan finansowania",
+    "doc_statuts": "Statut spółki",
+    "doc_rib": "Dane bankowe",
+    "status_done": "Zatwierdzone",
+    "status_pending": "Oczekuje",
+    "secure_badge": "Szyfrowanie end-to-end — Twoje dane są chronione"
+  },
+  "scene5": {
+    "label": "Model sukcesu",
+    "title_1": "Płacisz",
+    "title_2": "tylko jeśli Twój",
+    "title_3": "wniosek zostanie",
+    "title_accent": "zaakceptowany",
+    "desc": "Opłata instruktażowa 456 € z VAT — wymagana\nwyłącznie po korzystnej decyzji.",
+    "banner_title": "Powiadomienie o przyznaniu",
+    "banner_sub": "Twój wniosek został zaakceptowany",
+    "fee_label": "Opłata instruktażowa",
+    "payment_title": "Bezpieczna płatność",
+    "payment_methods": "Karta bankowa · Przelew · Czek",
+    "grant_label": "Dotacja uzyskana"
+  },
+  "scene6": {
+    "tagline": "Twój partner w zakresie bezzwrotnego finansowania publicznego"
+  },
+  "video": {
+    "enable_audio": "Włącz dźwięk",
+    "click_audio": "Kliknij, aby włączyć dźwięk",
+    "loop_on": "Pętla sceny: włączona",
+    "loop_off": "Pętla sceny: wyłączona",
+    "narration_on": "Włącz narrację",
+    "narration_off": "Wycisz narrację",
+    "show_controls": "Pokaż sterowanie",
+    "hide_controls": "Ukryj sterowanie",
+    "jump_to_scene": "Przejdź do sceny {{n}}"
+  }
+}

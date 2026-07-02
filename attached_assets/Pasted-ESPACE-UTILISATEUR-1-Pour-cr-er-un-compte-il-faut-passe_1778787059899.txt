@@ -1,0 +1,39 @@
+ESPACE UTILISATEUR
+
+1- Pour créer un compte, il faut passer par les 3 etapes dont j'ai fait la capture et envoyer ( Les 3 premieres captures). Je ne suis pas contre cela. Mais alors pourquoi apres inscription, pour faire une demande, il faut à nouveau choisir:
+- Territoire
+- Dispositif
+- Secteur d'activité
+- Description
+
+Je veux une explication. 
+
+
+2- J'ai créé un nouveau compte, et fais une nouvelle demande. Comme tu peux le voir sur la capture  précisément au niveau de la page Messagerie du MENU, c'est marqué comme si un message est reçu. Mais je ne vois rien. 
+
+3- La video de presentation marche. Mais le son n'est pas arrivé immédiatement au debut. De plus, dans le navigateur, on ne voit pas le favicon comme sur le site, mais plutôt le carré rouge de replit. 
+
+4- Dans le tableau de Bord, on voit bien qu'il y a un message non Lu, mais rien dans la messagerie. 
+
+
+5- Dans la page " Mes documents " du menu ESPACE UTILISATEUR, j'ai essayé d'envoyer un document. Le système confirme juste que le document pdf a été envoyé. Mais le bouton "DEPOSER" est toujours valable. Donc en clair, juste apres avoir chargé le fichier PDF il est aussitôt envoyé et sans plus. 
+
+Et chose encore plus troublant, ou va les documents qui sont envoyé? 
+J'ai besoin d'une reponse
+
+6- Il n'y a pas de Menu Parametres dans l'espace utilisateurs. Il n'est également pas possible de modifier l'image de profil. 
+
+
+Dans l'espace admin
+
+1- En cliquant sur " Dossiers et messagerie " puis sur un Dossier - section à droite - clic sur Messages affiche page blanche. Clic sur Actions affiche page blanche. 
+
+2- Toujours dans le meme espace Menu UTILISATEURS  - je ne vois pas les adresse ip/pays des utilisateurs comme je l'avais demandé. L'objectif etant de savoir si un utilisateur se connecte depuis le bon pays et sinon, utiliser les boutons ( Suspendre ou Supprimer) pour le bannir. Cela n'a pas été fait
+
+3- Toujours dans le meme espace, en cliquant sur MODERATIONS DES AVIS, cela affiche une page blanche. 
+
+Vois-tu le nombre de probleme en attente? 
+
+Je veux que tu precises si tu as compris chacun des problèmes reportés ici. Tu ne feras de modifications que lorsque je te le dirai. 
+
+Voici les logs render apres avoir fait le test. 

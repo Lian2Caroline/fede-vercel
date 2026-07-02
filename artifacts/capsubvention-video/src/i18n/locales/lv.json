@@ -1,0 +1,64 @@
+{
+  "scene1": {
+    "label": "Problēma",
+    "title": "Subsīdiju saņemšana\naizjūras teritorijās",
+    "desc": "Sarežģīts process, laikietilpīgas procedūras,\npieteikumi noraidīti atbalsta trūkuma dēļ."
+  },
+  "scene2": {
+    "tagline": "Oficiālā 100% digitālā platforma\nneatmaksājamu subsīdiju saņemšanai"
+  },
+  "scene3": {
+    "label": "Pieteikuma izsekošana",
+    "title": "Sekojiet\nsavam pieteikumam\nreālajā laikā",
+    "desc": "Jūsu norīkotais padomdevējs\ninformē jūs katrā posmā.",
+    "notif_title": "Statusa atjaunināšana",
+    "notif_body": "Jūsu pieteikums tiek izskatīts — atlikušas 30 dienas",
+    "status_submitted": "Pieteikums iesniegts",
+    "status_eligible": "Atbilstība pārbaudīta",
+    "status_processing": "Izskatīšanā",
+    "status_awaiting": "Lēmums gaidāms",
+    "status_notified": "Piešķiršana paziņota",
+    "active_badge": "Notiek"
+  },
+  "scene4": {
+    "header": "Pamatojuma dokumenti",
+    "label": "Dokumentu telpa",
+    "title": "Augšupielādējiet\nsa dokumentus\ndrošā veidā",
+    "desc": "Visi jūsu dokumenti\ncentralizēti, pieejami\nun aizsargāti 24/7.",
+    "doc_id": "Personu apliecinošs dokuments",
+    "doc_plan": "Finansēšanas plāns",
+    "doc_statuts": "Uzņēmuma statūti",
+    "doc_rib": "Bankas rekvizīti",
+    "status_done": "Apstiprināts",
+    "status_pending": "Gaida",
+    "secure_badge": "No gala līdz galam šifrēšana — jūsu dati ir aizsargāti"
+  },
+  "scene5": {
+    "label": "Panākumu modelis",
+    "title_1": "Jūs maksājat",
+    "title_2": "tikai tad, ja jūsu",
+    "title_3": "pieteikums tiek",
+    "title_accent": "apstiprināts",
+    "desc": "Izskatīšanas maksa 456 € ar PVN — jāmaksā\ntikai pēc labvēlīga lēmuma.",
+    "banner_title": "Piešķiršanas paziņojums",
+    "banner_sub": "Jūsu pieteikums ir apstiprināts",
+    "fee_label": "Izskatīšanas maksa",
+    "payment_title": "Droša maksājums",
+    "payment_methods": "Bankas karte · Pārskaitījums · Čeks",
+    "grant_label": "Subsīdija saņemta"
+  },
+  "scene6": {
+    "tagline": "Jūsu partneris neatmaksājamam publiskajam finansējumam"
+  },
+  "video": {
+    "enable_audio": "Iespējot skaņu",
+    "click_audio": "Noklikšķiniet, lai iespējotu skaņu",
+    "loop_on": "Ainas atkārtošana: ieslēgta",
+    "loop_off": "Ainas atkārtošana: izslēgta",
+    "narration_on": "Iespējot stāstījumu",
+    "narration_off": "Izslēgt stāstījumu",
+    "show_controls": "Rādīt vadīklas",
+    "hide_controls": "Slēpt vadīklas",
+    "jump_to_scene": "Pārlēkt uz ainu {{n}}"
+  }
+}

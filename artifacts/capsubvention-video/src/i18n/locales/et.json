@@ -1,0 +1,64 @@
+{
+  "scene1": {
+    "label": "Probleem",
+    "title": "Toetuste saamine\nmeretagustel territooriumidel",
+    "desc": "Keeruline protsess, aeganõudvad menetlused,\ntaotlused tagasi lükatud toetuse puudumise tõttu."
+  },
+  "scene2": {
+    "tagline": "Ametlik 100% digitaalne platvorm\ntagastamatu toetuse saamiseks"
+  },
+  "scene3": {
+    "label": "Taotluse jälgimine",
+    "title": "Jälgige\noma taotlust\nreaalajal",
+    "desc": "Teie pühendunud nõustaja\nteavitab teid igal sammul.",
+    "notif_title": "Oleku uuendus",
+    "notif_body": "Teie taotlust menetletakse — 30 päeva jäänud",
+    "status_submitted": "Taotlus esitatud",
+    "status_eligible": "Abikõlblikkus kontrollitud",
+    "status_processing": "Menetlemisel",
+    "status_awaiting": "Otsus ootel",
+    "status_notified": "Eraldamine teatatud",
+    "active_badge": "Käimasolev"
+  },
+  "scene4": {
+    "header": "Tõendavad dokumendid",
+    "label": "Dokumentide ruum",
+    "title": "Laadige üles\noma dokumendid\nturvaliselt",
+    "desc": "Kõik teie dokumendid\nkeskendatud, ligipääsetavad\nja kaitstud ööpäevaringselt.",
+    "doc_id": "Isikut tõendav dokument",
+    "doc_plan": "Rahastamiskava",
+    "doc_statuts": "Põhikiri",
+    "doc_rib": "Pangaandmed",
+    "status_done": "Kinnitatud",
+    "status_pending": "Ootel",
+    "secure_badge": "Otsast-otsani krüpteerimine — teie andmed on kaitstud"
+  },
+  "scene5": {
+    "label": "Edumudel",
+    "title_1": "Maksate",
+    "title_2": "ainult siis, kui teie",
+    "title_3": "taotlus",
+    "title_accent": "kiidetakse heaks",
+    "desc": "Menetlustasu 456 € koos käibemaksuga — makstav\nainult pärast soodsat otsust.",
+    "banner_title": "Eraldamise teatis",
+    "banner_sub": "Teie taotlus on heaks kiidetud",
+    "fee_label": "Menetlustasu",
+    "payment_title": "Turvaline makse",
+    "payment_methods": "Pangakaart · Ülekanne · Tšekk",
+    "grant_label": "Toetus saadud"
+  },
+  "scene6": {
+    "tagline": "Teie partner tagastamatu avaliku rahastuse jaoks"
+  },
+  "video": {
+    "enable_audio": "Luba heli",
+    "click_audio": "Klõpsake heli lubamiseks",
+    "loop_on": "Stseeni kordamine: sees",
+    "loop_off": "Stseeni kordamine: väljas",
+    "narration_on": "Luba jutustamine",
+    "narration_off": "Vaigista jutustamine",
+    "show_controls": "Kuva juhtelemendid",
+    "hide_controls": "Peida juhtelemendid",
+    "jump_to_scene": "Hüppa stseeni {{n}} juurde"
+  }
+}

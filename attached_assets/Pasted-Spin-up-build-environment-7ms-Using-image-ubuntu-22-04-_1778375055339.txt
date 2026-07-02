@@ -1,0 +1,580 @@
+Spin up build environment
+
+7ms
+
+Using image "ubuntu-22.04-jdk-11-ndk-r21e" based on "ubuntu-2204-jammy-v20220810"
+Installed software:
+- NDK 21.4.7075529
+- Node.js 18.18.0
+- Bun 1.0.14
+- Yarn 1.22.19
+- pnpm 8.7.5
+- npm 9.8.1
+- Java 11
+- node-gyp 10.0.1
+Project environment variables:
+  EAS_USE_CACHE=1
+  __API_SERVER_URL=https://api.expo.dev/
+Environment secrets:
+  EXPO_TOKEN=********
+EAS Build environment variables:
+  NVM_INC=/home/expo/.nvm/versions/node/v18.18.0/include/node
+  HOSTNAME=turtle-worker-4fd867fa8704
+  JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
+  WORKER_TARBALL_URL=https://storage.googleapis.com/eas-build-worker-tarballs/worker-android-production.tar.gz
+  PWD=/usr/local/eas-build-worker
+  HOME=/home/expo
+  ANDROID_NDK_HOME=/home/expo/Android/Sdk/ndk/21.4.7075529
+  NVM_DIR=/home/expo/.nvm
+  ANDROID_HOME=/home/expo/Android/Sdk
+  SHLVL=1
+  ANDROID_SDK_ROOT=/home/expo/Android/Sdk
+  PATH=/home/expo/workingdir/bin:/home/expo/.nvm/versions/node/v18.18.0/bin:/opt/bundletool:/home/expo/Android/Sdk/build-tools/29.0.3:/home/expo/Android/Sdk/build-tools/35.0.0:/home/expo/Android/Sdk/ndk/21.4.7075529:/home/expo/Android/Sdk/cmdline-tools/tools/bin:/home/expo/Android/Sdk/tools:/home/expo/Android/Sdk/tools/bin:/home/expo/Android/Sdk/platform-tools:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin:/home/expo/.bun/bin
+  LOGGER_LEVEL=debug
+  NVM_BIN=/home/expo/.nvm/versions/node/v18.18.0/bin
+  EAS_BUILD_WORKER_DIR=/home/expo/eas-build-worker
+  OLDPWD=/home/expo
+  _=/home/expo/.nvm/versions/node/v18.18.0/bin/node
+  CI=1
+  MAESTRO_DRIVER_STARTUP_TIMEOUT=120000
+  MAESTRO_CLI_NO_ANALYTICS=1
+  EAS_BUILD=true
+  EAS_BUILD_RUNNER=eas-build
+  EAS_BUILD_PLATFORM=android
+  EAS_CLI_SENTRY_DSN=https://ca4734dc503543b28d55fdaf0563f61c@o30871.ingest.sentry.io/1837720
+  NVM_NODEJS_ORG_MIRROR=http://nodejs.production.caches.eas-build.internal
+  EAS_BUILD_PROFILE=preview
+  EAS_BUILD_GIT_COMMIT_HASH=8124f8b99d4264b0dace594891dad68d7dc07e97
+  EAS_BUILD_ID=a7fc7c67-f432-4dfd-b44b-4fd867fa8704
+  LANG=en_US.UTF-8
+  EAS_BUILD_WORKINGDIR=/home/expo/workingdir/build
+  EAS_BUILD_PROJECT_ID=bfbba83e-63ab-492f-8555-0cd65a1547c4
+  EAS_BUILD_MAVEN_CACHE_URL=http://maven.production.caches.eas-build.internal
+  GRADLE_OPTS=-Dorg.gradle.jvmargs="-XX:MaxMetaspaceSize=1g -Xmx4g -XX:MaxPermSize=512m -XX:+HeapDumpOnOutOfMemoryError -Dfile.encoding=UTF-8" -Dorg.gradle.parallel=true -Dorg.gradle.daemon=false
+  __EAS_BUILD_ENVS_DIR=/home/expo/workingdir/env
+Builder is ready, starting build
+
+Checkout
+
+3ms
+
+Checking out project directory
+Changing default working directory to /home/expo/workingdir/build/artifacts/capsubvention-mobile (was /home/expo/workingdir/build)
+
+Install pnpm 10.26.1
+
+2s
+
+changed 1 package in 3s
+1 package is looking for funding
+  run `npm fund` for details
+
+Setup pnpm wrapper to bypass frozen-lockfile
+
+10ms
+
+No logs available
+
+Install Java 17
+
+12s
+
+Hit:1 http://archive.ubuntu.com/ubuntu jammy InRelease
+Get:2 http://archive.ubuntu.com/ubuntu jammy-updates InRelease [128 kB]
+Get:3 http://archive.ubuntu.com/ubuntu jammy-backports InRelease [127 kB]
+Get:4 http://security.ubuntu.com/ubuntu jammy-security InRelease [129 kB]
+Get:5 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 Packages [4247 kB]
+Get:6 http://archive.ubuntu.com/ubuntu jammy-updates/universe amd64 Packages [1602 kB]
+Get:7 http://archive.ubuntu.com/ubuntu jammy-updates/multiverse i386 Packages [9953 B]
+Get:8 http://archive.ubuntu.com/ubuntu jammy-updates/multiverse amd64 Packages [86.0 kB]
+Get:9 http://archive.ubuntu.com/ubuntu jammy-updates/main i386 Packages [1230 kB]
+Get:10 http://archive.ubuntu.com/ubuntu jammy-updates/restricted amd64 Packages [7251 kB]
+Get:11 http://archive.ubuntu.com/ubuntu jammy-updates/universe i386 Packages [990 kB]
+Get:12 http://archive.ubuntu.com/ubuntu jammy-updates/restricted i386 Packages [62.7 kB]
+Get:13 http://archive.ubuntu.com/ubuntu jammy-backports/main amd64 Packages [82.8 kB]
+Get:14 http://archive.ubuntu.com/ubuntu jammy-backports/universe i386 Packages [22.4 kB]
+Get:15 http://security.ubuntu.com/ubuntu jammy-security/multiverse i386 Packages [6180 B]
+Get:16 http://archive.ubuntu.com/ubuntu jammy-backports/main i386 Packages [72.4 kB]
+Get:17 http://archive.ubuntu.com/ubuntu jammy-backports/universe amd64 Packages [35.6 kB]
+Get:18 http://security.ubuntu.com/ubuntu jammy-security/universe i386 Packages [850 kB]
+Get:19 http://security.ubuntu.com/ubuntu jammy-security/main i386 Packages [1000 kB]
+Get:20 http://security.ubuntu.com/ubuntu jammy-security/universe amd64 Packages [1294 kB]
+Get:21 http://security.ubuntu.com/ubuntu jammy-security/main amd64 Packages [3915 kB]
+Get:22 http://security.ubuntu.com/ubuntu jammy-security/restricted amd64 Packages [7004 kB]
+Get:23 http://security.ubuntu.com/ubuntu jammy-security/restricted i386 Packages [59.7 kB]
+Get:24 http://security.ubuntu.com/ubuntu jammy-security/multiverse amd64 Packages [61.6 kB]
+Fetched 30.3 MB in 1s (23.0 MB/s)
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+adwaita-icon-theme fontconfig gtk-update-icon-cache hicolor-icon-theme
+  humanity-icon-theme libcairo-gobject2 libcairo2 libdatrie1 libfribidi0
+  libgail-common libgail18 libgdk-pixbuf-2.0-0 libgdk-pixbuf2.0-bin
+libgdk-pixbuf2.0-common libgtk2.0-0 libgtk2.0-bin libgtk2.0-common
+  libpango-1.0-0 libpangocairo-1.0-0 libpangoft2-1.0-0 libpixman-1-0
+  librsvg2-2 librsvg2-common libthai-data libthai0 libxcb-render0 libxcursor1
+libxdamage1 openjdk-17-jdk-headless openjdk-17-jre openjdk-17-jre-headless
+ubuntu-mono
+Suggested packages:
+  gvfs librsvg2-bin openjdk-17-demo openjdk-17-source visualvm libnss-mdns
+  fonts-ipafont-gothic fonts-ipafont-mincho fonts-wqy-microhei
+  | fonts-wqy-zenhei fonts-indic
+The following NEW packages will be installed:
+adwaita-icon-theme fontconfig gtk-update-icon-cache hicolor-icon-theme
+  humanity-icon-theme libcairo-gobject2 libcairo2 libdatrie1 libfribidi0
+  libgail-common libgail18 libgdk-pixbuf-2.0-0 libgdk-pixbuf2.0-bin
+libgdk-pixbuf2.0-common libgtk2.0-0 libgtk2.0-bin libgtk2.0-common
+  libpango-1.0-0 libpangocairo-1.0-0 libpangoft2-1.0-0 libpixman-1-0
+librsvg2-2 librsvg2-common libthai-data libthai0 libxcb-render0 libxcursor1
+libxdamage1 openjdk-17-jdk openjdk-17-jdk-headless openjdk-17-jre
+openjdk-17-jre-headless ubuntu-mono
+0 upgraded, 33 newly installed, 0 to remove and 132 not upgraded.
+Need to get 134 MB of archives.
+After this operation, 331 MB of additional disk space will be used.
+Get:1 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libfribidi0 amd64 1.0.8-2ubuntu3.1 [26.1 kB]
+Get:2 http://archive.ubuntu.com/ubuntu jammy/main amd64 hicolor-icon-theme all 0.17-2 [9976 B]
+Get:3 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libgdk-pixbuf2.0-common all 2.42.8+dfsg-1ubuntu0.5 [5560 B]
+Get:4 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libgdk-pixbuf-2.0-0 amd64 2.42.8+dfsg-1ubuntu0.5 [148 kB]
+Get:5 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 gtk-update-icon-cache amd64 3.24.33-1ubuntu2.2 [31.4 kB]
+Get:6 http://archive.ubuntu.com/ubuntu jammy/main amd64 humanity-icon-theme all 0.6.16 [1282 kB]
+Get:7 http://archive.ubuntu.com/ubuntu jammy/main amd64 ubuntu-mono all 20.10-0ubuntu2 [153 kB]
+Get:8 http://archive.ubuntu.com/ubuntu jammy/main amd64 adwaita-icon-theme all 41.0-1ubuntu1 [3444 kB]
+Get:9 http://archive.ubuntu.com/ubuntu jammy/main amd64 fontconfig amd64 2.13.1-4.2ubuntu5 [177 kB]
+Get:10 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libpixman-1-0 amd64 0.40.0-1ubuntu0.22.04.1 [264 kB]
+Get:11 http://archive.ubuntu.com/ubuntu jammy/main amd64 libxcb-render0 amd64 1.14-3ubuntu3 [16.4 kB]
+Get:12 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libcairo2 amd64 1.16.0-5ubuntu2.1 [628 kB]
+Get:13 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libcairo-gobject2 amd64 1.16.0-5ubuntu2.1 [19.5 kB]
+Get:14 http://archive.ubuntu.com/ubuntu jammy/main amd64 libdatrie1 amd64 0.2.13-2 [19.9 kB]
+Get:15 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libgtk2.0-common all 2.24.33-2ubuntu2.1 [125 kB]
+Get:16 http://archive.ubuntu.com/ubuntu jammy/main amd64 libthai-data all 0.1.29-1build1 [162 kB]
+Get:17 http://archive.ubuntu.com/ubuntu jammy/main amd64 libthai0 amd64 0.1.29-1build1 [19.2 kB]
+Get:18 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libpango-1.0-0 amd64 1.50.6+ds-2ubuntu1 [230 kB]
+Get:19 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libpangoft2-1.0-0 amd64 1.50.6+ds-2ubuntu1 [54.0 kB]
+Get:20 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libpangocairo-1.0-0 amd64 1.50.6+ds-2ubuntu1 [39.8 kB]
+Get:21 http://archive.ubuntu.com/ubuntu jammy/main amd64 libxcursor1 amd64 1:1.2.0-2build4 [20.9 kB]
+Get:22 http://archive.ubuntu.com/ubuntu jammy/main amd64 libxdamage1 amd64 1:1.1.5-2build2 [7154 B]
+Get:23 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libgtk2.0-0 amd64 2.24.33-2ubuntu2.1 [2038 kB]
+Get:24 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libgail18 amd64 2.24.33-2ubuntu2.1 [15.9 kB]
+Get:25 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libgail-common amd64 2.24.33-2ubuntu2.1 [132 kB]
+Get:26 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libgdk-pixbuf2.0-bin amd64 2.42.8+dfsg-1ubuntu0.5 [14.2 kB]
+Get:27 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libgtk2.0-bin amd64 2.24.33-2ubuntu2.1 [7936 B]
+Get:28 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 librsvg2-2 amd64 2.52.5+dfsg-3ubuntu0.2 [2974 kB]
+Get:29 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 librsvg2-common amd64 2.52.5+dfsg-3ubuntu0.2 [17.7 kB]
+Get:30 http://archive.ubuntu.com/ubuntu jammy-updates/universe amd64 openjdk-17-jre-headless amd64 17.0.18+8-1~22.04.1 [48.4 MB]
+Get:31 http://archive.ubuntu.com/ubuntu jammy-updates/universe amd64 openjdk-17-jre amd64 17.0.18+8-1~22.04.1 [238 kB]
+Get:32 http://archive.ubuntu.com/ubuntu jammy-updates/universe amd64 openjdk-17-jdk-headless amd64 17.0.18+8-1~22.04.1 [71.4 MB]
+Get:33 http://archive.ubuntu.com/ubuntu jammy-updates/universe amd64 openjdk-17-jdk amd64 17.0.18+8-1~22.04.1 [1534 kB]
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+debconf: delaying package configuration, since apt-utils is not installed
+Fetched 134 MB in 1s (125 MB/s)
+Selecting previously unselected package libfribidi0:amd64.
+
+(Reading database ...
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+(Reading database ... 75%
+(Reading database ... 80%
+(Reading database ... 85%
+(Reading database ... 90%
+(Reading database ... 95%
+(Reading database ... 41906 files and directories currently installed.)
+Preparing to unpack .../00-libfribidi0_1.0.8-2ubuntu3.1_amd64.deb ...
+Unpacking libfribidi0:amd64 (1.0.8-2ubuntu3.1) ...
+Selecting previously unselected package hicolor-icon-theme.
+Preparing to unpack .../01-hicolor-icon-theme_0.17-2_all.deb ...
+Unpacking hicolor-icon-theme (0.17-2) ...
+Selecting previously unselected package libgdk-pixbuf2.0-common.
+Preparing to unpack .../02-libgdk-pixbuf2.0-common_2.42.8+dfsg-1ubuntu0.5_all.deb ...
+Unpacking libgdk-pixbuf2.0-common (2.42.8+dfsg-1ubuntu0.5) ...
+Selecting previously unselected package libgdk-pixbuf-2.0-0:amd64.
+Preparing to unpack .../03-libgdk-pixbuf-2.0-0_2.42.8+dfsg-1ubuntu0.5_amd64.deb ...
+Unpacking libgdk-pixbuf-2.0-0:amd64 (2.42.8+dfsg-1ubuntu0.5) ...
+Selecting previously unselected package gtk-update-icon-cache.
+Preparing to unpack .../04-gtk-update-icon-cache_3.24.33-1ubuntu2.2_amd64.deb ...
+Unpacking gtk-update-icon-cache (3.24.33-1ubuntu2.2) ...
+Selecting previously unselected package humanity-icon-theme.
+Preparing to unpack .../05-humanity-icon-theme_0.6.16_all.deb ...
+Unpacking humanity-icon-theme (0.6.16) ...
+Selecting previously unselected package ubuntu-mono.
+Preparing to unpack .../06-ubuntu-mono_20.10-0ubuntu2_all.deb ...
+Unpacking ubuntu-mono (20.10-0ubuntu2) ...
+Selecting previously unselected package adwaita-icon-theme.
+Preparing to unpack .../07-adwaita-icon-theme_41.0-1ubuntu1_all.deb ...
+Unpacking adwaita-icon-theme (41.0-1ubuntu1) ...
+Selecting previously unselected package fontconfig.
+Preparing to unpack .../08-fontconfig_2.13.1-4.2ubuntu5_amd64.deb ...
+Unpacking fontconfig (2.13.1-4.2ubuntu5) ...
+Selecting previously unselected package libpixman-1-0:amd64.
+Preparing to unpack .../09-libpixman-1-0_0.40.0-1ubuntu0.22.04.1_amd64.deb ...
+Unpacking libpixman-1-0:amd64 (0.40.0-1ubuntu0.22.04.1) ...
+Selecting previously unselected package libxcb-render0:amd64.
+Preparing to unpack .../10-libxcb-render0_1.14-3ubuntu3_amd64.deb ...
+Unpacking libxcb-render0:amd64 (1.14-3ubuntu3) ...
+Selecting previously unselected package libcairo2:amd64.
+Preparing to unpack .../11-libcairo2_1.16.0-5ubuntu2.1_amd64.deb ...
+Unpacking libcairo2:amd64 (1.16.0-5ubuntu2.1) ...
+Selecting previously unselected package libcairo-gobject2:amd64.
+Preparing to unpack .../12-libcairo-gobject2_1.16.0-5ubuntu2.1_amd64.deb ...
+Unpacking libcairo-gobject2:amd64 (1.16.0-5ubuntu2.1) ...
+Selecting previously unselected package libdatrie1:amd64.
+Preparing to unpack .../13-libdatrie1_0.2.13-2_amd64.deb ...
+Unpacking libdatrie1:amd64 (0.2.13-2) ...
+Selecting previously unselected package libgtk2.0-common.
+Preparing to unpack .../14-libgtk2.0-common_2.24.33-2ubuntu2.1_all.deb ...
+Unpacking libgtk2.0-common (2.24.33-2ubuntu2.1) ...
+Selecting previously unselected package libthai-data.
+Preparing to unpack .../15-libthai-data_0.1.29-1build1_all.deb ...
+Unpacking libthai-data (0.1.29-1build1) ...
+Selecting previously unselected package libthai0:amd64.
+Preparing to unpack .../16-libthai0_0.1.29-1build1_amd64.deb ...
+Unpacking libthai0:amd64 (0.1.29-1build1) ...
+Selecting previously unselected package libpango-1.0-0:amd64.
+Preparing to unpack .../17-libpango-1.0-0_1.50.6+ds-2ubuntu1_amd64.deb ...
+Unpacking libpango-1.0-0:amd64 (1.50.6+ds-2ubuntu1) ...
+Selecting previously unselected package libpangoft2-1.0-0:amd64.
+Preparing to unpack .../18-libpangoft2-1.0-0_1.50.6+ds-2ubuntu1_amd64.deb ...
+Unpacking libpangoft2-1.0-0:amd64 (1.50.6+ds-2ubuntu1) ...
+Selecting previously unselected package libpangocairo-1.0-0:amd64.
+Preparing to unpack .../19-libpangocairo-1.0-0_1.50.6+ds-2ubuntu1_amd64.deb ...
+Unpacking libpangocairo-1.0-0:amd64 (1.50.6+ds-2ubuntu1) ...
+Selecting previously unselected package libxcursor1:amd64.
+Preparing to unpack .../20-libxcursor1_1%3a1.2.0-2build4_amd64.deb ...
+Unpacking libxcursor1:amd64 (1:1.2.0-2build4) ...
+Selecting previously unselected package libxdamage1:amd64.
+Preparing to unpack .../21-libxdamage1_1%3a1.1.5-2build2_amd64.deb ...
+Unpacking libxdamage1:amd64 (1:1.1.5-2build2) ...
+Selecting previously unselected package libgtk2.0-0:amd64.
+Preparing to unpack .../22-libgtk2.0-0_2.24.33-2ubuntu2.1_amd64.deb ...
+Unpacking libgtk2.0-0:amd64 (2.24.33-2ubuntu2.1) ...
+Selecting previously unselected package libgail18:amd64.
+Preparing to unpack .../23-libgail18_2.24.33-2ubuntu2.1_amd64.deb ...
+Unpacking libgail18:amd64 (2.24.33-2ubuntu2.1) ...
+Selecting previously unselected package libgail-common:amd64.
+Preparing to unpack .../24-libgail-common_2.24.33-2ubuntu2.1_amd64.deb ...
+Unpacking libgail-common:amd64 (2.24.33-2ubuntu2.1) ...
+Selecting previously unselected package libgdk-pixbuf2.0-bin.
+Preparing to unpack .../25-libgdk-pixbuf2.0-bin_2.42.8+dfsg-1ubuntu0.5_amd64.deb ...
+Unpacking libgdk-pixbuf2.0-bin (2.42.8+dfsg-1ubuntu0.5) ...
+Selecting previously unselected package libgtk2.0-bin.
+Preparing to unpack .../26-libgtk2.0-bin_2.24.33-2ubuntu2.1_amd64.deb ...
+Unpacking libgtk2.0-bin (2.24.33-2ubuntu2.1) ...
+Selecting previously unselected package librsvg2-2:amd64.
+Preparing to unpack .../27-librsvg2-2_2.52.5+dfsg-3ubuntu0.2_amd64.deb ...
+Unpacking librsvg2-2:amd64 (2.52.5+dfsg-3ubuntu0.2) ...
+Selecting previously unselected package librsvg2-common:amd64.
+Preparing to unpack .../28-librsvg2-common_2.52.5+dfsg-3ubuntu0.2_amd64.deb ...
+Unpacking librsvg2-common:amd64 (2.52.5+dfsg-3ubuntu0.2) ...
+Selecting previously unselected package openjdk-17-jre-headless:amd64.
+Preparing to unpack .../29-openjdk-17-jre-headless_17.0.18+8-1~22.04.1_amd64.deb ...
+Unpacking openjdk-17-jre-headless:amd64 (17.0.18+8-1~22.04.1) ...
+Selecting previously unselected package openjdk-17-jre:amd64.
+Preparing to unpack .../30-openjdk-17-jre_17.0.18+8-1~22.04.1_amd64.deb ...
+Unpacking openjdk-17-jre:amd64 (17.0.18+8-1~22.04.1) ...
+Selecting previously unselected package openjdk-17-jdk-headless:amd64.
+Preparing to unpack .../31-openjdk-17-jdk-headless_17.0.18+8-1~22.04.1_amd64.deb ...
+Unpacking openjdk-17-jdk-headless:amd64 (17.0.18+8-1~22.04.1) ...
+Selecting previously unselected package openjdk-17-jdk:amd64.
+Preparing to unpack .../32-openjdk-17-jdk_17.0.18+8-1~22.04.1_amd64.deb ...
+Unpacking openjdk-17-jdk:amd64 (17.0.18+8-1~22.04.1) ...
+Setting up libpixman-1-0:amd64 (0.40.0-1ubuntu0.22.04.1) ...
+Setting up fontconfig (2.13.1-4.2ubuntu5) ...
+Regenerating fonts cache...
+done.
+Setting up libxdamage1:amd64 (1:1.1.5-2build2) ...
+Setting up hicolor-icon-theme (0.17-2) ...
+Setting up libdatrie1:amd64 (0.2.13-2) ...
+Setting up libxcb-render0:amd64 (1.14-3ubuntu3) ...
+Setting up libxcursor1:amd64 (1:1.2.0-2build4) ...
+Setting up libgdk-pixbuf2.0-common (2.42.8+dfsg-1ubuntu0.5) ...
+Setting up libcairo2:amd64 (1.16.0-5ubuntu2.1) ...
+Setting up libfribidi0:amd64 (1.0.8-2ubuntu3.1) ...
+Setting up openjdk-17-jre-headless:amd64 (17.0.18+8-1~22.04.1) ...
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/java to provide /usr/bin/java (java) in auto mode
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/jpackage to provide /usr/bin/jpackage (jpackage) in auto mode
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/keytool to provide /usr/bin/keytool (keytool) in auto mode
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/rmiregistry to provide /usr/bin/rmiregistry (rmiregistry) in auto mode
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/lib/jexec to provide /usr/bin/jexec (jexec) in auto mode
+Setting up libthai-data (0.1.29-1build1) ...
+Setting up libgdk-pixbuf-2.0-0:amd64 (2.42.8+dfsg-1ubuntu0.5) ...
+Setting up libcairo-gobject2:amd64 (1.16.0-5ubuntu2.1) ...
+Setting up libgtk2.0-common (2.24.33-2ubuntu2.1) ...
+Setting up gtk-update-icon-cache (3.24.33-1ubuntu2.2) ...
+Setting up libthai0:amd64 (0.1.29-1build1) ...
+Setting up openjdk-17-jdk-headless:amd64 (17.0.18+8-1~22.04.1) ...
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/jar to provide /usr/bin/jar (jar) in auto mode
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/jarsigner to provide /usr/bin/jarsigner (jarsigner) in auto mode
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/javac to provide /usr/bin/javac (javac) in auto mode
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/javadoc to provide /usr/bin/javadoc (javadoc) in auto mode
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/javap to provide /usr/bin/javap (javap) in auto mode
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/jcmd to provide /usr/bin/jcmd (jcmd) in auto mode
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/jdb to provide /usr/bin/jdb (jdb) in auto mode
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/jdeprscan to provide /usr/bin/jdeprscan (jdeprscan) in auto mode
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/jdeps to provide /usr/bin/jdeps (jdeps) in auto mode
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/jfr to provide /usr/bin/jfr (jfr) in auto mode
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/jimage to provide /usr/bin/jimage (jimage) in auto mode
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/jinfo to provide /usr/bin/jinfo (jinfo) in auto mode
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/jlink to provide /usr/bin/jlink (jlink) in auto mode
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/jmap to provide /usr/bin/jmap (jmap) in auto mode
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/jmod to provide /usr/bin/jmod (jmod) in auto mode
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/jps to provide /usr/bin/jps (jps) in auto mode
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/jrunscript to provide /usr/bin/jrunscript (jrunscript) in auto mode
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/jshell to provide /usr/bin/jshell (jshell) in auto mode
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/jstack to provide /usr/bin/jstack (jstack) in auto mode
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/jstat to provide /usr/bin/jstat (jstat) in auto mode
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/jstatd to provide /usr/bin/jstatd (jstatd) in auto mode
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/serialver to provide /usr/bin/serialver (serialver) in auto mode
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/jhsdb to provide /usr/bin/jhsdb (jhsdb) in auto mode
+Setting up libgdk-pixbuf2.0-bin (2.42.8+dfsg-1ubuntu0.5) ...
+Setting up libpango-1.0-0:amd64 (1.50.6+ds-2ubuntu1) ...
+Setting up libpangoft2-1.0-0:amd64 (1.50.6+ds-2ubuntu1) ...
+Setting up libpangocairo-1.0-0:amd64 (1.50.6+ds-2ubuntu1) ...
+Setting up librsvg2-2:amd64 (2.52.5+dfsg-3ubuntu0.2) ...
+Setting up librsvg2-common:amd64 (2.52.5+dfsg-3ubuntu0.2) ...
+Setting up adwaita-icon-theme (41.0-1ubuntu1) ...
+update-alternatives: using /usr/share/icons/Adwaita/cursor.theme to provide /usr/share/icons/default/index.theme (x-cursor-theme) in auto mode
+Setting up libgtk2.0-0:amd64 (2.24.33-2ubuntu2.1) ...
+Setting up humanity-icon-theme (0.6.16) ...
+Setting up libgail18:amd64 (2.24.33-2ubuntu2.1) ...
+Setting up libgtk2.0-bin (2.24.33-2ubuntu2.1) ...
+Setting up libgail-common:amd64 (2.24.33-2ubuntu2.1) ...
+Setting up openjdk-17-jre:amd64 (17.0.18+8-1~22.04.1) ...
+Setting up ubuntu-mono (20.10-0ubuntu2) ...
+Setting up openjdk-17-jdk:amd64 (17.0.18+8-1~22.04.1) ...
+update-alternatives: using /usr/lib/jvm/java-17-openjdk-amd64/bin/jconsole to provide /usr/bin/jconsole (jconsole) in auto mode
+Processing triggers for libc-bin (2.35-0ubuntu3.10) ...
+Processing triggers for libgdk-pixbuf-2.0-0:amd64 (2.42.8+dfsg-1ubuntu0.5) ...
+
+Install workspace dependencies
+
+8s
+
+Scope: all 11 workspace projects
+Lockfile is up to date, resolution step is skipped
+Progress: resolved 1, reused 0, downloaded 0, added 0
+Packages: +1130
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Progress: resolved 1130, reused 0, downloaded 159, added 142
+Progress: resolved 1130, reused 0, downloaded 328, added 347
+Progress: resolved 1130, reused 0, downloaded 363, added 357
+Progress: resolved 1130, reused 0, downloaded 532, added 489
+Progress: resolved 1130, reused 0, downloaded 825, added 846
+Progress: resolved 1130, reused 0, downloaded 957, added 935
+Progress: resolved 1130, reused 0, downloaded 1104, added 1129
+Progress: resolved 1130, reused 0, downloaded 1104, added 1130, done
+.../esbuild@0.27.3/node_modules/esbuild postinstall$ node install.js
+.../esbuild@0.27.3/node_modules/esbuild postinstall: Done
+devDependencies:
++ prettier 3.8.1
++ typescript 5.9.3
+Done in 8.5s using pnpm v10.26.1
+
+Run expo prebuild (no install)
+
+6s
+
+- Creating native directory (./android)
+✔ Created native directory
+- Updating package.json
+✔ Updated package.json
+- Running prebuild
+Expo supports version "^5.2.0" of `sharp-cli`, current version: "1.15.0".
+If you can remove or upgrade using `npm (un)install -g sharp-cli@^5.2.0`.
+Or disable `sharp-cli` with `EXPO_IMAGE_UTILS_NO_SHARP=1`.
+- Running prebuild
+✔ Finished prebuild
+
+Install dependencies after prebuild
+
+4s
+
+Scope: all 11 workspace projects
+Progress: resolved 0, reused 1, downloaded 0, added 0
+artifacts/api-server                     |  WARN  deprecated @types/bcryptjs@3.0.0
+artifacts/capsubvention-mobile           |  WARN  deprecated @ungap/structured-clone@1.3.0
+Progress: resolved 267, reused 265, downloaded 0, added 0
+Progress: resolved 1107, reused 1104, downloaded 0, added 0
+WARN  5 deprecated subdependencies found: glob@7.2.3, inflight@1.0.6, rimraf@3.0.2, uuid@3.4.0, uuid@7.0.3
+Already up to date
+Progress: resolved 1107, reused 1104, downloaded 0, added 0, done
+Done in 3.9s using pnpm v10.26.1
+
+Build Android APK
+
+7s
+
+Downloading https://services.gradle.org/distributions/gradle-8.14.3-bin.zip
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+10%.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+20%
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+30%.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+40%.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+50%.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+60%.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+70%
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+80%.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+90%.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+100%
+Welcome to Gradle 8.14.3!
+Here are the highlights of this release:
+- Java 24 support
+- GraalVM Native Image toolchain selection
+- Enhancements to test reporting
+- Build Authoring improvements
+For more details see https://docs.gradle.org/8.14.3/release-notes.html
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.14.3/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+FAILURE: Build failed with an exception.
+* What went wrong:
+Unable to start the daemon process.
+This problem might be caused by incorrect configuration of the daemon.
+For example, an unrecognized jvm option is used.For more details on the daemon, please refer to https://docs.gradle.org/8.14.3/userguide/gradle_daemon.html in the Gradle documentation.
+Process command line: /usr/lib/jvm/java-17-openjdk-amd64/bin/java --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.prefs/java.util.prefs=ALL-UNNAMED --add-exports=jdk.compiler/com.sun.tools.javac.api=ALL-UNNAMED --add-exports=jdk.compiler/com.sun.tools.javac.util=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.prefs/java.util.prefs=ALL-UNNAMED --add-opens=java.base/java.nio.charset=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED --add-opens=java.xml/javax.xml.namespace=ALL-UNNAMED -XX:MaxMetaspaceSize=1g -XX:MaxPermSize=512m -XX:+HeapDumpOnOutOfMemoryError -Xmx4g -Dfile.encoding=UTF-8 -Duser.country=US -Duser.language=en -Duser.variant -cp /home/expo/.gradle/wrapper/dists/gradle-8.14.3-bin/cv11ve7ro1n3o1j4so8xd9n66/gradle-8.14.3/lib/gradle-daemon-main-8.14.3.jar -javaagent:/home/expo/.gradle/wrapper/dists/gradle-8.14.3-bin/cv11ve7ro1n3o1j4so8xd9n66/gradle-8.14.3/lib/agents/gradle-instrumentation-agent-8.14.3.jar org.gradle.launcher.daemon.bootstrap.GradleDaemon 8.14.3
+Please read the following process output to find out more:
+-----------------------
+Unrecognized VM option 'MaxPermSize=512m'
+Error: Could not create the Java Virtual Machine.
+Error: A fatal exception has occurred. Program will exit.
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+/bin/bash -eo pipefail /tmp/eas-build/ea73d198-b8e6-4793-9c0b-efb11023e576/steps/step-008/scripts/8566be57-dc02-487c-b52d-451b2fe36502.sh exited with non-zero code: 1
+
+Find and upload build artifacts
+
+1ms
+
+Skipped build step "Find and upload build artifacts"

@@ -1,0 +1,50 @@
+2026-05-10T11:37:01.295855371Z             [Symbol(kBytesRead)]: 5279,
+2026-05-10T11:37:01.295857911Z             [Symbol(kBytesWritten)]: 2150
+2026-05-10T11:37:01.295860981Z           },
+2026-05-10T11:37:01.295864311Z           servername: 'ep-sweet-pine-alqa5r6s.c-3.eu-central-1.aws.neon.tech',
+2026-05-10T11:37:01.295867261Z           singleUse: true
+2026-05-10T11:37:01.295870301Z         }
+2026-05-10T11:37:01.295873391Z       },
+2026-05-10T11:37:01.295876631Z       _keepAlive: false,
+2026-05-10T11:37:01.295879911Z       _keepAliveInitialDelayMillis: 0,
+2026-05-10T11:37:01.295882591Z       parsedStatements: {},
+2026-05-10T11:37:01.295884531Z       ssl: {},
+2026-05-10T11:37:01.295886481Z       _ending: true,
+2026-05-10T11:37:01.295888461Z       _emitMessage: false,
+2026-05-10T11:37:01.295890381Z       _connecting: true,
+2026-05-10T11:37:01.295892381Z       [Symbol(shapeMode)]: false,
+2026-05-10T11:37:01.295894292Z       [Symbol(kCapture)]: false
+2026-05-10T11:37:01.295896221Z     },
+2026-05-10T11:37:01.295898172Z     _queryQueue: [],
+2026-05-10T11:37:01.295900152Z     binary: false,
+2026-05-10T11:37:01.295902062Z     processID: -1531297904,
+2026-05-10T11:37:01.295904022Z     secretKey: 1791736206,
+2026-05-10T11:37:01.295906832Z     ssl: {},
+2026-05-10T11:37:01.295908832Z     _connectionTimeoutMillis: 0,
+2026-05-10T11:37:01.295931962Z     _connectionCallback: null,
+2026-05-10T11:37:01.295940773Z     saslSession: null,
+2026-05-10T11:37:01.295944983Z     release: [Function (anonymous)],
+2026-05-10T11:37:01.295947123Z     readyForQuery: true,
+2026-05-10T11:37:01.295949183Z     hasExecuted: true,
+2026-05-10T11:37:01.295951193Z     _poolUseCount: 1,
+2026-05-10T11:37:01.295953153Z     [Symbol(shapeMode)]: false,
+2026-05-10T11:37:01.295955083Z     [Symbol(kCapture)]: false
+2026-05-10T11:37:01.295957063Z   }
+2026-05-10T11:37:01.295959033Z }
+2026-05-10T11:37:01.295960913Z 
+2026-05-10T11:37:01.295963603Z Node.js v22.22.0
+2026-05-10T11:37:11.081736124Z ==> Running 'node --enable-source-maps artifacts/api-server/dist/index.mjs'
+2026-05-10T11:37:16.682907952Z (node:50) Warning: SECURITY WARNING: The SSL modes 'prefer', 'require', and 'verify-ca' are treated as aliases for 'verify-full'.
+2026-05-10T11:37:16.682941073Z In the next major version (pg-connection-string v3.0.0 and pg v9.0.0), these modes will adopt standard libpq semantics, which have weaker security guarantees.
+2026-05-10T11:37:16.682945723Z 
+2026-05-10T11:37:16.682950663Z To prepare for this change:
+2026-05-10T11:37:16.682955393Z - If you want the current behavior, explicitly use 'sslmode=verify-full'
+2026-05-10T11:37:16.682959273Z - If you want libpq compatibility now, use 'uselibpqcompat=true&sslmode=require'
+2026-05-10T11:37:16.682963484Z 
+2026-05-10T11:37:16.682970464Z See https://www.postgresql.org/docs/current/libpq-ssl.html for libpq SSL mode definitions.
+2026-05-10T11:37:16.682976964Z (Use `node --trace-warnings ...` to show where the warning was created)
+2026-05-10T11:37:17.512323189Z {"level":30,"time":1778413037511,"pid":50,"hostname":"srv-d7j4rvu7r5hc73chknh0-hibernate-68b4cc8fd-zvts9","port":10000,"msg":"Server listening"}
+2026-05-10T11:37:47.483663694Z {"level":30,"time":1778413067483,"pid":50,"hostname":"srv-d7j4rvu7r5hc73chknh0-hibernate-68b4cc8fd-zvts9","req":{"id":1,"method":"GET","url":"/api/dashboard/stats"},"res":{"statusCode":304},"responseTime":407,"msg":"request completed"}
+2026-05-10T11:37:47.486144084Z {"level":30,"time":1778413067484,"pid":50,"hostname":"srv-d7j4rvu7r5hc73chknh0-hibernate-68b4cc8fd-zvts9","req":{"id":4,"method":"GET","url":"/api/frais"},"res":{"statusCode":304},"responseTime":105,"msg":"request completed"}
+2026-05-10T11:37:47.486160804Z {"level":30,"time":1778413067484,"pid":50,"hostname":"srv-d7j4rvu7r5hc73chknh0-hibernate-68b4cc8fd-zvts9","req":{"id":3,"method":"GET","url":"/api/dossiers/2/events"},"res":{"statusCode":304},"responseTime":109,"msg":"request completed"}
+2026-05-10T11:37:47.486166844Z {"level":30,"time":1778413067485,"pid":50,"hostname":"srv-d7j4rvu7r5hc73chknh0-hibernate-68b4cc8fd-zvts9","req":{"id":2,"method":"GET","url":"/api/dossiers/2/messages"},"res":{"statusCode":304},"responseTime":189,"msg":"request completed"}

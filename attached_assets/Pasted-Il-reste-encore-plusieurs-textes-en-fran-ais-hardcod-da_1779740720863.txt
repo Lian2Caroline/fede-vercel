@@ -1,0 +1,91 @@
+Il reste encore plusieurs textes en français hardcodé dans le projet malgré la mise en place du système multilingue.
+
+Comme le site est désormais destiné à plusieurs pays et plusieurs langues, je veux une vérification complète et approfondie afin d’éliminer TOUS les textes hardcodés en français et les intégrer correctement au système i18n/multilangue.
+
+IMPORTANT :
+Cette correction doit s’appliquer :
+
+* à la version WEB
+* à la version APK/mobile
+* aux emails automatiques
+* aux documents générés
+* aux messages système
+* aux notifications
+* à tous les composants visibles et dynamiques
+
+========================================
+IMPORTANT — EXCEPTION À RESPECTER
+=================================
+
+L’ESPACE ADMIN doit rester entièrement en français.
+
+Ne modifie PAS :
+
+* les pages admin
+* les composants admin
+* les messages admin
+* les formulaires admin
+* les dashboards admin
+* les outils internes admin
+
+Le multilingue doit concerner uniquement :
+
+* les utilisateurs
+* les visiteurs
+* les pages publiques
+* l’espace utilisateur
+* les emails utilisateur
+* les documents utilisateur
+* les messages automatiques utilisateur
+* l’APK côté utilisateur
+
+========================================
+TEXTES FRANÇAIS HARDCODÉS DÉJÀ IDENTIFIÉS
+=========================================
+
+J’ai déjà repéré plusieurs zones contenant du français hardcodé :
+
+1. Section :
+   “Organismes financeurs & partenaires institutionnels”
+
+2. Footer :
+   plusieurs textes encore en français hardcodé
+
+3. Toute la FAQ :
+   questions + réponses encore hardcodées
+
+4. Top bar :
+   “INFO OFFICIELLE”
+
+Et ceci n’est probablement qu’une partie des textes concernés.
+
+========================================
+OBJECTIF
+========
+
+Je veux que tu recherches dans TOUT le projet utilisateur :
+
+* tous les textes hardcodés en français
+* tous les labels fixes
+* tous les titres statiques
+* tous les placeholders
+* tous les messages frontend
+* tous les textes UI visibles
+* tous les messages d’erreur
+* tous les textes mobile/app
+* tous les composants React/React Native contenant du texte fixe
+* tous les emails automatiques
+* tous les documents générés utilisateur
+* tous les messages envoyés aux utilisateurs
+
+Je veux ensuite que chaque texte soit :
+
+* extrait proprement
+* intégré au système i18n existant
+* traduit correctement
+* compatible avec le changement dynamique de langue
+
+========================================
+IMPORTANT — ÉVITER LES DOUBLONS
+===============================
+

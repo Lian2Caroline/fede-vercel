@@ -1,0 +1,64 @@
+{
+  "scene1": {
+    "label": "Das Problem",
+    "title": "Förderungen erhalten\nin Überseegebieten",
+    "desc": "Ein komplexer Prozess, zeitaufwändige Verfahren,\nabgelehnte Anträge mangels Unterstützung."
+  },
+  "scene2": {
+    "tagline": "Die offizielle 100% digitale Plattform\nfür den Zugang zu nicht rückzahlbaren Zuschüssen"
+  },
+  "scene3": {
+    "label": "Antragsverfolgung",
+    "title": "Verfolgen Sie Ihren\nAntrag\nin Echtzeit",
+    "desc": "Ihr persönlicher Berater\ninformiert Sie bei jedem Schritt.",
+    "notif_title": "Statusaktualisierung",
+    "notif_body": "Ihr Antrag wird geprüft — noch 30 Tage",
+    "status_submitted": "Antrag eingereicht",
+    "status_eligible": "Förderfähigkeit geprüft",
+    "status_processing": "In Prüfung",
+    "status_awaiting": "Entscheidung ausstehend",
+    "status_notified": "Bewilligung mitgeteilt",
+    "active_badge": "In Bearbeitung"
+  },
+  "scene4": {
+    "header": "Nachweisdokumente",
+    "label": "Dokumentenbereich",
+    "title": "Laden Sie Ihre\nDokumente\nsicher hoch",
+    "desc": "Alle Ihre Dokumente\nzentralisiert, zugänglich\nund gesichert, 24/7.",
+    "doc_id": "Personalausweis",
+    "doc_plan": "Finanzierungsplan",
+    "doc_statuts": "Gesellschaftssatzung",
+    "doc_rib": "Bankverbindung",
+    "status_done": "Validiert",
+    "status_pending": "Ausstehend",
+    "secure_badge": "Ende-zu-Ende-Verschlüsselung — Ihre Daten sind geschützt"
+  },
+  "scene5": {
+    "label": "Erfolgsmodell",
+    "title_1": "Sie zahlen",
+    "title_2": "nur wenn Ihr",
+    "title_3": "Antrag",
+    "title_accent": "genehmigt wird",
+    "desc": "Bearbeitungsgebühr von 456 € inkl. MwSt. — fällig\nnur nach positiver Entscheidung.",
+    "banner_title": "Bewilligungsbenachrichtigung",
+    "banner_sub": "Ihr Antrag wurde genehmigt",
+    "fee_label": "Bearbeitungsgebühr",
+    "payment_title": "Sichere Zahlung",
+    "payment_methods": "Bankkarte · Überweisung · Scheck",
+    "grant_label": "Förderung erhalten"
+  },
+  "scene6": {
+    "tagline": "Ihr Partner für nicht rückzahlbare öffentliche Förderung"
+  },
+  "video": {
+    "enable_audio": "Ton aktivieren",
+    "click_audio": "Klicken Sie, um den Ton zu aktivieren",
+    "loop_on": "Szene wiederholen: an",
+    "loop_off": "Szene wiederholen: aus",
+    "narration_on": "Erzählung aktivieren",
+    "narration_off": "Erzählung stummschalten",
+    "show_controls": "Steuerelemente anzeigen",
+    "hide_controls": "Steuerelemente ausblenden",
+    "jump_to_scene": "Zu Szene {{n}} springen"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "scene1": {
+    "label": "Il problema",
+    "title": "Ottenere sovvenzioni\nnei territori d'oltremare",
+    "desc": "Un processo complesso, pratiche burocratiche,\ndomande rifiutate per mancanza di supporto."
+  },
+  "scene2": {
+    "tagline": "La piattaforma ufficiale 100% digitale\nper accedere alle sovvenzioni non rimborsabili"
+  },
+  "scene3": {
+    "label": "Monitoraggio pratica",
+    "title": "Monitora la tua\npratica\nin tempo reale",
+    "desc": "Il tuo consulente dedicato\nti informa ad ogni passo.",
+    "notif_title": "Aggiornamento di stato",
+    "notif_body": "La tua pratica è in istruttoria — 30 giorni rimanenti",
+    "status_submitted": "Pratica presentata",
+    "status_eligible": "Ammissibilità verificata",
+    "status_processing": "In istruttoria",
+    "status_awaiting": "Decisione attesa",
+    "status_notified": "Attribuzione notificata",
+    "active_badge": "In corso"
+  },
+  "scene4": {
+    "header": "Documentazione giustificativa",
+    "label": "Spazio documenti",
+    "title": "Carica i tuoi\ngiustificativi\nin sicurezza",
+    "desc": "Tutti i tuoi documenti\ncentralizzati, accessibili\ne protetti 24h/24.",
+    "doc_id": "Documento d'identità",
+    "doc_plan": "Piano di finanziamento",
+    "doc_statuts": "Statuti della società",
+    "doc_rib": "Coordinate bancarie",
+    "status_done": "Validato",
+    "status_pending": "In attesa",
+    "secure_badge": "Crittografia end-to-end — i tuoi dati sono protetti"
+  },
+  "scene5": {
+    "label": "Modello a successo",
+    "title_1": "Paghi",
+    "title_2": "solo se la tua",
+    "title_3": "pratica è",
+    "title_accent": "accettata",
+    "desc": "Spese di istruttoria di 456 € IVA incl. — dovute\nsolo dopo decisione favorevole.",
+    "banner_title": "Notifica di attribuzione",
+    "banner_sub": "La tua pratica è stata accettata",
+    "fee_label": "Spese di istruttoria",
+    "payment_title": "Pagamento sicuro",
+    "payment_methods": "Carta bancaria · Bonifico · Assegno",
+    "grant_label": "Sovvenzione ottenuta"
+  },
+  "scene6": {
+    "tagline": "Il tuo partner per i finanziamenti pubblici non rimborsabili"
+  },
+  "video": {
+    "enable_audio": "Attiva audio",
+    "click_audio": "Clicca per attivare l'audio",
+    "loop_on": "Loop scena: attivo",
+    "loop_off": "Loop scena: disattivo",
+    "narration_on": "Attiva narrazione",
+    "narration_off": "Disattiva narrazione",
+    "show_controls": "Mostra controlli",
+    "hide_controls": "Nascondi controlli",
+    "jump_to_scene": "Vai alla scena {{n}}"
+  }
+}

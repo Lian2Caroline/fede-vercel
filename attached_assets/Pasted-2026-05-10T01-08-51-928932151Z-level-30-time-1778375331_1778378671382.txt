@@ -1,0 +1,50 @@
+2026-05-10T01:08:51.928932151Z {"level":30,"time":1778375331928,"pid":70,"hostname":"srv-d7j4rvu7r5hc73chknh0-hibernate-7fbc868b58-nkmbq","req":{"id":1,"method":"HEAD","url":"/"},"res":{"statusCode":404},"responseTime":5,"msg":"request completed"}
+2026-05-10T01:09:00.020672399Z ==> Available at your primary URL https://api.capsubvention.com + 1 more domain
+2026-05-10T01:09:00.023244467Z ==> 
+2026-05-10T01:09:00.025456909Z ==> ///////////////////////////////////////////////////////////
+2026-05-10T01:09:00.211286069Z {"level":30,"time":1778375340211,"pid":70,"hostname":"srv-d7j4rvu7r5hc73chknh0-hibernate-7fbc868b58-nkmbq","req":{"id":2,"method":"GET","url":"/"},"res":{"statusCode":404},"responseTime":2,"msg":"request completed"}
+2026-05-10T01:13:56.270413451Z ==> Detected service running on port 10000
+2026-05-10T01:13:56.603394625Z ==> Docs on specifying a port: https://render.com/docs/web-services#port-binding
+2026-05-10T01:19:42.473549634Z ==> Deploying...
+2026-05-10T01:19:42.656596691Z ==> Setting WEB_CONCURRENCY=1 by default, based on available CPUs in the instance
+2026-05-10T01:20:17.05293498Z ==> Running 'node --enable-source-maps artifacts/api-server/dist/index.mjs'
+2026-05-10T01:20:22.543788481Z {"level":30,"time":1778376022542,"pid":68,"hostname":"srv-d7j4rvu7r5hc73chknh0-hibernate-554458ccb6-z8vzp","port":10000,"msg":"Server listening"}
+2026-05-10T01:20:23.336167357Z {"level":30,"time":1778376023335,"pid":68,"hostname":"srv-d7j4rvu7r5hc73chknh0-hibernate-554458ccb6-z8vzp","req":{"id":1,"method":"HEAD","url":"/"},"res":{"statusCode":404},"responseTime":5,"msg":"request completed"}
+2026-05-10T01:20:33.504963958Z ==> Your service is live 🎉
+2026-05-10T01:20:33.687580011Z ==> 
+2026-05-10T01:20:33.692194433Z ==> ///////////////////////////////////////////////////////////
+2026-05-10T01:20:33.698533326Z ==> 
+2026-05-10T01:20:33.701969898Z ==> Available at your primary URL https://api.capsubvention.com + 1 more domain
+2026-05-10T01:20:33.705408851Z ==> 
+2026-05-10T01:20:33.708869975Z ==> ///////////////////////////////////////////////////////////
+2026-05-10T01:20:33.886891332Z {"level":30,"time":1778376033886,"pid":68,"hostname":"srv-d7j4rvu7r5hc73chknh0-hibernate-554458ccb6-z8vzp","req":{"id":2,"method":"GET","url":"/"},"res":{"statusCode":404},"responseTime":1,"msg":"request completed"}
+2026-05-10T01:25:26.457375453Z ==> Detected service running on port 10000
+2026-05-10T01:25:26.782461526Z ==> Docs on specifying a port: https://render.com/docs/web-services#port-binding
+2026-05-10T01:31:04.481540089Z ==> Deploying...
+2026-05-10T01:31:04.66488072Z ==> Setting WEB_CONCURRENCY=1 by default, based on available CPUs in the instance
+2026-05-10T01:31:39.550433988Z ==> Running 'node --enable-source-maps artifacts/api-server/dist/index.mjs'
+2026-05-10T01:31:44.84589693Z {"level":30,"time":1778376704845,"pid":67,"hostname":"srv-d7j4rvu7r5hc73chknh0-hibernate-65bcb786d7-j8xmk","port":10000,"msg":"Server listening"}
+2026-05-10T01:31:45.720832658Z {"level":30,"time":1778376705720,"pid":67,"hostname":"srv-d7j4rvu7r5hc73chknh0-hibernate-65bcb786d7-j8xmk","req":{"id":1,"method":"HEAD","url":"/"},"res":{"statusCode":404},"responseTime":4,"msg":"request completed"}
+2026-05-10T01:31:55.41718984Z ==> Your service is live 🎉
+2026-05-10T01:31:55.598519775Z ==> 
+2026-05-10T01:31:55.600475792Z ==> ///////////////////////////////////////////////////////////
+2026-05-10T01:31:55.602374398Z ==> 
+2026-05-10T01:31:55.604310205Z ==> Available at your primary URL https://api.capsubvention.com + 1 more domain
+2026-05-10T01:31:55.606335654Z ==> 
+2026-05-10T01:31:55.607866471Z ==> ///////////////////////////////////////////////////////////
+2026-05-10T01:31:55.88771981Z {"level":30,"time":1778376715887,"pid":67,"hostname":"srv-d7j4rvu7r5hc73chknh0-hibernate-65bcb786d7-j8xmk","req":{"id":2,"method":"GET","url":"/"},"res":{"statusCode":404},"responseTime":1,"msg":"request completed"}
+2026-05-10T01:36:48.462444923Z ==> Detected service running on port 10000
+2026-05-10T01:36:48.842053804Z ==> Docs on specifying a port: https://render.com/docs/web-services#port-binding
+2026-05-10T02:02:11.450581509Z ==> Running 'node --enable-source-maps artifacts/api-server/dist/index.mjs'
+2026-05-10T02:02:17.051362325Z {"level":30,"time":1778378537050,"pid":50,"hostname":"srv-d7j4rvu7r5hc73chknh0-hibernate-65bcb786d7-jqj8f","port":10000,"msg":"Server listening"}
+2026-05-10T02:02:25.189694627Z {"level":30,"time":1778378545189,"pid":50,"hostname":"srv-d7j4rvu7r5hc73chknh0-hibernate-65bcb786d7-jqj8f","req":{"id":1,"method":"GET","url":"/api/auth/me"},"res":{"statusCode":401},"responseTime":5,"msg":"request completed"}
+2026-05-10T02:02:53.255014708Z (node:50) Warning: SECURITY WARNING: The SSL modes 'prefer', 'require', and 'verify-ca' are treated as aliases for 'verify-full'.
+2026-05-10T02:02:53.255050719Z In the next major version (pg-connection-string v3.0.0 and pg v9.0.0), these modes will adopt standard libpq semantics, which have weaker security guarantees.
+2026-05-10T02:02:53.25505569Z 
+2026-05-10T02:02:53.25506077Z To prepare for this change:
+2026-05-10T02:02:53.25506635Z - If you want the current behavior, explicitly use 'sslmode=verify-full'
+2026-05-10T02:02:53.255070751Z - If you want libpq compatibility now, use 'uselibpqcompat=true&sslmode=require'
+2026-05-10T02:02:53.255075111Z 
+2026-05-10T02:02:53.255080041Z See https://www.postgresql.org/docs/current/libpq-ssl.html for libpq SSL mode definitions.
+2026-05-10T02:02:53.255084711Z (Use `node --trace-warnings ...` to show where the warning was created)
+2026-05-10T02:02:56.369962802Z {"level":30,"time":1778378576369,"pid":50,"hostname":"srv-d7j4rvu7r5hc73chknh0-hibernate-65bcb786d7-jqj8f","req":{"id":2,"method":"POST","url":"/api/auth/register"},"res":{"statusCode":202},"responseTime":3124,"msg":"request completed"}

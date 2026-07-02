@@ -1,0 +1,66 @@
+2026-05-10T02:02:25.189694627Z {"level":30,"time":1778378545189,"pid":50,"hostname":"srv-d7j4rvu7r5hc73chknh0-hibernate-65bcb786d7-jqj8f","req":{"id":1,"method":"GET","url":"/api/auth/me"},"res":{"statusCode":401},"responseTime":5,"msg":"request completed"}
+2026-05-10T02:02:53.255014708Z (node:50) Warning: SECURITY WARNING: The SSL modes 'prefer', 'require', and 'verify-ca' are treated as aliases for 'verify-full'.
+2026-05-10T02:02:53.255050719Z In the next major version (pg-connection-string v3.0.0 and pg v9.0.0), these modes will adopt standard libpq semantics, which have weaker security guarantees.
+2026-05-10T02:02:53.25505569Z 
+2026-05-10T02:02:53.25506077Z To prepare for this change:
+2026-05-10T02:02:53.25506635Z - If you want the current behavior, explicitly use 'sslmode=verify-full'
+2026-05-10T02:02:53.255070751Z - If you want libpq compatibility now, use 'uselibpqcompat=true&sslmode=require'
+2026-05-10T02:02:53.255075111Z 
+2026-05-10T02:02:53.255080041Z See https://www.postgresql.org/docs/current/libpq-ssl.html for libpq SSL mode definitions.
+2026-05-10T02:02:53.255084711Z (Use `node --trace-warnings ...` to show where the warning was created)
+2026-05-10T02:02:56.369962802Z {"level":30,"time":1778378576369,"pid":50,"hostname":"srv-d7j4rvu7r5hc73chknh0-hibernate-65bcb786d7-jqj8f","req":{"id":2,"method":"POST","url":"/api/auth/register"},"res":{"statusCode":202},"responseTime":3124,"msg":"request completed"}
+2026-05-10T02:04:36.499217615Z {"level":30,"time":1778378676498,"pid":50,"hostname":"srv-d7j4rvu7r5hc73chknh0-hibernate-65bcb786d7-jqj8f","req":{"id":3,"method":"GET","url":"/api/auth/me"},"res":{"statusCode":401},"responseTime":1,"msg":"request completed"}
+2026-05-10T02:06:56.40369571Z [mailer] register verification: Error: Connection timeout
+2026-05-10T02:06:56.403728722Z     at SMTPConnection._formatError (/opt/render/project/src/node_modules/.pnpm/nodemailer@8.0.7/node_modules/nodemailer/lib/smtp-connection/index.js:887:19)
+2026-05-10T02:06:56.403733583Z     at SMTPConnection._onError (/opt/render/project/src/node_modules/.pnpm/nodemailer@8.0.7/node_modules/nodemailer/lib/smtp-connection/index.js:868:20)
+2026-05-10T02:06:56.403738633Z     at SMTPConnection._onConnectionError (/opt/render/project/src/node_modules/.pnpm/nodemailer@8.0.7/node_modules/nodemailer/lib/smtp-connection/index.js:405:18)
+2026-05-10T02:06:56.403742953Z     at Timeout.<anonymous> (/opt/render/project/src/node_modules/.pnpm/nodemailer@8.0.7/node_modules/nodemailer/lib/smtp-connection/index.js:385:18)
+2026-05-10T02:06:56.403747163Z     at listOnTimeout (node:internal/timers:588:17)
+2026-05-10T02:06:56.403751144Z     at process.processTimers (node:internal/timers:523:7) {
+2026-05-10T02:06:56.403755774Z   code: 'ETIMEDOUT',
+2026-05-10T02:06:56.403759914Z   command: 'CONN'
+2026-05-10T02:06:56.403764024Z }
+2026-05-10T02:12:14.201985049Z ==> Deploying...
+2026-05-10T02:12:14.411077374Z ==> Setting WEB_CONCURRENCY=1 by default, based on available CPUs in the instance
+2026-05-10T02:12:51.364959761Z ==> Running 'node --enable-source-maps artifacts/api-server/dist/index.mjs'
+2026-05-10T02:12:57.161966282Z {"level":30,"time":1778379177161,"pid":69,"hostname":"srv-d7j4rvu7r5hc73chknh0-hibernate-678c895899-sm7gp","port":10000,"msg":"Server listening"}
+2026-05-10T02:12:57.802846653Z {"level":30,"time":1778379177802,"pid":69,"hostname":"srv-d7j4rvu7r5hc73chknh0-hibernate-678c895899-sm7gp","req":{"id":1,"method":"HEAD","url":"/"},"res":{"statusCode":404},"responseTime":5,"msg":"request completed"}
+2026-05-10T02:13:05.32432302Z ==> Your service is live 🎉
+2026-05-10T02:13:05.382102595Z {"level":30,"time":1778379185381,"pid":69,"hostname":"srv-d7j4rvu7r5hc73chknh0-hibernate-678c895899-sm7gp","req":{"id":2,"method":"GET","url":"/"},"res":{"statusCode":404},"responseTime":1,"msg":"request completed"}
+2026-05-10T02:13:05.503636163Z ==> 
+2026-05-10T02:13:05.505777443Z ==> ///////////////////////////////////////////////////////////
+2026-05-10T02:13:05.507899823Z ==> 
+2026-05-10T02:13:05.510493541Z ==> Available at your primary URL https://api.capsubvention.com + 1 more domain
+2026-05-10T02:13:05.512758394Z ==> 
+2026-05-10T02:13:05.515103088Z ==> ///////////////////////////////////////////////////////////
+2026-05-10T02:13:35.633658866Z {"level":30,"time":1778379215633,"pid":69,"hostname":"srv-d7j4rvu7r5hc73chknh0-hibernate-678c895899-sm7gp","req":{"id":3,"method":"GET","url":"/api/auth/me"},"res":{"statusCode":401},"responseTime":3,"msg":"request completed"}
+2026-05-10T02:13:46.878874515Z {"level":30,"time":1778379226878,"pid":69,"hostname":"srv-d7j4rvu7r5hc73chknh0-hibernate-678c895899-sm7gp","req":{"id":4,"method":"GET","url":"/api/auth/me"},"res":{"statusCode":401},"responseTime":2,"msg":"request completed"}
+2026-05-10T02:14:06.147403335Z {"level":30,"time":1778379246147,"pid":69,"hostname":"srv-d7j4rvu7r5hc73chknh0-hibernate-678c895899-sm7gp","req":{"id":5,"method":"GET","url":"/api/auth/me"},"res":{"statusCode":401},"responseTime":1,"msg":"request completed"}
+2026-05-10T02:14:30.45882081Z (node:69) Warning: SECURITY WARNING: The SSL modes 'prefer', 'require', and 'verify-ca' are treated as aliases for 'verify-full'.
+2026-05-10T02:14:30.458856001Z In the next major version (pg-connection-string v3.0.0 and pg v9.0.0), these modes will adopt standard libpq semantics, which have weaker security guarantees.
+2026-05-10T02:14:30.458860571Z 
+2026-05-10T02:14:30.458867341Z To prepare for this change:
+2026-05-10T02:14:30.458873381Z - If you want the current behavior, explicitly use 'sslmode=verify-full'
+2026-05-10T02:14:30.458878661Z - If you want libpq compatibility now, use 'uselibpqcompat=true&sslmode=require'
+2026-05-10T02:14:30.458882922Z 
+2026-05-10T02:14:30.458888512Z See https://www.postgresql.org/docs/current/libpq-ssl.html for libpq SSL mode definitions.
+2026-05-10T02:14:30.458892702Z (Use `node --trace-warnings ...` to show where the warning was created)
+2026-05-10T02:14:31.277124518Z {"level":30,"time":1778379271276,"pid":69,"hostname":"srv-d7j4rvu7r5hc73chknh0-hibernate-678c895899-sm7gp","req":{"id":6,"method":"POST","url":"/api/auth/register"},"res":{"statusCode":409},"responseTime":882,"msg":"request completed"}
+2026-05-10T02:14:38.101660502Z {"level":30,"time":1778379278101,"pid":69,"hostname":"srv-d7j4rvu7r5hc73chknh0-hibernate-678c895899-sm7gp","req":{"id":7,"method":"POST","url":"/api/auth/register"},"res":{"statusCode":409},"responseTime":7,"msg":"request completed"}
+2026-05-10T02:14:53.507583396Z {"level":30,"time":1778379293507,"pid":69,"hostname":"srv-d7j4rvu7r5hc73chknh0-hibernate-678c895899-sm7gp","req":{"id":8,"method":"GET","url":"/api/auth/me"},"res":{"statusCode":401},"responseTime":1,"msg":"request completed"}
+2026-05-10T02:15:12.302950532Z {"level":30,"time":1778379312302,"pid":69,"hostname":"srv-d7j4rvu7r5hc73chknh0-hibernate-678c895899-sm7gp","req":{"id":9,"method":"POST","url":"/api/auth/register"},"res":{"statusCode":409},"responseTime":38,"msg":"request completed"}
+2026-05-10T02:15:28.628854827Z {"level":30,"time":1778379328628,"pid":69,"hostname":"srv-d7j4rvu7r5hc73chknh0-hibernate-678c895899-sm7gp","req":{"id":10,"method":"GET","url":"/api/auth/me"},"res":{"statusCode":401},"responseTime":1,"msg":"request completed"}
+2026-05-10T02:15:37.725437609Z {"level":30,"time":1778379337725,"pid":69,"hostname":"srv-d7j4rvu7r5hc73chknh0-hibernate-678c895899-sm7gp","req":{"id":11,"method":"GET","url":"/api/auth/me"},"res":{"statusCode":401},"responseTime":1,"msg":"request completed"}
+2026-05-10T02:15:42.360198569Z {"level":30,"time":1778379342359,"pid":69,"hostname":"srv-d7j4rvu7r5hc73chknh0-hibernate-678c895899-sm7gp","req":{"id":12,"method":"GET","url":"/api/auth/me"},"res":{"statusCode":401},"responseTime":0,"msg":"request completed"}
+2026-05-10T02:16:14.027943571Z {"level":30,"time":1778379374027,"pid":69,"hostname":"srv-d7j4rvu7r5hc73chknh0-hibernate-678c895899-sm7gp","req":{"id":13,"method":"GET","url":"/api/auth/me"},"res":{"statusCode":401},"responseTime":0,"msg":"request completed"}
+2026-05-10T02:16:20.759158734Z {"level":30,"time":1778379380758,"pid":69,"hostname":"srv-d7j4rvu7r5hc73chknh0-hibernate-678c895899-sm7gp","req":{"id":14,"method":"GET","url":"/api/auth/me"},"res":{"statusCode":401},"responseTime":0,"msg":"request completed"}
+2026-05-10T02:17:05.686513606Z {"level":30,"time":1778379425686,"pid":69,"hostname":"srv-d7j4rvu7r5hc73chknh0-hibernate-678c895899-sm7gp","req":{"id":15,"method":"GET","url":"/api/auth/me"},"res":{"statusCode":401},"responseTime":1,"msg":"request completed"}
+2026-05-10T02:17:11.646302158Z {"level":30,"time":1778379431646,"pid":69,"hostname":"srv-d7j4rvu7r5hc73chknh0-hibernate-678c895899-sm7gp","req":{"id":16,"method":"GET","url":"/api/auth/me"},"res":{"statusCode":401},"responseTime":1,"msg":"request completed"}
+2026-05-10T02:17:33.965162528Z {"level":30,"time":1778379453964,"pid":69,"hostname":"srv-d7j4rvu7r5hc73chknh0-hibernate-678c895899-sm7gp","req":{"id":17,"method":"POST","url":"/api/auth/register"},"res":{"statusCode":202},"responseTime":2571,"msg":"request completed"}
+2026-05-10T02:17:58.707684749Z ==> Detected service running on port 10000
+2026-05-10T02:17:59.027327507Z ==> Docs on specifying a port: https://render.com/docs/web-services#port-binding
+2026-05-10T02:18:08.145970506Z {"level":30,"time":1778379488145,"pid":69,"hostname":"srv-d7j4rvu7r5hc73chknh0-hibernate-678c895899-sm7gp","req":{"id":18,"method":"GET","url":"/api/auth/me"},"res":{"statusCode":401},"responseTime":0,"msg":"request completed"}
+2026-05-10T02:18:45.002653838Z {"level":30,"time":1778379525002,"pid":69,"hostname":"srv-d7j4rvu7r5hc73chknh0-hibernate-678c895899-sm7gp","req":{"id":19,"method":"GET","url":"/api/auth/me"},"res":{"statusCode":401},"responseTime":1,"msg":"request completed"}
+2026-05-10T02:18:48.646378963Z {"level":30,"time":1778379528646,"pid":69,"hostname":"srv-d7j4rvu7r5hc73chknh0-hibernate-678c895899-sm7gp","req":{"id":20,"method":"GET","url":"/api/auth/me"},"res":{"statusCode":401},"responseTime":1,"msg":"request completed"}
+2026-05-10T02:19:02.579346279Z {"level":30,"time":1778379542576,"pid":69,"hostname":"srv-d7j4rvu7r5hc73chknh0-hibernate-678c895899-sm7gp","req":{"id":21,"method":"GET","url":"/api/auth/me"},"res":{"statusCode":401},"responseTime":1,"msg":"request completed"}
+2026-05-10T02:19:16.192566404Z {"level":30,"time":1778379556192,"pid":69,"hostname":"srv-d7j4rvu7r5hc73chknh0-hibernate-678c895899-sm7gp","req":{"id":22,"method":"GET","url":"/api/auth/me"},"res":{"statusCode":401},"responseTime":1,"msg":"request completed"}

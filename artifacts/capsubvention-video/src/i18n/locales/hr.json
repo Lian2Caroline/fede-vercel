@@ -1,0 +1,64 @@
+{
+  "scene1": {
+    "label": "Problem",
+    "title": "Dobivanje potpora\nu prekomorskim teritorijima",
+    "desc": "Složen proces, dugotrajan postupak,\nzahtjevi odbijeni zbog nedostatka podrške."
+  },
+  "scene2": {
+    "tagline": "Službena 100% digitalna platforma\nza pristup nepovratnim potporama"
+  },
+  "scene3": {
+    "label": "Praćenje zahtjeva",
+    "title": "Pratite\nsvoj zahtjev\nu stvarnom vremenu",
+    "desc": "Vaš namjenski savjetnik\nobavještava vas na svakom koraku.",
+    "notif_title": "Ažuriranje statusa",
+    "notif_body": "Vaš zahtjev se obrađuje — 30 dana preostalo",
+    "status_submitted": "Zahtjev podnesen",
+    "status_eligible": "Prihvatljivost provjerena",
+    "status_processing": "U obradi",
+    "status_awaiting": "Odluka na čekanju",
+    "status_notified": "Dodjela obavještena",
+    "active_badge": "U tijeku"
+  },
+  "scene4": {
+    "header": "Popratna dokumentacija",
+    "label": "Prostor za dokumente",
+    "title": "Pohranite\nsvoje dokumente\nsigurno",
+    "desc": "Svi vaši dokumenti\ncentralizirani, dostupni\ni zaštićeni 24/7.",
+    "doc_id": "Identifikacijski dokument",
+    "doc_plan": "Plan financiranja",
+    "doc_statuts": "Statut društva",
+    "doc_rib": "Bankovni podaci",
+    "status_done": "Potvrđeno",
+    "status_pending": "Na čekanju",
+    "secure_badge": "End-to-end enkripcija — vaši podaci su zaštićeni"
+  },
+  "scene5": {
+    "label": "Model uspjeha",
+    "title_1": "Plaćate",
+    "title_2": "samo ako je vaš",
+    "title_3": "zahtjev",
+    "title_accent": "prihvaćen",
+    "desc": "Naknada za obradu od 456 € s PDV-om — dospijeva\nsamo nakon povoljne odluke.",
+    "banner_title": "Obavijest o dodjeli",
+    "banner_sub": "Vaš zahtjev je prihvaćen",
+    "fee_label": "Naknada za obradu",
+    "payment_title": "Sigurno plaćanje",
+    "payment_methods": "Bankovnom karticom · Uplatom · Čekom",
+    "grant_label": "Potpora dobivena"
+  },
+  "scene6": {
+    "tagline": "Vaš partner za nepovratno javno financiranje"
+  },
+  "video": {
+    "enable_audio": "Aktiviraj zvuk",
+    "click_audio": "Kliknite za aktivaciju zvuka",
+    "loop_on": "Ponavljanje scene: uključeno",
+    "loop_off": "Ponavljanje scene: isključeno",
+    "narration_on": "Aktiviraj naraciju",
+    "narration_off": "Isključi naraciju",
+    "show_controls": "Prikaži kontrole",
+    "hide_controls": "Sakrij kontrole",
+    "jump_to_scene": "Prijeđi na scenu {{n}}"
+  }
+}

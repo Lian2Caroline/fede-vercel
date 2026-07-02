@@ -1,0 +1,376 @@
+Spin up build environment
+
+7ms
+
+Using image "ubuntu-22.04-jdk-11-ndk-r21e" based on "ubuntu-2204-jammy-v20220810"
+Installed software:
+- NDK 21.4.7075529
+- Node.js 18.18.0
+- Bun 1.0.14
+- Yarn 1.22.19
+- pnpm 8.7.5
+- npm 9.8.1
+- Java 11
+- node-gyp 10.0.1
+Project environment variables:
+  EAS_USE_CACHE=1
+  __API_SERVER_URL=https://api.expo.dev/
+Environment secrets:
+  EXPO_TOKEN=********
+EAS Build environment variables:
+  NVM_INC=/home/expo/.nvm/versions/node/v18.18.0/include/node
+  HOSTNAME=turtle-worker-b86b823b3587
+  JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
+  WORKER_TARBALL_URL=https://storage.googleapis.com/eas-build-worker-tarballs/worker-android-production.tar.gz
+  PWD=/usr/local/eas-build-worker
+  HOME=/home/expo
+  ANDROID_NDK_HOME=/home/expo/Android/Sdk/ndk/21.4.7075529
+  NVM_DIR=/home/expo/.nvm
+  ANDROID_HOME=/home/expo/Android/Sdk
+  SHLVL=1
+  ANDROID_SDK_ROOT=/home/expo/Android/Sdk
+  PATH=/home/expo/workingdir/bin:/home/expo/.nvm/versions/node/v18.18.0/bin:/opt/bundletool:/home/expo/Android/Sdk/build-tools/29.0.3:/home/expo/Android/Sdk/build-tools/35.0.0:/home/expo/Android/Sdk/ndk/21.4.7075529:/home/expo/Android/Sdk/cmdline-tools/tools/bin:/home/expo/Android/Sdk/tools:/home/expo/Android/Sdk/tools/bin:/home/expo/Android/Sdk/platform-tools:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin:/home/expo/.bun/bin
+  LOGGER_LEVEL=debug
+  NVM_BIN=/home/expo/.nvm/versions/node/v18.18.0/bin
+  EAS_BUILD_WORKER_DIR=/home/expo/eas-build-worker
+  OLDPWD=/home/expo
+  _=/home/expo/.nvm/versions/node/v18.18.0/bin/node
+  CI=1
+  MAESTRO_DRIVER_STARTUP_TIMEOUT=120000
+  MAESTRO_CLI_NO_ANALYTICS=1
+  EAS_BUILD=true
+  EAS_BUILD_RUNNER=eas-build
+  EAS_BUILD_PLATFORM=android
+  EAS_CLI_SENTRY_DSN=https://ca4734dc503543b28d55fdaf0563f61c@o30871.ingest.sentry.io/1837720
+  NVM_NODEJS_ORG_MIRROR=http://nodejs.production.caches.eas-build.internal
+  EAS_BUILD_PROFILE=preview
+  EAS_BUILD_GIT_COMMIT_HASH=c0777b99ac8784d8e40a3afa3626d0a0f7e819f5
+  EAS_BUILD_ID=3f21e003-6210-4809-b87f-b86b823b3587
+  LANG=en_US.UTF-8
+  EAS_BUILD_WORKINGDIR=/home/expo/workingdir/build
+  EAS_BUILD_PROJECT_ID=bfbba83e-63ab-492f-8555-0cd65a1547c4
+  EAS_BUILD_MAVEN_CACHE_URL=http://maven.production.caches.eas-build.internal
+  GRADLE_OPTS=-Dorg.gradle.jvmargs="-XX:MaxMetaspaceSize=1g -Xmx4g -XX:MaxPermSize=512m -XX:+HeapDumpOnOutOfMemoryError -Dfile.encoding=UTF-8" -Dorg.gradle.parallel=true -Dorg.gradle.daemon=false
+  __EAS_BUILD_ENVS_DIR=/home/expo/workingdir/env
+Builder is ready, starting build
+
+Checkout
+
+3ms
+
+Checking out project directory
+Changing default working directory to /home/expo/workingdir/build/artifacts/capsubvention-mobile (was /home/expo/workingdir/build)
+
+Install pnpm 10.26.1
+
+2s
+
+changed 1 package in 3s
+1 package is looking for funding
+  run `npm fund` for details
+
+Setup pnpm wrapper to bypass frozen-lockfile
+
+9ms
+
+No logs available
+
+Install workspace dependencies
+
+8s
+
+Scope: all 11 workspace projects
+Lockfile is up to date, resolution step is skipped
+Progress: resolved 1, reused 0, downloaded 0, added 0
+Packages: +1130
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Progress: resolved 1130, reused 0, downloaded 161, added 158
+Progress: resolved 1130, reused 0, downloaded 331, added 348
+Progress: resolved 1130, reused 0, downloaded 366, added 357
+Progress: resolved 1130, reused 0, downloaded 580, added 585
+Progress: resolved 1130, reused 0, downloaded 847, added 862
+Progress: resolved 1130, reused 0, downloaded 981, added 962
+Progress: resolved 1130, reused 0, downloaded 1104, added 1130, done
+.../esbuild@0.27.3/node_modules/esbuild postinstall$ node install.js
+.../esbuild@0.27.3/node_modules/esbuild postinstall: Done
+devDependencies:
++ prettier 3.8.1
++ typescript 5.9.3
+Done in 8.4s using pnpm v10.26.1
+
+Run expo prebuild (no install)
+
+6s
+
+- Creating native directory (./android)
+✔ Created native directory
+- Updating package.json
+✔ Updated package.json
+- Running prebuild
+Expo supports version "^5.2.0" of `sharp-cli`, current version: "1.15.0".
+If you can remove or upgrade using `npm (un)install -g sharp-cli@^5.2.0`.
+Or disable `sharp-cli` with `EXPO_IMAGE_UTILS_NO_SHARP=1`.
+- Running prebuild
+✔ Finished prebuild
+
+Install dependencies after prebuild
+
+3s
+
+Scope: all 11 workspace projects
+Progress: resolved 0, reused 1, downloaded 0, added 0
+artifacts/api-server                     |  WARN  deprecated @types/bcryptjs@3.0.0
+artifacts/capsubvention-mobile           |  WARN  deprecated @ungap/structured-clone@1.3.0
+Progress: resolved 315, reused 311, downloaded 0, added 0
+Progress: resolved 1107, reused 1104, downloaded 0, added 0
+WARN  5 deprecated subdependencies found: glob@7.2.3, inflight@1.0.6, rimraf@3.0.2, uuid@3.4.0, uuid@7.0.3
+Already up to date
+Progress: resolved 1107, reused 1104, downloaded 0, added 0, done
+Done in 3.8s using pnpm v10.26.1
+
+Build Android APK
+
+1m 35s
+
+Downloading https://services.gradle.org/distributions/gradle-8.14.3-bin.zip
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+10
+%.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+20%
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+30%.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+40%.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+50%.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+60%
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+70%.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+80%.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+90
+%.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+100%
+Welcome to Gradle 8.14.3!
+Here are the highlights of this release:
+ - Java 24 support
+ - GraalVM Native Image toolchain selection
+- Enhancements to test reporting
+ - Build Authoring improvements
+For more details see https://docs.gradle.org/8.14.3/release-notes.html
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.14.3/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build
+> Configure project :expo-gradle-plugin:expo-autolinking-plugin
+w: file:///home/expo/workingdir/build/node_modules/.pnpm/expo-modules-autolinking@3.0.25/node_modules/expo-modules-autolinking/android/expo-gradle-plugin/expo-autolinking-plugin/build.gradle.kts:25:3: 'kotlinOptions(KotlinJvmOptionsDeprecated /* = KotlinJvmOptions */.() -> Unit): Unit' is deprecated. Please migrate to the compilerOptions DSL. More details are here: https://kotl.in/u1r8ln
+> Configure project :expo-gradle-plugin:expo-autolinking-settings-plugin
+w: file:///home/expo/workingdir/build/node_modules/.pnpm/expo-modules-autolinking@3.0.25/node_modules/expo-modules-autolinking/android/expo-gradle-plugin/expo-autolinking-settings-plugin/build.gradle.kts:30:3: 'kotlinOptions(KotlinJvmOptionsDeprecated /* = KotlinJvmOptions */.() -> Unit): Unit' is deprecated. Please migrate to the compilerOptions DSL. More details are here: https://kotl.in/u1r8ln
+> Task :expo-gradle-plugin:expo-autolinking-settings-plugin:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :expo-gradle-plugin:expo-autolinking-plugin-shared:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :gradle-plugin:settings-plugin:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :gradle-plugin:shared:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :expo-gradle-plugin:expo-autolinking-settings-plugin:pluginDescriptors
+> Task :gradle-plugin:settings-plugin:pluginDescriptors
+> Task :expo-gradle-plugin:expo-autolinking-settings-plugin:processResources
+> Task :gradle-plugin:settings-plugin:processResources
+> Task :gradle-plugin:shared:processResources
+NO-SOURCE
+> Task :expo-gradle-plugin:expo-autolinking-plugin-shared:processResources NO-SOURCE
+> Task :gradle-plugin:shared:compileKotlin
+> Task :gradle-plugin:shared:compileJava NO-SOURCE
+> Task :gradle-plugin:shared:classes UP-TO-DATE
+> Task :gradle-plugin:shared:jar
+> Task :expo-gradle-plugin:expo-autolinking-plugin-shared:compileKotlin
+> Task :expo-gradle-plugin:expo-autolinking-plugin-shared:compileJava NO-SOURCE
+> Task :expo-gradle-plugin:expo-autolinking-plugin-shared:classes UP-TO-DATE
+> Task :expo-gradle-plugin:expo-autolinking-plugin-shared:jar
+> Task :gradle-plugin:settings-plugin:compileKotlin
+> Task :gradle-plugin:settings-plugin:compileJava NO-SOURCE
+> Task :gradle-plugin:settings-plugin:classes
+> Task :gradle-plugin:settings-plugin:jar
+> Task :expo-gradle-plugin:expo-autolinking-settings-plugin:compileKotlin
+> Task :expo-gradle-plugin:expo-autolinking-settings-plugin:compileJava
+NO-SOURCE
+> Task :expo-gradle-plugin:expo-autolinking-settings-plugin:classes
+> Task :expo-gradle-plugin:expo-autolinking-settings-plugin:jar
+> Configure project :expo-module-gradle-plugin
+w: file:///home/expo/workingdir/build/node_modules/.pnpm/expo-modules-core@3.0.30_react-native@0.81.5_@babel+core@7.29.0_@types+react@19.1.17_react@19.1.0__react@19.1.0/node_modules/expo-modules-core/expo-module-gradle-plugin/build.gradle.kts:58:3: 'kotlinOptions(KotlinJvmOptionsDeprecated /* = KotlinJvmOptions */.() -> Unit): Unit' is deprecated. Please migrate to the compilerOptions DSL. More details are here: https://kotl.in/u1r8ln
+> Task :gradle-plugin:react-native-gradle-plugin:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :expo-gradle-plugin:expo-autolinking-plugin:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :expo-module-gradle-plugin:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :expo-module-gradle-plugin:pluginDescriptors
+> Task :expo-module-gradle-plugin:processResources
+> Task :expo-gradle-plugin:expo-autolinking-plugin:pluginDescriptors
+> Task :expo-gradle-plugin:expo-autolinking-plugin:processResources
+> Task :gradle-plugin:react-native-gradle-plugin:pluginDescriptors
+> Task :gradle-plugin:react-native-gradle-plugin:processResources
+> Task :expo-gradle-plugin:expo-autolinking-plugin:compileKotlin
+> Task :expo-gradle-plugin:expo-autolinking-plugin:compileJava NO-SOURCE
+> Task :expo-gradle-plugin:expo-autolinking-plugin:classes
+> Task :expo-gradle-plugin:expo-autolinking-plugin:jar
+> Task :gradle-plugin:react-native-gradle-plugin:compileKotlin
+> Task :gradle-plugin:react-native-gradle-plugin:compileJava NO-SOURCE
+> Task :gradle-plugin:react-native-gradle-plugin:classes
+> Task :gradle-plugin:react-native-gradle-plugin:jar
+> Task :expo-module-gradle-plugin:compileKotlin
+w: file:///home/expo/workingdir/build/node_modules/.pnpm/expo-modules-core@3.0.30_react-native@0.81.5_@babel+core@7.29.0_@types+react@19.1.17_react@19.1.0__react@19.1.0/node_modules/expo-modules-core/expo-module-gradle-plugin/src/main/kotlin/expo/modules/plugin/android/AndroidLibraryExtension.kt:9:24 'var targetSdk: Int?' is deprecated. Will be removed from library DSL in v9.0. Use testOptions.targetSdk or/and lint.targetSdk instead.
+> Task :expo-module-gradle-plugin:compileJava NO-SOURCE
+> Task :expo-module-gradle-plugin:classes
+> Task :expo-module-gradle-plugin:jar
+> Configure project :
+[ExpoRootProject] Using the following versions:
+  - buildTools:  36.0.0
+  - minSdk:      24
+  - compileSdk:  36
+  - targetSdk:   36
+  - ndk:         27.1.12297006
+  - kotlin:      2.1.20
+  - ksp:         2.1.20-2.0.1
+[Incubating] Problems report is available at: file:///home/expo/workingdir/build/artifacts/capsubvention-mobile/android/build/reports/problems/problems-report.html
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+For more on this, please refer to https://docs.gradle.org/8.14.3/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+FAILURE: Build failed with an exception.
+* Where:
+Build file '/home/expo/workingdir/build/artifacts/capsubvention-mobile/android/app/build.gradle' line: 1
+* What went wrong:
+A problem occurred evaluating project ':app'.
+> Failed to apply plugin 'com.android.internal.application'.
+   > Android Gradle plugin requires Java 17 to run. You are currently using Java 11.
+      Your current JDK is located in /usr/lib/jvm/java-11-openjdk-amd64
+      You can try some of the following options:
+       - changing the IDE settings.
+       - changing the JAVA_HOME environment variable.
+       - changing `org.gradle.java.home` in `gradle.properties`.
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+BUILD FAILED in 1m 34s
+24 actionable tasks: 24 executed
+
+/bin/bash -eo pipefail /tmp/eas-build/88ef9417-2674-4dd4-ac8d-2d537bfa120d/steps/step-007/scripts/0a9aad02-ab46-418c-b0eb-29ad98495fb1.sh exited with non-zero code: 1
+
+Find and upload build artifacts
+
+0ms
+
+Skipped build step "Find and upload build artifacts"

@@ -1,0 +1,15 @@
+{
+  "buildCommand": "pnpm install && pnpm --filter @workspace/financedom run build",
+  "outputDirectory": "artifacts/financedom/dist/public",
+  "installCommand": "pnpm install",
+  "rewrites": [
+    {
+      "source": "/api/:path*",
+      "destination": "https://capsubvention-api.onrender.com/api/:path*"
+    },
+    {
+      "source": "/((?!_next|favicon|robots|sitemap|opengraph).*)",
+      "destination": "/index.html"
+    }
+  ]
+}

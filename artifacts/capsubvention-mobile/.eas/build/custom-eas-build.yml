@@ -1,0 +1,47 @@
+build:
+  name: CapSubvention Android APK
+  steps:
+    - eas/checkout
+    - run:
+        name: Install Node 20 and set as default
+        command: |
+          source /home/expo/.nvm/nvm.sh
+          nvm install 20
+          nvm use 20
+          NODE20_BIN=$(dirname $(which node))
+          ln -sf "$NODE20_BIN/node" /home/expo/workingdir/bin/node
+          ln -sf "$NODE20_BIN/npm" /home/expo/workingdir/bin/npm
+          ln -sf "$NODE20_BIN/npx" /home/expo/workingdir/bin/npx
+          echo "Active node: $(node --version)"
+    - run:
+        name: Install pnpm 10.26.1 and setup wrapper
+        command: |
+          npm install -g pnpm@10.26.1
+          REAL_PNPM=$(npm config get prefix)/bin/pnpm
+          printf '#!/bin/bash\nARGS=()\nfor ARG in "$@"; do\n  if [ "$ARG" != "--frozen-lockfile" ]; then\n    ARGS+=("$ARG")\n  fi\ndone\nexec '"$REAL_PNPM"' "${ARGS[@]}"\n' > /home/expo/workingdir/bin/pnpm
+          chmod +x /home/expo/workingdir/bin/pnpm
+          echo "pnpm wrapper installed, real pnpm: $REAL_PNPM"
+    - run:
+        name: Install Java 17
+        command: |
+          sudo apt-get update -q
+          sudo apt-get install -y openjdk-17-jdk
+    - run:
+        name: Install workspace dependencies
+        working_directory: ../..
+        command: pnpm install --no-frozen-lockfile
+    - run:
+        name: Run expo prebuild (no install)
+        command: npx expo prebuild --platform android --no-install
+    - run:
+        name: Install dependencies after prebuild
+        working_directory: ../..
+        command: pnpm install --no-frozen-lockfile
+    - run:
+        name: Build Android APK
+        working_directory: android
+        command: |
+          JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64 \
+          GRADLE_OPTS='-Dorg.gradle.jvmargs="-XX:MaxMetaspaceSize=1g -Xmx4g -XX:+HeapDumpOnOutOfMemoryError -Dfile.encoding=UTF-8" -Dorg.gradle.parallel=true -Dorg.gradle.daemon=false' \
+          ./gradlew :app:assembleRelease
+    - eas/find_and_upload_build_artifacts

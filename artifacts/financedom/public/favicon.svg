@@ -1,0 +1,27 @@
+<svg width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background rounded square -->
+  <rect width="180" height="180" rx="36" fill="#0D1F3C"/>
+
+  <!-- Gold ring -->
+  <circle cx="90" cy="90" r="82" fill="none" stroke="#FFD500" stroke-width="2.5" stroke-opacity="0.35"/>
+
+  <!-- 12 gold dots (clock positions, r=62 from center) -->
+  <circle cx="90"  cy="28"  r="5.5" fill="#FFD500" opacity="0.9"/>
+  <circle cx="121" cy="37"  r="5.5" fill="#FFD500" opacity="0.9"/>
+  <circle cx="143" cy="59"  r="5.5" fill="#FFD500" opacity="0.9"/>
+  <circle cx="152" cy="90"  r="5.5" fill="#FFD500" opacity="0.9"/>
+  <circle cx="143" cy="121" r="5.5" fill="#FFD500" opacity="0.9"/>
+  <circle cx="121" cy="143" r="5.5" fill="#FFD500" opacity="0.9"/>
+  <circle cx="90"  cy="152" r="5.5" fill="#FFD500" opacity="0.9"/>
+  <circle cx="59"  cy="143" r="5.5" fill="#FFD500" opacity="0.9"/>
+  <circle cx="37"  cy="121" r="5.5" fill="#FFD500" opacity="0.9"/>
+  <circle cx="28"  cy="90"  r="5.5" fill="#FFD500" opacity="0.9"/>
+  <circle cx="37"  cy="59"  r="5.5" fill="#FFD500" opacity="0.9"/>
+  <circle cx="59"  cy="37"  r="5.5" fill="#FFD500" opacity="0.9"/>
+
+  <!-- Inner circle -->
+  <circle cx="90" cy="90" r="48" fill="#162B52"/>
+
+  <!-- Letter F -->
+  <text x="90" y="117" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="72" fill="#FFD500" text-anchor="middle">F</text>
+</svg>

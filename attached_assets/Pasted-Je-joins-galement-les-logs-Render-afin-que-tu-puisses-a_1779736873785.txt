@@ -1,0 +1,118 @@
+Je joins également les logs Render afin que tu puisses analyser précisément le problème.
+
+IMPORTANT :
+Même si aucune erreur évidente n’apparaît dans les logs, les problèmes existent bien sur la version production déployée.
+
+Je veux une vraie investigation technique approfondie et PAS des suppositions générales.
+
+========================================
+CONTEXTE IMPORTANT
+==================
+
+* En environnement DEV Replit, plusieurs éléments semblent fonctionner normalement
+* Les problèmes sont visibles sur la version LIVE Render
+* Il y a quelques jours, l’inscription fonctionnait normalement avec affichage complet des pays
+* Le simulateur Android affichait également correctement l’application mobile
+
+Aujourd’hui :
+
+* la liste des pays ne s’affiche plus sur la page register en production
+* le simulateur Android affiche seulement le site web responsive
+
+Je veux que tu analyses le code, la configuration build et les différences DEV/PROD afin d’identifier la cause réelle.
+
+========================================
+PROBLÈME 1 — LISTE DES PAYS
+===========================
+
+URL :
+https://capsubvention.com/register
+
+Comportement :
+
+* Le select pays est cliquable
+* Mais aucun pays ne s’affiche
+* Seul “Sélectionner votre pays” apparaît
+
+IMPORTANT :
+Le problème semble uniquement présent après déploiement production.
+
+Je veux que tu vérifies précisément :
+
+1. Si le tableau/listing des pays est vide en production
+2. Si un import JSON ou import dynamique échoue après build
+3. Si Vite/Webpack/tree shaking retire le fichier pays du bundle production
+4. Si le composant Select/Dropdown reçoit bien les données en production
+5. Si un problème hydration React empêche le rendu
+6. Si une erreur JS silencieuse bloque l’affichage
+7. Si les assets statiques sont correctement générés dans dist/build
+8. Si le problème vient d’une différence ENV DEV vs PROD
+9. Si Render sert un ancien build en cache
+10. Si le problème vient d’une dépendance frontend cassée
+11. Si le composant utilise window/localStorage/document avant hydration
+12. Si le problème vient d’un lazy loading ou import conditionnel
+
+Je veux également que tu :
+
+* analyses les logs Render joints
+* vérifies les logs build frontend
+* vérifies les logs runtime
+* ajoutes temporairement des logs/debugs ciblés dans le composant pays
+* identifies précisément pourquoi le tableau des pays disparaît uniquement en production
+
+Actions demandées :
+
+* corriger le problème dans le code
+* effectuer un clean rebuild
+* vérifier les chemins assets/imports
+* vérifier la configuration Vite/React production
+* confirmer précisément la cause réelle trouvée
+
+========================================
+PROBLÈME 2 — SIMULATEUR ANDROID
+===============================
+
+Avant :
+
+* Le simulateur Android affichait l’application mobile correctement
+
+Maintenant :
+
+* Le simulateur affiche simplement le site web responsive
+
+Je veux que tu vérifies précisément :
+
+1. Si Expo/React Native mobile est toujours correctement configuré
+2. Si le simulateur pointe maintenant vers le frontend web
+3. Si Expo est passé involontairement en mode web
+4. Si le bundler Metro fonctionne encore
+5. Si le point d’entrée Android/mobile a été modifié
+6. Si Replit preview ouvre maintenant le serveur web au lieu du bundle mobile
+7. Si les composants React Native natifs sont encore utilisés
+8. Si la configuration Expo Android a été altérée
+9. Si le package mobile existe encore correctement
+10. Si une configuration récente a cassé le preview mobile
+
+Actions demandées :
+
+* restaurer le vrai affichage mobile Android
+* vérifier que ce n’est pas simplement un rendu responsive web
+* confirmer que l’environnement Android/mobile est à nouveau correctement fonctionnel
+
+========================================
+IMPORTANT
+=========
+
+Je ne veux pas :
+
+* de suppositions vagues
+* de réponses génériques
+* de “cela devrait fonctionner”
+
+Je veux :
+
+* analyse technique précise
+* cause réelle identifiée
+* correction réelle
+* explication claire du problème
+* validation après vérification complète

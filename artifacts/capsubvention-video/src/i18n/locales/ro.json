@@ -1,0 +1,64 @@
+{
+  "scene1": {
+    "label": "Problema",
+    "title": "Obținerea subvențiilor\nîn teritoriile de peste mări",
+    "desc": "Un proces complex, proceduri consumatoare de timp,\ncereri respinse din cauza lipsei de sprijin."
+  },
+  "scene2": {
+    "tagline": "Platforma oficială 100% digitală\npentru accesarea subvențiilor nerambursabile"
+  },
+  "scene3": {
+    "label": "Urmărire dosar",
+    "title": "Urmăriți-vă\ndosarul\nîn timp real",
+    "desc": "Consilierul dvs. dedicat\nvă informează la fiecare etapă.",
+    "notif_title": "Actualizare status",
+    "notif_body": "Dosarul dvs. este în instrucție — 30 de zile rămase",
+    "status_submitted": "Dosar depus",
+    "status_eligible": "Eligibilitate verificată",
+    "status_processing": "În instrucție",
+    "status_awaiting": "Decizie în așteptare",
+    "status_notified": "Atribuire notificată",
+    "active_badge": "În curs"
+  },
+  "scene4": {
+    "header": "Documente justificative",
+    "label": "Spațiu documente",
+    "title": "Depuneți documentele\njustificative\nîn siguranță",
+    "desc": "Toate documentele dvs.\ncentralizate, accesibile\nși securizate 24h/24.",
+    "doc_id": "Document de identitate",
+    "doc_plan": "Plan de finanțare",
+    "doc_statuts": "Statut societate",
+    "doc_rib": "Date bancare",
+    "status_done": "Validat",
+    "status_pending": "În așteptare",
+    "secure_badge": "Criptare end-to-end — datele dvs. sunt protejate"
+  },
+  "scene5": {
+    "label": "Model de succes",
+    "title_1": "Plătiți",
+    "title_2": "doar dacă dosarul dvs.",
+    "title_3": "este",
+    "title_accent": "acceptat",
+    "desc": "Taxă de instrucție de 456 € TVA incl. — datorată\nnumai după o decizie favorabilă.",
+    "banner_title": "Notificare de atribuire",
+    "banner_sub": "Dosarul dvs. a fost acceptat",
+    "fee_label": "Taxă de instrucție",
+    "payment_title": "Plată securizată",
+    "payment_methods": "Card bancar · Virament · Cec",
+    "grant_label": "Subvenție obținută"
+  },
+  "scene6": {
+    "tagline": "Partenerul dvs. pentru finanțări publice nerambursabile"
+  },
+  "video": {
+    "enable_audio": "Activați sunetul",
+    "click_audio": "Faceți clic pentru a activa sunetul",
+    "loop_on": "Buclă scenă: activată",
+    "loop_off": "Buclă scenă: dezactivată",
+    "narration_on": "Activați narațiunea",
+    "narration_off": "Dezactivați narațiunea",
+    "show_controls": "Afișați comenzile",
+    "hide_controls": "Ascundeți comenzile",
+    "jump_to_scene": "Mergeți la scena {{n}}"
+  }
+}

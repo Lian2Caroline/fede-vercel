@@ -1,0 +1,32 @@
+{
+  "cli": {
+    "version": ">= 14.0.0",
+    "appVersionSource": "local"
+  },
+  "build": {
+    "preview": {
+      "config": "custom-eas-build.yml",
+      "distribution": "internal",
+      "android": {
+        "buildType": "apk",
+        "gradleCommand": ":app:assembleRelease"
+      },
+      "env": {
+        "EXPO_PUBLIC_DOMAIN": "api.fede-financement.com",
+        "EXPO_PUBLIC_VIDEO_URL": "https://www.fede-financement.com/capsubvention-video/index.html"
+      }
+    },
+    "production": {
+      "android": {
+        "buildType": "app-bundle"
+      },
+      "env": {
+        "EXPO_PUBLIC_DOMAIN": "api.fede-financement.com",
+        "EXPO_PUBLIC_VIDEO_URL": "https://www.fede-financement.com/capsubvention-video/index.html"
+      }
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}

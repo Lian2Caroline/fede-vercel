@@ -1,0 +1,64 @@
+User-agent: Googlebot
+Allow: /
+Disallow: /admin
+Disallow: /dashboard
+Disallow: /documents
+Disallow: /suivi
+Disallow: /paiement
+Disallow: /messages
+Disallow: /dossier
+Disallow: /api/
+
+User-agent: Bingbot
+Allow: /
+Disallow: /admin
+Disallow: /api/
+
+User-agent: HTTrack
+Disallow: /
+
+User-agent: WebCopier
+Disallow: /
+
+User-agent: wget
+Disallow: /
+
+User-agent: WebZip
+Disallow: /
+
+User-agent: Offline Explorer
+Disallow: /
+
+User-agent: SiteSnagger
+Disallow: /
+
+User-agent: Teleport
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DataForSeoBot
+Disallow: /
+
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /api/
+Disallow: /dashboard
+Disallow: /documents
+Disallow: /suivi
+Disallow: /paiement
+Disallow: /messages
+Disallow: /dossier
+
+Sitemap: https://www.capsubvention.com/sitemap.xml

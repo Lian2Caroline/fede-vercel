@@ -1,0 +1,29 @@
+<svg width="280" height="80" viewBox="0 0 280 80" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="cs-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0D1F3C"/>
+      <stop offset="100%" stop-color="#162B52"/>
+    </linearGradient>
+    <linearGradient id="cs-gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F0C84A"/>
+      <stop offset="100%" stop-color="#B5872A"/>
+    </linearGradient>
+    <linearGradient id="cs-ring" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D4A847"/>
+      <stop offset="100%" stop-color="#8B6020"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Icon -->
+  <rect x="2" y="2" width="76" height="76" rx="17" ry="17" fill="url(#cs-bg)"/>
+  <rect x="22" y="9" width="35" height="2.5" rx="1.25" fill="url(#cs-gold)" opacity="0.7"/>
+  <circle cx="40" cy="37" r="21" fill="none" stroke="url(#cs-ring)" stroke-width="2.8" opacity="0.35"/>
+  <text x="40" y="50" text-anchor="middle" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="30" letter-spacing="-1.5" fill="url(#cs-gold)">CS</text>
+  <rect x="20" y="53" width="38" height="1.2" rx="0.6" fill="url(#cs-gold)" opacity="0.5"/>
+  <text x="40" y="65" text-anchor="middle" font-family="Arial, sans-serif" font-weight="700" font-size="7" letter-spacing="2" fill="#D4A847" opacity="0.75">SUBVENTION</text>
+  <rect x="22" y="69" width="35" height="1.5" rx="0.75" fill="url(#cs-gold)" opacity="0.4"/>
+
+  <!-- Text -->
+  <text x="96" y="38" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="26" fill="#0D1F3C" letter-spacing="-0.5">CapSubvention</text>
+  <text x="97" y="56" font-family="Arial, sans-serif" font-weight="400" font-size="11" fill="#6B7896" letter-spacing="0.3">Subventions non remboursables</text>
+</svg>

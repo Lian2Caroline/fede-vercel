@@ -1,0 +1,31 @@
+kind = "video"
+previewPath = "/capsubvention-video/"
+title = "CapSubvention — Vidéo Promotionnelle"
+version = "1.0.0"
+id = "artifacts/capsubvention-video"
+router = "path"
+
+[[integratedSkills]]
+name = "video-js"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/capsubvention-video/" ]
+localPort = 19544
+
+[services.development]
+run = "pnpm --filter @workspace/capsubvention-video run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/capsubvention-video", "run", "build" ]
+publicDir = "artifacts/capsubvention-video/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "19544"
+BASE_PATH = "/capsubvention-video/"

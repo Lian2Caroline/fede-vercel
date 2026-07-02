@@ -1,0 +1,38 @@
+2026-05-09T19:00:54.687643197Z ==> Downloading cache...
+2026-05-09T19:00:54.734067257Z ==> Cloning from https://github.com/replitprojet97-del/Financement-non-remboursable-Pro-apk
+2026-05-09T19:00:56.476553726Z ==> Checking out commit 79b37848d5419053dd7bb3892b39ae8a067e7e5c in branch main
+2026-05-09T19:01:11.215553022Z ==> Downloaded 457MB in 2s. Extraction took 14s.
+2026-05-09T19:01:24.886322504Z ==> Using Node.js version 22.22.0 (default)
+2026-05-09T19:01:24.922186705Z ==> Docs on specifying a Node.js version: https://render.com/docs/node-version
+2026-05-09T19:01:25.044586608Z ==> Running build command 'npm install -g pnpm && pnpm install && pnpm --filter @workspace/api-server run build'...
+2026-05-09T19:01:25.8732426Z 
+2026-05-09T19:01:25.873266781Z changed 1 package in 760ms
+2026-05-09T19:01:25.873425446Z 
+2026-05-09T19:01:25.873432506Z 1 package is looking for funding
+2026-05-09T19:01:25.873439006Z   run `npm fund` for details
+2026-05-09T19:01:26.673080292Z Scope: all 11 workspace projects
+2026-05-09T19:01:26.765189597Z Lockfile is up to date, resolution step is skipped
+2026-05-09T19:01:26.855707829Z Progress: resolved 1, reused 0, downloaded 0, added 0
+2026-05-09T19:01:26.997290044Z Packages: +1131
+2026-05-09T19:01:26.997311665Z ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2026-05-09T19:01:27.856744911Z Progress: resolved 1131, reused 208, downloaded 0, added 0
+2026-05-09T19:01:28.856172129Z Progress: resolved 1131, reused 835, downloaded 0, added 0
+2026-05-09T19:01:29.856566579Z Progress: resolved 1131, reused 961, downloaded 0, added 0
+2026-05-09T19:01:30.856919618Z Progress: resolved 1131, reused 1105, downloaded 0, added 137
+2026-05-09T19:01:31.857456103Z Progress: resolved 1131, reused 1105, downloaded 0, added 320
+2026-05-09T19:01:32.858733192Z Progress: resolved 1131, reused 1105, downloaded 0, added 692
+2026-05-09T19:01:33.858256834Z Progress: resolved 1131, reused 1105, downloaded 0, added 932
+2026-05-09T19:01:34.858798229Z Progress: resolved 1131, reused 1105, downloaded 0, added 987
+2026-05-09T19:01:35.860636887Z Progress: resolved 1131, reused 1105, downloaded 0, added 1116
+2026-05-09T19:01:35.87196249Z Progress: resolved 1131, reused 1105, downloaded 0, added 1131, done
+2026-05-09T19:01:36.576695279Z 
+2026-05-09T19:01:36.57671751Z devDependencies:
+2026-05-09T19:01:36.57672307Z + prettier 3.8.1
+2026-05-09T19:01:36.57672844Z + typescript 5.9.3
+2026-05-09T19:01:36.5767328Z 
+2026-05-09T19:01:36.630309445Z . preinstall$ sh -c 'rm -f package-lock.json yarn.lock; case "$npm_config_user_agent" in pnpm/*) ;; *) if [ "$CI" = "true" ]; then exit 0; fi; echo "Use pnpm instead" >&2; exit 1 ;; esac'
+2026-05-09T19:01:36.645192226Z . preinstall: Use pnpm instead
+2026-05-09T19:01:36.647648357Z . preinstall: Failed
+2026-05-09T19:01:36.682211925Z [ELIFECYCLE] Command failed with exit code 1.
+2026-05-09T19:01:36.781422524Z ==> Build failed 😞
+2026-05-09T19:01:36.781461915Z ==> Common ways to troubleshoot your deploy: https://render.com/docs/troubleshooting-deploys

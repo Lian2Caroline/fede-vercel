@@ -1,0 +1,25 @@
+uploads = []
+
+[[generated]]
+id = "1c9yRc_sMvYDC2A2bhnaU"
+uri = "file://artifacts/capsubvention-video/public/images/bg-abstract.png"
+type = "image"
+title = "Navy gold abstract background"
+
+[[generated]]
+id = "oUMbMNKAOSNWFo5q2DWWt"
+uri = "file://artifacts/capsubvention-video/public/images/bg-tropics.png"
+type = "image"
+title = "Overseas territory coastline"
+
+[[outputs]]
+id = "VtRu0tXaS9ebKkd-s7Gtc"
+uri = "file://artifacts/financedom/public/capsubvention-logo.svg"
+type = "image"
+title = "Logo CapSubvention (SVG)"
+
+[[outputs]]
+id = "orPrYgMsTYV31D1YSl9f0"
+uri = "file://artifacts/capsubvention-mobile/capsubvention-keystore.tar.gz"
+type = "unspecified"
+title = "capsubvention-keystore.tar.gz — Android Keystore"

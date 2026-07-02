@@ -1,0 +1,205 @@
+> Task :react-native-svg:mergeReleaseJniLibFolders
+> Task :react-native-svg:mergeReleaseNativeLibs NO-SOURCE
+> Task :react-native-svg:copyReleaseJniLibsProjectOnly
+> Task :react-native-gesture-handler:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :react-native-gesture-handler:generateReleaseBuildConfig
+> Task :react-native-gesture-handler:generateReleaseResValues
+> Task :react-native-gesture-handler:generateReleaseResources
+> Task :react-native-gesture-handler:packageReleaseResources
+> Task :react-native-worklets:generateCodegenArtifactsFromSchema
+> Task :react-native-worklets:prepareWorkletsHeadersForPrefabs
+> Task :react-native-worklets:preBuild
+> Task :app:preBuild
+> Task :app:preReleaseBuild
+> Task :react-native-worklets:preReleaseBuild
+> Task :react-native-gesture-handler:parseReleaseLocalResources
+> Task :app:mergeReleaseJniLibFolders
+> Task :react-native-gesture-handler:generateReleaseRFile
+> Task :react-native-reanimated:generateReleaseBuildConfig
+> Task :react-native-reanimated:generateReleaseResValues
+> Task :react-native-reanimated:generateReleaseResources
+> Task :react-native-reanimated:packageReleaseResources
+> Task :react-native-reanimated:parseReleaseLocalResources
+> Task :react-native-reanimated:generateReleaseRFile
+> Task :react-native-reanimated:javaPreCompileRelease
+> Task :react-native-svg:generateReleaseBuildConfig
+> Task :react-native-svg:generateReleaseResValues
+> Task :react-native-svg:generateReleaseResources
+> Task :react-native-svg:packageReleaseResources
+> Task :react-native-svg:parseReleaseLocalResources
+> Task :react-native-svg:generateReleaseRFile
+> Task :react-native-svg:javaPreCompileRelease
+> Task :expo-modules-core:configureCMakeRelWithDebInfo[arm64-v8a]
+Checking the license for package CMake 3.22.1 in /home/expo/Android/Sdk/licenses
+License for package CMake 3.22.1 accepted.
+Preparing "Install CMake 3.22.1 v.3.22.1".
+"Install CMake 3.22.1 v.3.22.1" ready.
+Installing CMake 3.22.1 in /home/expo/Android/Sdk/cmake/3.22.1
+"Install CMake 3.22.1 v.3.22.1" complete.
+"Install CMake 3.22.1 v.3.22.1" finished.
+> Task :react-native-svg:compileReleaseJavaWithJavac
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+> Task :react-native-svg:bundleLibCompileToJarRelease
+> Task :react-native-gesture-handler:javaPreCompileRelease
+> Task :react-native-keyboard-controller:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :react-native-keyboard-controller:generateReleaseBuildConfig
+> Task :react-native-keyboard-controller:generateReleaseResValues
+> Task :react-native-keyboard-controller:generateReleaseResources
+> Task :react-native-keyboard-controller:packageReleaseResources
+> Task :react-native-keyboard-controller:parseReleaseLocalResources
+> Task :react-native-keyboard-controller:generateReleaseRFile
+> Task :react-native-worklets:configureCMakeRelWithDebInfo[arm64-v8a]
+> Task :react-native-screens:configureCMakeRelWithDebInfo[arm64-v8a]
+> Task :react-native-worklets:configureCMakeRelWithDebInfo[armeabi-v7a]
+> Task :react-native-worklets:configureCMakeRelWithDebInfo[x86]
+> Task :react-native-worklets:configureCMakeRelWithDebInfo[x86_64]
+> Task :react-native-worklets:generateJsonModelRelease
+> Task :react-native-worklets:prefabReleaseConfigurePackage
+> Task :react-native-reanimated:configureCMakeRelWithDebInfo[arm64-v8a]
+> Task :react-native-reanimated:configureCMakeRelWithDebInfo[armeabi-v7a]
+> Task :react-native-screens:buildCMakeRelWithDebInfo[arm64-v8a]
+> Task :react-native-reanimated:configureCMakeRelWithDebInfo[x86]
+> Task :react-native-reanimated:configureCMakeRelWithDebInfo[x86_64]
+> Task :react-native-reanimated:generateJsonModelRelease
+> Task :react-native-reanimated:prefabReleaseConfigurePackage
+> Task :app:configureCMakeRelWithDebInfo[arm64-v8a]
+> Task :react-native-keyboard-controller:compileReleaseKotlin
+w: file:///home/expo/workingdir/build/node_modules/.pnpm/react-native-keyboard-controller@1.18.5_react-native-reanimated@4.1.7_react-native-work_fcfe858f08c40f4fabb70307ed883ead/node_modules/react-native-keyboard-controller/android/src/main/java/com/reactnativekeyboardcontroller/extensions/EditText.kt:69:42 Unchecked cast of 'ArrayList<*>' to 'ArrayList<TextWatcher>'.
+w: file:///home/expo/workingdir/build/node_modules/.pnpm/react-native-keyboard-controller@1.18.5_react-native-reanimated@4.1.7_react-native-work_fcfe858f08c40f4fabb70307ed883ead/node_modules/react-native-keyboard-controller/android/src/main/java/com/reactnativekeyboardcontroller/interactive/KeyboardAnimationController.kt:89:16 'static fun getWindowInsetsController(p0: View): WindowInsetsControllerCompat?' is deprecated. Deprecated in Java.
+w: file:///home/expo/workingdir/build/node_modules/.pnpm/react-native-keyboard-controller@1.18.5_react-native-reanimated@4.1.7_react-native-work_fcfe858f08c40f4fabb70307ed883ead/node_modules/react-native-keyboard-controller/android/src/main/java/com/reactnativekeyboardcontroller/managers/KeyboardControllerViewManagerImpl.kt:3:8 'object MapBuilder : Any' is deprecated. Use Kotlin's built-in collections extensions.
+w: file:///home/expo/workingdir/build/node_modules/.pnpm/react-native-keyboard-controller@1.18.5_react-native-reanimated@4.1.7_react-native-work_fcfe858f08c40f4fabb70307ed883ead/node_modules/react-native-keyboard-controller/android/src/main/java/com/reactnativekeyboardcontroller/managers/KeyboardControllerViewManagerImpl.kt:62:7 'object MapBuilder : Any' is deprecated. Use Kotlin's built-in collections extensions.
+w: file:///home/expo/workingdir/build/node_modules/.pnpm/react-native-keyboard-controller@1.18.5_react-native-reanimated@4.1.7_react-native-work_fcfe858f08c40f4fabb70307ed883ead/node_modules/react-native-keyboard-controller/android/src/main/java/com/reactnativekeyboardcontroller/managers/KeyboardControllerViewManagerImpl.kt:64:9 'object MapBuilder : Any' is deprecated. Use Kotlin's built-in collections extensions.
+w: file:///home/expo/workingdir/build/node_modules/.pnpm/react-native-keyboard-controller@1.18.5_react-native-reanimated@4.1.7_react-native-work_fcfe858f08c40f4fabb70307ed883ead/node_modules/react-native-keyboard-controller/android/src/main/java/com/reactnativekeyboardcontroller/managers/KeyboardControllerViewManagerImpl.kt:66:9 'object MapBuilder : Any' is deprecated. Use Kotlin's built-in collections extensions.
+w: file:///home/expo/workingdir/build/node_modules/.pnpm/react-native-keyboard-controller@1.18.5_react-native-reanimated@4.1.7_react-native-work_fcfe858f08c40f4fabb70307ed883ead/node_modules/react-native-keyboard-controller/android/src/main/java/com/reactnativekeyboardcontroller/managers/KeyboardControllerViewManagerImpl.kt:68:9 'object MapBuilder : Any' is deprecated. Use Kotlin's built-in collections extensions.
+w: file:///home/expo/workingdir/build/node_modules/.pnpm/react-native-keyboard-controller@1.18.5_react-native-reanimated@4.1.7_react-native-work_fcfe858f08c40f4fabb70307ed883ead/node_modules/react-native-keyboard-controller/android/src/main/java/com/reactnativekeyboardcontroller/managers/KeyboardControllerViewManagerImpl.kt:70:9 'object MapBuilder : Any' is deprecated. Use Kotlin's built-in collections extensions.
+w: file:///home/expo/workingdir/build/node_modules/.pnpm/react-native-keyboard-controller@1.18.5_react-native-reanimated@4.1.7_react-native-work_fcfe858f08c40f4fabb70307ed883ead/node_modules/react-native-keyboard-controller/android/src/main/java/com/reactnativekeyboardcontroller/managers/KeyboardControllerViewManagerImpl.kt:72:9 'object MapBuilder : Any' is deprecated. Use Kotlin's built-in collections extensions.
+w: file:///home/expo/workingdir/build/node_modules/.pnpm/react-native-keyboard-controller@1.18.5_react-native-reanimated@4.1.7_react-native-work_fcfe858f08c40f4fabb70307ed883ead/node_modules/react-native-keyboard-controller/android/src/main/java/com/reactnativekeyboardcontroller/managers/KeyboardControllerViewManagerImpl.kt:74:9 'object MapBuilder : Any' is deprecated. Use Kotlin's built-in collections extensions.
+w: file:///home/expo/workingdir/build/node_modules/.pnpm/react-native-keyboard-controller@1.18.5_react-native-reanimated@4.1.7_react-native-work_fcfe858f08c40f4fabb70307ed883ead/node_modules/react-native-keyboard-controller/android/src/main/java/com/reactnativekeyboardcontroller/managers/KeyboardControllerViewManagerImpl.kt:76:9 'object MapBuilder : Any' is deprecated. Use Kotlin's built-in collections extensions.
+w: file:///home/expo/workingdir/build/node_modules/.pnpm/react-native-keyboard-controller@1.18.5_react-native-reanimated@4.1.7_react-native-work_fcfe858f08c40f4fabb70307ed883ead/node_modules/react-native-keyboard-controller/android/src/main/java/com/reactnativekeyboardcontroller/modal/ModalAttachedWatcher.kt:29:111 'val DEFAULT: Int' is deprecated. UIManagerType.DEFAULT will be deleted in the next release of React Native. Use [LEGACY] instead.
+w: file:///home/expo/workingdir/build/node_modules/.pnpm/react-native-keyboard-controller@1.18.5_react-native-reanimated@4.1.7_react-native-work_fcfe858f08c40f4fabb70307ed883ead/node_modules/react-native-keyboard-controller/android/src/main/java/com/reactnativekeyboardcontroller/modules/statusbar/StatusBarManagerCompatModuleImpl.kt:62:36 'var statusBarColor: Int' is deprecated. Deprecated in Java.
+w: file:///home/expo/workingdir/build/node_modules/.pnpm/react-native-keyboard-controller@1.18.5_react-native-reanimated@4.1.7_react-native-work_fcfe858f08c40f4fabb70307ed883ead/node_modules/react-native-keyboard-controller/android/src/main/java/com/reactnativekeyboardcontroller/modules/statusbar/StatusBarManagerCompatModuleImpl.kt:65:18 'var statusBarColor: Int' is deprecated. Deprecated in Java.
+w: file:///home/expo/workingdir/build/node_modules/.pnpm/react-native-keyboard-controller@1.18.5_react-native-reanimated@4.1.7_react-native-work_fcfe858f08c40f4fabb70307ed883ead/node_modules/react-native-keyboard-controller/android/src/main/java/com/reactnativekeyboardcontroller/modules/statusbar/StatusBarManagerCompatModuleImpl.kt:70:16 'var statusBarColor: Int' is deprecated. Deprecated in Java.
+w: file:///home/expo/workingdir/build/node_modules/.pnpm/react-native-keyboard-controller@1.18.5_react-native-reanimated@4.1.7_react-native-work_fcfe858f08c40f4fabb70307ed883ead/node_modules/react-native-keyboard-controller/android/src/main/java/com/reactnativekeyboardcontroller/views/EdgeToEdgeReactViewGroup.kt:134:23 'fun replaceSystemWindowInsets(p0: Int, p1: Int, p2: Int, p3: Int): WindowInsetsCompat' is deprecated. Deprecated in Java.
+w: file:///home/expo/workingdir/build/node_modules/.pnpm/react-native-keyboard-controller@1.18.5_react-native-reanimated@4.1.7_react-native-work_fcfe858f08c40f4fabb70307ed883ead/node_modules/react-native-keyboard-controller/android/src/main/java/com/reactnativekeyboardcontroller/views/EdgeToEdgeReactViewGroup.kt:135:25 'val systemWindowInsetLeft: Int' is deprecated. Deprecated in Java.
+w: file:///home/expo/workingdir/build/node_modules/.pnpm/react-native-keyboard-controller@1.18.5_react-native-reanimated@4.1.7_react-native-work_fcfe858f08c40f4fabb70307ed883ead/node_modules/react-native-keyboard-controller/android/src/main/java/com/reactnativekeyboardcontroller/views/EdgeToEdgeReactViewGroup.kt:136:65 'val systemWindowInsetTop: Int' is deprecated. Deprecated in Java.
+w: file:///home/expo/workingdir/build/node_modules/.pnpm/react-native-keyboard-controller@1.18.5_react-native-reanimated@4.1.7_react-native-work_fcfe858f08c40f4fabb70307ed883ead/node_modules/react-native-keyboard-controller/android/src/main/java/com/reactnativekeyboardcontroller/views/EdgeToEdgeReactViewGroup.kt:137:25 'val systemWindowInsetRight: Int' is deprecated. Deprecated in Java.
+w: file:///home/expo/workingdir/build/node_modules/.pnpm/react-native-keyboard-controller@1.18.5_react-native-reanimated@4.1.7_react-native-work_fcfe858f08c40f4fabb70307ed883ead/node_modules/react-native-keyboard-controller/android/src/main/java/com/reactnativekeyboardcontroller/views/EdgeToEdgeReactViewGroup.kt:138:25 'val systemWindowInsetBottom: Int' is deprecated. Deprecated in Java.
+w: file:///home/expo/workingdir/build/node_modules/.pnpm/react-native-keyboard-controller@1.18.5_react-native-reanimated@4.1.7_react-native-work_fcfe858f08c40f4fabb70307ed883ead/node_modules/react-native-keyboard-controller/android/src/main/java/com/reactnativekeyboardcontroller/views/overlay/OverKeyboardViewGroup.kt:13:8 'object ReactFeatureFlags : Any' is deprecated. Use com.facebook.react.internal.featureflags.ReactNativeFeatureFlags instead.
+w: file:///home/expo/workingdir/build/node_modules/.pnpm/react-native-keyboard-controller@1.18.5_react-native-reanimated@4.1.7_react-native-work_fcfe858f08c40f4fabb70307ed883ead/node_modules/react-native-keyboard-controller/android/src/main/java/com/reactnativekeyboardcontroller/views/overlay/OverKeyboardViewGroup.kt:79:5 The corresponding parameter in the supertype 'ReactViewGroup' is named 'left'. This may cause problems when calling this function with named arguments.
+w: file:///home/expo/workingdir/build/node_modules/.pnpm/react-native-keyboard-controller@1.18.5_react-native-reanimated@4.1.7_react-native-work_fcfe858f08c40f4fabb70307ed883ead/node_modules/react-native-keyboard-controller/android/src/main/java/com/reactnativekeyboardcontroller/views/overlay/OverKeyboardViewGroup.kt:80:5 The corresponding parameter in the supertype 'ReactViewGroup' is named 'top'. This may cause problems when calling this function with named arguments.
+w: file:///home/expo/workingdir/build/node_modules/.pnpm/react-native-keyboard-controller@1.18.5_react-native-reanimated@4.1.7_react-native-work_fcfe858f08c40f4fabb70307ed883ead/node_modules/react-native-keyboard-controller/android/src/main/java/com/reactnativekeyboardcontroller/views/overlay/OverKeyboardViewGroup.kt:81:5 The corresponding parameter in the supertype 'ReactViewGroup' is named 'right'. This may cause problems when calling this function with named arguments.
+w: file:///home/expo/workingdir/build/node_modules/.pnpm/react-native-keyboard-controller@1.18.5_react-native-reanimated@4.1.7_react-native-work_fcfe858f08c40f4fabb70307ed883ead/node_modules/react-native-keyboard-controller/android/src/main/java/com/reactnativekeyboardcontroller/views/overlay/OverKeyboardViewGroup.kt:82:5 The corresponding parameter in the supertype 'ReactViewGroup' is named 'bottom'. This may cause problems when calling this function with named arguments.
+w: file:///home/expo/workingdir/build/node_modules/.pnpm/react-native-keyboard-controller@1.18.5_react-native-reanimated@4.1.7_react-native-work_fcfe858f08c40f4fabb70307ed883ead/node_modules/react-native-keyboard-controller/android/src/main/java/com/reactnativekeyboardcontroller/views/overlay/OverKeyboardViewGroup.kt:132:9 'object ReactFeatureFlags : Any' is deprecated. Use com.facebook.react.internal.featureflags.ReactNativeFeatureFlags instead.
+w: file:///home/expo/workingdir/build/node_modules/.pnpm/react-native-keyboard-controller@1.18.5_react-native-reanimated@4.1.7_react-native-work_fcfe858f08c40f4fabb70307ed883ead/node_modules/react-native-keyboard-controller/android/src/main/java/com/reactnativekeyboardcontroller/views/overlay/OverKeyboardViewGroup.kt:152:5 The corresponding parameter in the supertype 'ReactViewGroup' is named 'w'. This may cause problems when calling this function with named arguments.
+w: file:///home/expo/workingdir/build/node_modules/.pnpm/react-native-keyboard-controller@1.18.5_react-native-reanimated@4.1.7_react-native-work_fcfe858f08c40f4fabb70307ed883ead/node_modules/react-native-keyboard-controller/android/src/main/java/com/reactnativekeyboardcontroller/views/overlay/OverKeyboardViewGroup.kt:153:5 The corresponding parameter in the supertype 'ReactViewGroup' is named 'h'. This may cause problems when calling this function with named arguments.
+w: file:///home/expo/workingdir/build/node_modules/.pnpm/react-native-keyboard-controller@1.18.5_react-native-reanimated@4.1.7_react-native-work_fcfe858f08c40f4fabb70307ed883ead/node_modules/react-native-keyboard-controller/android/src/main/java/com/reactnativekeyboardcontroller/views/overlay/OverKeyboardViewGroup.kt:154:5 The corresponding parameter in the supertype 'ReactViewGroup' is named 'oldw'. This may cause problems when calling this function with named arguments.
+w: file:///home/expo/workingdir/build/node_modules/.pnpm/react-native-keyboard-controller@1.18.5_react-native-reanimated@4.1.7_react-native-work_fcfe858f08c40f4fabb70307ed883ead/node_modules/react-native-keyboard-controller/android/src/main/java/com/reactnativekeyboardcontroller/views/overlay/OverKeyboardViewGroup.kt:155:5 The corresponding parameter in the supertype 'ReactViewGroup' is named 'oldh'. This may cause problems when calling this function with named arguments.
+> Task :react-native-gesture-handler:configureCMakeRelWithDebInfo[arm64-v8a]
+> Task :app:configureCMakeRelWithDebInfo[armeabi-v7a]
+> Task :expo-modules-core:buildCMakeRelWithDebInfo[arm64-v8a]
+> Task :react-native-gesture-handler:configureCMakeRelWithDebInfo[armeabi-v7a]
+> Task :app:configureCMakeRelWithDebInfo[x86]
+> Task :react-native-gesture-handler:configureCMakeRelWithDebInfo[x86]
+> Task :app:configureCMakeRelWithDebInfo[x86_64]
+> Task :react-native-gesture-handler:configureCMakeRelWithDebInfo[x86_64]
+> Task :react-native-keyboard-controller:javaPreCompileRelease
+> Task :react-native-screens:configureCMakeRelWithDebInfo[armeabi-v7a]
+> Task :react-native-keyboard-controller:compileReleaseJavaWithJavac
+> Task :react-native-keyboard-controller:bundleLibRuntimeToDirRelease
+> Task :react-native-worklets:buildCMakeRelWithDebInfo[arm64-v8a][worklets]
+> Task :expo-modules-core:configureCMakeRelWithDebInfo[armeabi-v7a]
+> Task :react-native-safe-area-context:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :react-native-safe-area-context:generateReleaseBuildConfig
+> Task :react-native-safe-area-context:generateReleaseResValues
+> Task :react-native-safe-area-context:generateReleaseResources
+> Task :react-native-safe-area-context:packageReleaseResources
+> Task :react-native-safe-area-context:parseReleaseLocalResources
+> Task :react-native-safe-area-context:generateReleaseRFile
+> Task :react-native-screens:buildCMakeRelWithDebInfo[armeabi-v7a]
+> Task :react-native-screens:configureCMakeRelWithDebInfo[x86]
+> Task :react-native-safe-area-context:compileReleaseKotlin
+w: file:///home/expo/workingdir/build/node_modules/.pnpm/react-native-safe-area-context@5.6.2_react-native@0.81.5_@babel+core@7.29.0_@types+reac_db7e84308fa9a28cdc0cc9a7b78f5e93/node_modules/react-native-safe-area-context/android/src/main/java/com/th3rdwave/safeareacontext/SafeAreaView.kt:59:23 'val uiImplementation: UIImplementation!' is deprecated. Deprecated in Java.
+> Task :react-native-safe-area-context:javaPreCompileRelease
+> Task :react-native-safe-area-context:compileReleaseJavaWithJavac
+> Task :react-native-safe-area-context:bundleLibRuntimeToDirRelease
+> Task :expo:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :expo:generateReleaseBuildConfig
+> Task :expo:generateReleaseResValues
+> Task :expo:generateReleaseResources
+> Task :expo:packageReleaseResources
+> Task :expo:parseReleaseLocalResources
+> Task :expo:generateReleaseRFile
+> Task :expo-constants:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :expo-constants:generateReleaseBuildConfig
+> Task :expo-constants:generateReleaseResValues
+> Task :expo-constants:generateReleaseResources
+> Task :expo-constants:packageReleaseResources
+> Task :expo-constants:parseReleaseLocalResources
+> Task :expo-constants:generateReleaseRFile
+> Task :expo-constants:javaPreCompileRelease
+> Task :expo:javaPreCompileRelease
+> Task :react-native-async-storage_async-storage:generateReleaseBuildConfig
+> Task :react-native-async-storage_async-storage:generateReleaseResValues
+> Task :react-native-async-storage_async-storage:generateReleaseResources
+> Task :react-native-async-storage_async-storage:packageReleaseResources
+> Task :react-native-async-storage_async-storage:parseReleaseLocalResources
+> Task :react-native-async-storage_async-storage:generateReleaseRFile
+> Task :react-native-async-storage_async-storage:javaPreCompileRelease
+> Task :react-native-async-storage_async-storage:compileReleaseJavaWithJavac
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: /home/expo/workingdir/build/node_modules/.pnpm/@react-native-async-storage+async-storage@2.2.0_react-native@0.81.5_@babel+core@7.29.0__088e8303e028f6e6ca5c16cc3d46621a/node_modules/@react-native-async-storage/async-storage/android/src/javaPackage/java/com/reactnativecommunity/asyncstorage/AsyncStoragePackage.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+> Task :react-native-async-storage_async-storage:bundleLibRuntimeToDirRelease
+> Task :react-native-svg:bundleLibRuntimeToDirRelease
+> Task :react-native-screens:buildCMakeRelWithDebInfo[x86]
+> Task :react-native-screens:configureCMakeRelWithDebInfo[x86_64]
+> Task :app:checkReleaseDuplicateClasses
+> Task :app:buildKotlinToolingMetadata
+> Task :app:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :app:generateReleaseBuildConfig
+> Task :expo:writeReleaseAarMetadata
+> Task :expo-constants:writeReleaseAarMetadata
+> Task :react-native-async-storage_async-storage:writeReleaseAarMetadata
+> Task :react-native-gesture-handler:writeReleaseAarMetadata
+> Task :react-native-keyboard-controller:writeReleaseAarMetadata
+> Task :react-native-reanimated:writeReleaseAarMetadata
+> Task :react-native-safe-area-context:writeReleaseAarMetadata
+> Task :react-native-svg:writeReleaseAarMetadata
+> Task :expo-modules-core:buildCMakeRelWithDebInfo[armeabi-v7a]
+> Task :app:createBundleReleaseJsAndAssets FAILED
+TypeError: Error loading Metro config at: /home/expo/workingdir/build/artifacts/capsubvention-mobile/metro.config.js
+configs.toReversed is not a function
+TypeError: configs.toReversed is not a function
+    at mergeConfig (/home/expo/workingdir/build/node_modules/.pnpm/metro-config@0.83.3/node_modules/metro-config/src/loadConfig.js:179:35)
+    at getDefaultConfig (/home/expo/workingdir/build/node_modules/.pnpm/@expo+metro-config@54.0.15_expo@54.0.34/node_modules/@expo/metro-config/src/ExpoMetroConfig.ts:419:23)
+    at Object.<anonymous> (/home/expo/workingdir/build/artifacts/capsubvention-mobile/metro.config.js:3:18)
+    at Module._compile (node:internal/modules/cjs/loader:1256:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:960:12)
+    at ModuleWrap.<anonymous> (node:internal/modules/esm/translators:169:29)
+    at ModuleJob.run (node:internal/modules/esm/module_job:194:25)
+> Task :react-native-screens:buildCMakeRelWithDebInfo[x86_64]
+> Task :react-native-worklets:buildCMakeRelWithDebInfo[armeabi-v7a][worklets]
+[Incubating] Problems report is available at: file:///home/expo/workingdir/build/artifacts/capsubvention-mobile/android/build/reports/problems/problems-report.html
+FAILURE: Build failed with an exception.
+* What went wrong:
+Execution failed for task ':app:createBundleReleaseJsAndAssets'.
+> Process 'command 'node'' finished with non-zero exit value 1
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan
+to get full insights.
+> Get more help at https://help.gradle.org.
+BUILD FAILED in 4m 11s
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+For more on this, please refer to https://docs.gradle.org/8.14.3/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+176 actionable tasks: 176 executed
+
+/bin/bash -eo pipefail /tmp/eas-build/3e0f8c95-b7a5-4cc2-96ad-3c7dee74e44e/steps/step-008/scripts/309304f7-afe8-40fd-a874-b290797ffa1e.sh exited with non-zero code: 1

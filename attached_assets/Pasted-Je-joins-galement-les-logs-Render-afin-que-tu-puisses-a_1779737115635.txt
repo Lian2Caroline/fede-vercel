@@ -1,0 +1,126 @@
+Je joins également les logs Render afin que tu puisses analyser précisément le problème.
+
+IMPORTANT :
+Même si aucune erreur évidente n’apparaît dans les logs, les problèmes existent bien sur la version production déployée.
+
+Je veux une vraie investigation technique approfondie et PAS des suppositions générales.
+
+========================================
+CONTEXTE IMPORTANT
+==================
+
+Avant l’ajout du système multi-pays international :
+
+* l’inscription fonctionnait correctement
+* uniquement les DOM-TOM étaient utilisés
+* aucun problème d’affichage du select pays
+* le simulateur Android fonctionnait normalement
+
+Les problèmes sont apparus après les modifications visant à ajouter plusieurs pays internationaux.
+
+Aujourd’hui :
+
+* la liste des pays ne s’affiche plus sur la version LIVE
+* le simulateur Android affiche simplement le site web responsive
+
+IMPORTANT :
+
+* En environnement DEV Replit, plusieurs éléments semblent fonctionner normalement
+* Les problèmes sont visibles principalement sur la version production Render
+
+Je veux donc que tu analyses précisément les modifications récentes liées au système multi-pays afin d’identifier exactement ce qui a cassé le comportement production.
+
+========================================
+PROBLÈME 1 — LISTE DES PAYS
+===========================
+
+URL :
+https://capsubvention.com/register
+
+Comportement :
+
+* Le champ “Sélectionner votre pays” est cliquable
+* Mais aucun pays ne s’affiche dans la liste déroulante
+
+Le problème semble être apparu après :
+
+* l’ajout des pays internationaux
+* les modifications du système de sélection des pays
+* ou les changements liés aux données pays
+
+Je veux que tu vérifies précisément :
+
+1. Si le nouveau tableau/listing des pays est correctement chargé en production
+2. Si les nouvelles données pays sont bien incluses dans le build Render
+3. Si un import JSON/dynamique échoue après compilation
+4. Si Vite/Webpack/tree-shaking retire une partie des données pays
+5. Si le composant Select reçoit réellement les données en production
+6. Si le state React contenant les pays devient vide après build
+7. Si une erreur JS silencieuse bloque l’affichage
+8. Si le problème vient d’une incompatibilité entre ancien système DOM-TOM et nouveau système multi-pays
+9. Si le problème vient du format des nouvelles données pays
+10. Si une dépendance frontend utilisée pour les pays est cassée
+11. Si hydration React échoue uniquement en production
+12. Si un problème cache Render sert un ancien bundle
+13. Vérifier Console + Network directement sur la version LIVE
+
+Je veux également :
+
+* des logs/debugs temporaires ajoutés dans le composant pays
+* une analyse précise du comportement DEV vs PROD
+* l’identification exacte du moment où les données pays disparaissent
+
+Actions demandées :
+
+* corriger le problème dans le code
+* effectuer un clean rebuild complet
+* vérifier tous les imports/assets liés aux pays
+* vérifier la configuration production Render
+* confirmer précisément la cause réelle trouvée
+
+========================================
+PROBLÈME 2 — SIMULATEUR ANDROID
+===============================
+
+Avant :
+
+* Le simulateur Android affichait correctement l’application mobile
+
+Maintenant :
+
+* Le simulateur affiche simplement le site web responsive
+
+Je veux que tu vérifies précisément :
+
+1. Si Expo/React Native mobile est toujours correctement configuré
+2. Si le simulateur pointe maintenant vers le frontend web
+3. Si Expo est passé involontairement en mode web
+4. Si le bundler Metro fonctionne encore
+5. Si le point d’entrée Android/mobile a été modifié
+6. Si Replit preview ouvre maintenant uniquement le frontend web
+7. Si les composants React Native natifs sont encore actifs
+8. Si une modification récente a cassé le preview mobile
+
+Actions demandées :
+
+* restaurer le vrai affichage mobile Android
+* vérifier que ce n’est pas simplement un rendu responsive web
+* confirmer que l’environnement Android fonctionne à nouveau normalement
+
+========================================
+IMPORTANT
+=========
+
+Je ne veux pas :
+
+* de suppositions vagues
+* de réponses génériques
+* de “cela devrait fonctionner”
+
+Je veux :
+
+* diagnostic technique précis
+* cause réelle identifiée
+* correction réelle
+* explication claire
+* validation complète après vérification

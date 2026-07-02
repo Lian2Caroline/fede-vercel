@@ -1,0 +1,52 @@
+Note: /home/expo/workingdir/build/node_modules/.pnpm/@react-native-async-storage+async-storage@2.2.0_react-native@0.81.5_@babel+core@7.29.0__088e8303e028f6e6ca5c16cc3d46621a/node_modules/@react-native-async-storage/async-storage/android/src/javaPackage/java/com/reactnativecommunity/asyncstorage/AsyncStoragePackage.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+> Task :react-native-async-storage_async-storage:bundleLibRuntimeToDirRelease
+> Task :react-native-svg:bundleLibRuntimeToDirRelease
+> Task :react-native-screens:buildCMakeRelWithDebInfo[x86]
+> Task :react-native-screens:configureCMakeRelWithDebInfo[x86_64]
+> Task :app:checkReleaseDuplicateClasses
+> Task :app:buildKotlinToolingMetadata
+> Task :app:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :app:generateReleaseBuildConfig
+> Task :expo:writeReleaseAarMetadata
+> Task :expo-constants:writeReleaseAarMetadata
+> Task :react-native-async-storage_async-storage:writeReleaseAarMetadata
+> Task :react-native-gesture-handler:writeReleaseAarMetadata
+> Task :react-native-keyboard-controller:writeReleaseAarMetadata
+> Task :react-native-reanimated:writeReleaseAarMetadata
+> Task :react-native-safe-area-context:writeReleaseAarMetadata
+> Task :react-native-svg:writeReleaseAarMetadata
+> Task :expo-modules-core:buildCMakeRelWithDebInfo[armeabi-v7a]
+> Task :app:createBundleReleaseJsAndAssets FAILED
+TypeError: Error loading Metro config at: /home/expo/workingdir/build/artifacts/capsubvention-mobile/metro.config.js
+configs.toReversed is not a function
+TypeError: configs.toReversed is not a function
+    at mergeConfig (/home/expo/workingdir/build/node_modules/.pnpm/metro-config@0.83.3/node_modules/metro-config/src/loadConfig.js:179:35)
+    at getDefaultConfig (/home/expo/workingdir/build/node_modules/.pnpm/@expo+metro-config@54.0.15_expo@54.0.34/node_modules/@expo/metro-config/src/ExpoMetroConfig.ts:419:23)
+    at Object.<anonymous> (/home/expo/workingdir/build/artifacts/capsubvention-mobile/metro.config.js:3:18)
+    at Module._compile (node:internal/modules/cjs/loader:1256:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1310:10)
+    at Module.load (node:internal/modules/cjs/loader:1119:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:960:12)
+    at ModuleWrap.<anonymous> (node:internal/modules/esm/translators:169:29)
+    at ModuleJob.run (node:internal/modules/esm/module_job:194:25)
+> Task :react-native-screens:buildCMakeRelWithDebInfo[x86_64]
+> Task :react-native-worklets:buildCMakeRelWithDebInfo[armeabi-v7a][worklets]
+[Incubating] Problems report is available at: file:///home/expo/workingdir/build/artifacts/capsubvention-mobile/android/build/reports/problems/problems-report.html
+FAILURE: Build failed with an exception.
+* What went wrong:
+Execution failed for task ':app:createBundleReleaseJsAndAssets'.
+> Process 'command 'node'' finished with non-zero exit value 1
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan
+to get full insights.
+> Get more help at https://help.gradle.org.
+BUILD FAILED in 4m 11s
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+For more on this, please refer to https://docs.gradle.org/8.14.3/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+176 actionable tasks: 176 executed
+
+/bin/bash -eo pipefail /tmp/eas-build/3e0f8c95-b7a5-4cc2-96ad-3c7dee74e44e/steps/step-008/scripts/309304f7-afe8-40fd-a874-b290797ffa1e.sh exited with non-zero code: 1

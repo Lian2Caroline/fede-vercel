@@ -1,0 +1,172 @@
+Il reste encore plusieurs textes en français hardcodé dans le projet malgré la mise en place du système multilingue.
+
+Comme le site est désormais destiné à plusieurs pays et plusieurs langues, je veux une vérification complète et approfondie afin d’éliminer TOUS les textes hardcodés en français et les intégrer correctement au système i18n/multilangue.
+
+IMPORTANT :
+Cette correction doit s’appliquer :
+
+* à la version WEB
+* à la version APK/mobile
+* aux emails automatiques
+* aux documents générés
+* aux messages système
+* aux notifications
+* à tous les composants visibles et dynamiques
+
+========================================
+IMPORTANT — EXCEPTION À RESPECTER
+=================================
+
+L’ESPACE ADMIN doit rester entièrement en français.
+
+Ne modifie PAS :
+
+* les pages admin
+* les composants admin
+* les messages admin
+* les formulaires admin
+* les dashboards admin
+* les outils internes admin
+
+Le multilingue doit concerner uniquement :
+
+* les utilisateurs
+* les visiteurs
+* les pages publiques
+* l’espace utilisateur
+* les emails utilisateur
+* les documents utilisateur
+* les messages automatiques utilisateur
+* l’APK côté utilisateur
+
+========================================
+TEXTES FRANÇAIS HARDCODÉS DÉJÀ IDENTIFIÉS
+=========================================
+
+J’ai déjà repéré plusieurs zones contenant du français hardcodé :
+
+1. Section :
+   “Organismes financeurs & partenaires institutionnels”
+
+2. Footer :
+   plusieurs textes encore en français hardcodé
+
+3. Toute la FAQ :
+   questions + réponses encore hardcodées
+
+4. Top bar :
+   “INFO OFFICIELLE”
+
+Et ceci n’est probablement qu’une partie des textes concernés.
+
+========================================
+OBJECTIF
+========
+
+Je veux que tu recherches dans TOUT le projet utilisateur :
+
+* tous les textes hardcodés en français
+* tous les labels fixes
+* tous les titres statiques
+* tous les placeholders
+* tous les messages frontend
+* tous les textes UI visibles
+* tous les messages d’erreur
+* tous les textes mobile/app
+* tous les composants React/React Native contenant du texte fixe
+* tous les emails automatiques
+* tous les documents générés utilisateur
+* tous les messages envoyés aux utilisateurs
+
+Je veux ensuite que chaque texte soit :
+
+* extrait proprement
+* intégré au système i18n existant
+* traduit correctement
+* compatible avec le changement dynamique de langue
+
+========================================
+IMPORTANT — ÉVITER LES DOUBLONS
+===============================
+
+Avant toute modification :
+
+* vérifie si certaines corrections multilingues ont déjà été faites
+* ne recrée PAS de nouvelles clés inutiles
+* ne duplique PAS les traductions existantes
+* ne crée PAS plusieurs versions d’un même texte
+* réutilise les clés i18n déjà existantes lorsque possible
+* nettoie les anciennes implémentations incorrectes si nécessaire
+
+Je veux une structure propre, cohérente et maintenable.
+
+========================================
+VÉRIFICATIONS OBLIGATOIRES
+==========================
+
+Je veux que tu vérifies précisément :
+
+1. Tous les composants React contenant du texte fixe
+2. Tous les composants React Native/mobile
+3. Le footer complet
+4. Les sections landing/home
+5. Toute la FAQ
+6. Les topbars/banners
+7. Les pages auth/register/login
+8. Les messages système utilisateur
+9. Les notifications utilisateur
+10. Les modals/popups utilisateur
+11. Les placeholders des formulaires
+12. Les messages validation/erreurs
+13. Les menus/navigation
+14. Les composants dynamiques
+15. Les chaînes oubliées dans les fichiers JSX/TSX
+16. Les chaînes directement écrites dans return(...)
+17. Les constantes frontend contenant du texte français
+18. Les textes dans les hooks/composants utilitaires
+19. Les emails automatiques
+20. Les documents générés côté utilisateur
+
+========================================
+IMPLEMENTATION DEMANDÉE
+=======================
+
+Je veux que :
+
+* tous les textes utilisateur soient centralisés dans le système i18n
+* aucune chaîne française hardcodée visible ne reste côté utilisateur
+* le fallback multilingue fonctionne correctement
+* le changement de langue mette instantanément à jour tous les textes
+* les emails et documents utilisent également la bonne langue utilisateur
+
+Je veux également :
+
+* une structure propre et maintenable
+* aucune duplication inutile
+* aucune régression
+* aucune modification de l’espace admin français
+
+========================================
+WEB + APK
+=========
+
+IMPORTANT :
+Les corrections doivent fonctionner :
+
+* sur le site web
+* sur l’APK/mobile
+* dans tous les layouts et écrans utilisateur
+
+========================================
+VALIDATION OBLIGATOIRE
+======================
+
+Avant confirmation finale :
+
+* effectue une recherche complète dans le code
+* teste plusieurs langues
+* vérifie les changements dynamiques de langue
+* confirme qu’aucun texte français hardcodé visible ne subsiste côté utilisateur
+* confirme que l’espace admin est resté entièrement en français
+
+Je veux un vrai audit multilingue complet du projet.

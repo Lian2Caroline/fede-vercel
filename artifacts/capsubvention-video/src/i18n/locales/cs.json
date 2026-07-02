@@ -1,0 +1,64 @@
+{
+  "scene1": {
+    "label": "Problém",
+    "title": "Získávání dotací\nv zámoří",
+    "desc": "Složitý proces, časově náročné postupy,\nžádosti zamítnuty kvůli nedostatku podpory."
+  },
+  "scene2": {
+    "tagline": "Oficiální 100% digitální platforma\npro přístup k nevratným dotacím"
+  },
+  "scene3": {
+    "label": "Sledování žádosti",
+    "title": "Sledujte\nsvou žádost\nv reálném čase",
+    "desc": "Váš osobní poradce\nvás informuje na každém kroku.",
+    "notif_title": "Aktualizace stavu",
+    "notif_body": "Vaše žádost se zpracovává — zbývá 30 dní",
+    "status_submitted": "Žádost podána",
+    "status_eligible": "Způsobilost ověřena",
+    "status_processing": "Ve zpracování",
+    "status_awaiting": "Rozhodnutí čeká",
+    "status_notified": "Přiřazení oznámeno",
+    "active_badge": "Probíhá"
+  },
+  "scene4": {
+    "header": "Podpůrné dokumenty",
+    "label": "Prostor pro dokumenty",
+    "title": "Nahrajte\nsvé doklady\nbezpečně",
+    "desc": "Všechny vaše dokumenty\ncentralizované, dostupné\na zabezpečené 24/7.",
+    "doc_id": "Doklad totožnosti",
+    "doc_plan": "Plán financování",
+    "doc_statuts": "Stanovy společnosti",
+    "doc_rib": "Bankovní údaje",
+    "status_done": "Ověřeno",
+    "status_pending": "Čeká",
+    "secure_badge": "End-to-end šifrování — vaše data jsou chráněna"
+  },
+  "scene5": {
+    "label": "Model úspěchu",
+    "title_1": "Platíte",
+    "title_2": "jen pokud vaše",
+    "title_3": "žádost je",
+    "title_accent": "schválena",
+    "desc": "Poplatek za instrukci 456 € vč. DPH — splatný\njen po kladném rozhodnutí.",
+    "banner_title": "Oznámení o přidělení",
+    "banner_sub": "Vaše žádost byla přijata",
+    "fee_label": "Poplatek za instrukci",
+    "payment_title": "Bezpečná platba",
+    "payment_methods": "Bankovní karta · Převod · Šek",
+    "grant_label": "Dotace získána"
+  },
+  "scene6": {
+    "tagline": "Váš partner pro nevratné veřejné financování"
+  },
+  "video": {
+    "enable_audio": "Aktivovat zvuk",
+    "click_audio": "Kliknutím aktivujte zvuk",
+    "loop_on": "Smyčka scény: zapnuta",
+    "loop_off": "Smyčka scény: vypnuta",
+    "narration_on": "Aktivovat komentář",
+    "narration_off": "Ztlumit komentář",
+    "show_controls": "Zobrazit ovládací prvky",
+    "hide_controls": "Skrýt ovládací prvky",
+    "jump_to_scene": "Přeskočit na scénu {{n}}"
+  }
+}

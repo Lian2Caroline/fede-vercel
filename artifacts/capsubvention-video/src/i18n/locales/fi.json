@@ -1,0 +1,64 @@
+{
+  "scene1": {
+    "label": "Ongelma",
+    "title": "Tukien saaminen\nmerentakaisilla alueilla",
+    "desc": "Monimutkainen prosessi, aikaa vievät menettelyt,\nhakemukset hylätty tuen puutteen vuoksi."
+  },
+  "scene2": {
+    "tagline": "Virallinen 100% digitaalinen alusta\npalautuksettomien avustusten hakemiseen"
+  },
+  "scene3": {
+    "label": "Hakemuksen seuranta",
+    "title": "Seuraa\nhakemustasi\nreaaliaika",
+    "desc": "Omistettu neuvonantajasi\npitää sinut ajan tasalla joka vaiheessa.",
+    "notif_title": "Tilapäivitys",
+    "notif_body": "Hakemustasi käsitellään — 30 päivää jäljellä",
+    "status_submitted": "Hakemus jätetty",
+    "status_eligible": "Tukikelpoisuus tarkistettu",
+    "status_processing": "Käsittelyssä",
+    "status_awaiting": "Päätös odottaa",
+    "status_notified": "Myöntäminen ilmoitettu",
+    "active_badge": "Käynnissä"
+  },
+  "scene4": {
+    "header": "Tukiasiakirjat",
+    "label": "Asiakirja-alue",
+    "title": "Lataa\nasiakirjasi\nturvallisesti",
+    "desc": "Kaikki asiakirjasi\nkeskitettyinä, saatavilla\nja suojattuna 24/7.",
+    "doc_id": "Henkilöllisyysasiakirja",
+    "doc_plan": "Rahoitussuunnitelma",
+    "doc_statuts": "Yhtiöjärjestys",
+    "doc_rib": "Pankkitiedot",
+    "status_done": "Vahvistettu",
+    "status_pending": "Odottaa",
+    "secure_badge": "Päästä päähän -salaus — tietosi ovat suojattuja"
+  },
+  "scene5": {
+    "label": "Menestymismalli",
+    "title_1": "Maksat",
+    "title_2": "vain jos hakemuksesi",
+    "title_3": "",
+    "title_accent": "hyväksytään",
+    "desc": "Käsittelymaksu 456 € sis. ALV — perittävissä\nvain myönteisen päätöksen jälkeen.",
+    "banner_title": "Myöntämisilmoitus",
+    "banner_sub": "Hakemuksesi on hyväksytty",
+    "fee_label": "Käsittelymaksu",
+    "payment_title": "Turvallinen maksu",
+    "payment_methods": "Pankkikortti · Tilisiirto · Sekki",
+    "grant_label": "Avustus saatu"
+  },
+  "scene6": {
+    "tagline": "Kumppanisi palautuksettomaan julkiseen rahoitukseen"
+  },
+  "video": {
+    "enable_audio": "Ota ääni käyttöön",
+    "click_audio": "Napsauta ottaaksesi äänen käyttöön",
+    "loop_on": "Toista kohtaus: päällä",
+    "loop_off": "Toista kohtaus: pois",
+    "narration_on": "Ota kerronta käyttöön",
+    "narration_off": "Mykistä kerronta",
+    "show_controls": "Näytä ohjaimet",
+    "hide_controls": "Piilota ohjaimet",
+    "jump_to_scene": "Siirry kohtaukseen {{n}}"
+  }
+}

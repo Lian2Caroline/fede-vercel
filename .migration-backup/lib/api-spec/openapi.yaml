@@ -1,0 +1,909 @@
+openapi: 3.1.0
+info:
+  title: Api
+  version: 0.1.0
+  description: FinanceDOM API — Subventions non remboursables Outre-Mer
+servers:
+  - url: /api
+    description: Base API path
+tags:
+  - name: health
+  - name: auth
+  - name: dossiers
+  - name: documents
+  - name: frais
+  - name: messages
+  - name: dashboard
+  - name: admin
+
+paths:
+  /healthz:
+    get:
+      operationId: healthCheck
+      tags: [health]
+      summary: Health check
+      responses:
+        "200":
+          description: Healthy
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/HealthStatus"
+
+  # ── Auth ──────────────────────────────────────
+  /auth/register:
+    post:
+      operationId: register
+      tags: [auth]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/RegisterBody"
+      responses:
+        "201":
+          description: Registered
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/AuthResponse"
+
+  /auth/login:
+    post:
+      operationId: login
+      tags: [auth]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/LoginBody"
+      responses:
+        "200":
+          description: Logged in
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/AuthResponse"
+
+  /auth/logout:
+    post:
+      operationId: logout
+      tags: [auth]
+      responses:
+        "200":
+          description: Logged out
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/MessageResponse"
+
+  /auth/me:
+    get:
+      operationId: getMe
+      tags: [auth]
+      responses:
+        "200":
+          description: Current user
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/User"
+        "401":
+          description: Unauthorized
+
+  # ── Dashboard ──────────────────────────────────────
+  /dashboard/stats:
+    get:
+      operationId: getDashboardStats
+      tags: [dashboard]
+      responses:
+        "200":
+          description: User dashboard stats
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/DashboardStats"
+
+  # ── Dossiers ──────────────────────────────────────
+  /dossiers:
+    get:
+      operationId: listDossiers
+      tags: [dossiers]
+      responses:
+        "200":
+          description: List of dossiers
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Dossier"
+    post:
+      operationId: createDossier
+      tags: [dossiers]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/CreateDossierBody"
+      responses:
+        "201":
+          description: Created
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Dossier"
+
+  /dossiers/{id}:
+    get:
+      operationId: getDossier
+      tags: [dossiers]
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        "200":
+          description: Dossier detail
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/DossierDetail"
+    put:
+      operationId: updateDossier
+      tags: [dossiers]
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/UpdateDossierBody"
+      responses:
+        "200":
+          description: Updated
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Dossier"
+
+  /dossiers/{id}/submit:
+    post:
+      operationId: submitDossier
+      tags: [dossiers]
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        "200":
+          description: Submitted
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Dossier"
+
+  # ── Documents ──────────────────────────────────────
+  /dossiers/{id}/documents:
+    get:
+      operationId: listDocuments
+      tags: [documents]
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        "200":
+          description: List of documents
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Document"
+    post:
+      operationId: uploadDocument
+      tags: [documents]
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/UploadDocumentBody"
+      responses:
+        "201":
+          description: Uploaded
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Document"
+
+  /dossiers/{dossierId}/documents/{docId}:
+    delete:
+      operationId: deleteDocument
+      tags: [documents]
+      parameters:
+        - name: dossierId
+          in: path
+          required: true
+          schema:
+            type: integer
+        - name: docId
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        "200":
+          description: Deleted
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/MessageResponse"
+
+  # ── Messages ──────────────────────────────────────
+  /dossiers/{id}/messages:
+    get:
+      operationId: listMessages
+      tags: [messages]
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        "200":
+          description: Messages
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Message"
+    post:
+      operationId: sendMessage
+      tags: [messages]
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/SendMessageBody"
+      responses:
+        "201":
+          description: Sent
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Message"
+
+  # ── Frais ──────────────────────────────────────
+  /frais:
+    get:
+      operationId: listFrais
+      tags: [frais]
+      responses:
+        "200":
+          description: User's fees
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Frais"
+
+  /frais/{id}:
+    get:
+      operationId: getFrais
+      tags: [frais]
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        "200":
+          description: Fee invoice
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/FraisDetail"
+
+  /frais/{id}/pay:
+    post:
+      operationId: payFrais
+      tags: [frais]
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/PayFraisBody"
+      responses:
+        "200":
+          description: Paid
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Frais"
+
+  # ── Admin ──────────────────────────────────────
+  /admin/stats:
+    get:
+      operationId: getAdminStats
+      tags: [admin]
+      responses:
+        "200":
+          description: Admin stats
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/AdminStats"
+
+  /admin/dossiers:
+    get:
+      operationId: listAdminDossiers
+      tags: [admin]
+      parameters:
+        - name: statut
+          in: query
+          schema:
+            type: string
+        - name: territoire
+          in: query
+          schema:
+            type: string
+        - name: search
+          in: query
+          schema:
+            type: string
+      responses:
+        "200":
+          description: All dossiers
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/AdminDossier"
+
+  /admin/dossiers/{id}:
+    get:
+      operationId: getAdminDossier
+      tags: [admin]
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        "200":
+          description: Dossier detail
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/AdminDossier"
+
+  /admin/dossiers/{id}/status:
+    put:
+      operationId: updateDossierStatus
+      tags: [admin]
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/UpdateStatusBody"
+      responses:
+        "200":
+          description: Updated
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/AdminDossier"
+
+  /admin/frais:
+    get:
+      operationId: listAdminFrais
+      tags: [admin]
+      responses:
+        "200":
+          description: All fees
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Frais"
+    post:
+      operationId: emitFrais
+      tags: [admin]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/EmitFraisBody"
+      responses:
+        "201":
+          description: Created fee
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Frais"
+
+  /admin/users:
+    get:
+      operationId: listAdminUsers
+      tags: [admin]
+      responses:
+        "200":
+          description: All users
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/User"
+
+components:
+  schemas:
+    HealthStatus:
+      type: object
+      properties:
+        status:
+          type: string
+      required: [status]
+
+    MessageResponse:
+      type: object
+      properties:
+        message:
+          type: string
+      required: [message]
+
+    # ── Auth ──
+    RegisterBody:
+      type: object
+      properties:
+        prenom:
+          type: string
+        nom:
+          type: string
+        email:
+          type: string
+        password:
+          type: string
+        telephone:
+          type: string
+        territoire:
+          type: string
+        typePorteur:
+          type: string
+        organisation:
+          type: string
+      required: [prenom, nom, email, password, territoire, typePorteur]
+
+    LoginBody:
+      type: object
+      properties:
+        email:
+          type: string
+        password:
+          type: string
+      required: [email, password]
+
+    AuthResponse:
+      type: object
+      properties:
+        user:
+          $ref: "#/components/schemas/User"
+        token:
+          type: string
+      required: [user, token]
+
+    User:
+      type: object
+      properties:
+        id:
+          type: integer
+        prenom:
+          type: string
+        nom:
+          type: string
+        email:
+          type: string
+        telephone:
+          type: string
+        territoire:
+          type: string
+        typePorteur:
+          type: string
+        organisation:
+          type: string
+        role:
+          type: string
+          enum: [user, admin]
+        createdAt:
+          type: string
+      required: [id, prenom, nom, email, territoire, typePorteur, role, createdAt]
+
+    # ── Dashboard ──
+    DashboardStats:
+      type: object
+      properties:
+        dossiersCount:
+          type: integer
+        documentsCount:
+          type: integer
+        fraisEnAttente:
+          type: integer
+        messagesNonLus:
+          type: integer
+        dossierActif:
+          $ref: "#/components/schemas/Dossier"
+      required: [dossiersCount, documentsCount, fraisEnAttente, messagesNonLus]
+
+    # ── Dossiers ──
+    Dossier:
+      type: object
+      properties:
+        id:
+          type: integer
+        reference:
+          type: string
+        titre:
+          type: string
+        territoire:
+          type: string
+        dispositif:
+          type: string
+        secteur:
+          type: string
+        statut:
+          type: string
+        montantDemande:
+          type: number
+        montantApport:
+          type: number
+        progressionEtape:
+          type: integer
+        totalEtapes:
+          type: integer
+        createdAt:
+          type: string
+        updatedAt:
+          type: string
+      required: [id, reference, titre, territoire, dispositif, secteur, statut, montantDemande, progressionEtape, totalEtapes, createdAt, updatedAt]
+
+    DossierDetail:
+      allOf:
+        - $ref: "#/components/schemas/Dossier"
+        - type: object
+          properties:
+            description:
+              type: string
+            justificationBudget:
+              type: string
+            dateDebut:
+              type: string
+            dureeProjet:
+              type: string
+            documents:
+              type: array
+              items:
+                $ref: "#/components/schemas/Document"
+            messages:
+              type: array
+              items:
+                $ref: "#/components/schemas/Message"
+            frais:
+              type: array
+              items:
+                $ref: "#/components/schemas/Frais"
+            timeline:
+              type: array
+              items:
+                $ref: "#/components/schemas/TimelineEvent"
+
+    CreateDossierBody:
+      type: object
+      properties:
+        titre:
+          type: string
+        territoire:
+          type: string
+        dispositif:
+          type: string
+        secteur:
+          type: string
+        description:
+          type: string
+        montantDemande:
+          type: number
+        montantApport:
+          type: number
+        justificationBudget:
+          type: string
+        dateDebut:
+          type: string
+        dureeProjet:
+          type: string
+      required: [titre, territoire, dispositif, secteur, montantDemande]
+
+    UpdateDossierBody:
+      type: object
+      properties:
+        titre:
+          type: string
+        description:
+          type: string
+        montantDemande:
+          type: number
+        montantApport:
+          type: number
+        justificationBudget:
+          type: string
+        dateDebut:
+          type: string
+        dureeProjet:
+          type: string
+
+    # ── Documents ──
+    Document:
+      type: object
+      properties:
+        id:
+          type: integer
+        dossierId:
+          type: integer
+        type:
+          type: string
+        nom:
+          type: string
+        filename:
+          type: string
+        statut:
+          type: string
+          enum: [en_attente, valide, rejete, manquant]
+        obligatoire:
+          type: boolean
+        uploadedAt:
+          type: string
+      required: [id, dossierId, type, nom, statut, obligatoire]
+
+    UploadDocumentBody:
+      type: object
+      properties:
+        type:
+          type: string
+        nom:
+          type: string
+        filename:
+          type: string
+      required: [type, nom, filename]
+
+    # ── Messages ──
+    Message:
+      type: object
+      properties:
+        id:
+          type: integer
+        dossierId:
+          type: integer
+        expediteur:
+          type: string
+        expediteurRole:
+          type: string
+          enum: [user, admin, system]
+        contenu:
+          type: string
+        lu:
+          type: boolean
+        createdAt:
+          type: string
+      required: [id, dossierId, expediteur, expediteurRole, contenu, lu, createdAt]
+
+    SendMessageBody:
+      type: object
+      properties:
+        contenu:
+          type: string
+      required: [contenu]
+
+    # ── Frais ──
+    Frais:
+      type: object
+      properties:
+        id:
+          type: integer
+        dossierId:
+          type: integer
+        reference:
+          type: string
+        montantHT:
+          type: number
+        montantTVA:
+          type: number
+        montantTTC:
+          type: number
+        statut:
+          type: string
+          enum: [en_attente, paye, annule]
+        echeance:
+          type: string
+        paidAt:
+          type: string
+        createdAt:
+          type: string
+      required: [id, dossierId, reference, montantHT, montantTVA, montantTTC, statut, echeance, createdAt]
+
+    FraisDetail:
+      allOf:
+        - $ref: "#/components/schemas/Frais"
+        - type: object
+          properties:
+            lignes:
+              type: array
+              items:
+                $ref: "#/components/schemas/FraisLigne"
+            dossier:
+              $ref: "#/components/schemas/Dossier"
+            user:
+              $ref: "#/components/schemas/User"
+
+    FraisLigne:
+      type: object
+      properties:
+        label:
+          type: string
+        description:
+          type: string
+        montantHT:
+          type: number
+      required: [label, description, montantHT]
+
+    PayFraisBody:
+      type: object
+      properties:
+        cardNumber:
+          type: string
+        cardExpiry:
+          type: string
+        cardCvv:
+          type: string
+        cardName:
+          type: string
+      required: [cardNumber, cardExpiry, cardCvv, cardName]
+
+    # ── Timeline ──
+    TimelineEvent:
+      type: object
+      properties:
+        etape:
+          type: integer
+        titre:
+          type: string
+        description:
+          type: string
+        statut:
+          type: string
+          enum: [fait, en_cours, en_attente]
+        date:
+          type: string
+      required: [etape, titre, description, statut]
+
+    # ── Admin ──
+    AdminStats:
+      type: object
+      properties:
+        totalDossiers:
+          type: integer
+        enInstruction:
+          type: integer
+        fraisEnAttente:
+          type: integer
+        validesThisMois:
+          type: integer
+        totalFraisPercu:
+          type: number
+        byStatut:
+          type: array
+          items:
+            type: object
+            properties:
+              statut:
+                type: string
+              count:
+                type: integer
+            required: [statut, count]
+        byTerritoire:
+          type: array
+          items:
+            type: object
+            properties:
+              territoire:
+                type: string
+              count:
+                type: integer
+            required: [territoire, count]
+      required: [totalDossiers, enInstruction, fraisEnAttente, validesThisMois, totalFraisPercu, byStatut, byTerritoire]
+
+    AdminDossier:
+      allOf:
+        - $ref: "#/components/schemas/Dossier"
+        - type: object
+          properties:
+            user:
+              $ref: "#/components/schemas/User"
+            expertDesigne:
+              type: string
+            frais:
+              type: array
+              items:
+                $ref: "#/components/schemas/Frais"
+
+    UpdateStatusBody:
+      type: object
+      properties:
+        statut:
+          type: string
+        expertDesigne:
+          type: string
+        commentaire:
+          type: string
+      required: [statut]
+
+    EmitFraisBody:
+      type: object
+      properties:
+        dossierId:
+          type: integer
+        lignes:
+          type: array
+          items:
+            $ref: "#/components/schemas/FraisLigne"
+        echeanceDays:
+          type: integer
+      required: [dossierId, lignes]

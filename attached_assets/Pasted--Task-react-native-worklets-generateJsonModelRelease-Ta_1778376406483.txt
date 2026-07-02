@@ -1,0 +1,63 @@
+ Task :react-native-worklets:generateJsonModelRelease
+> Task :react-native-worklets:prefabReleaseConfigurePackage
+> Task :react-native-reanimated:configureCMakeRelWithDebInfo[arm64-v8a]
+> Task :react-native-reanimated:configureCMakeRelWithDebInfo[armeabi-v7a]
+> Task :react-native-screens:buildCMakeRelWithDebInfo[arm64-v8a]
+> Task :react-native-reanimated:configureCMakeRelWithDebInfo[x86]
+> Task :react-native-screens:configureCMakeRelWithDebInfo[armeabi-v7a]
+> Task :react-native-reanimated:configureCMakeRelWithDebInfo[x86_64]
+> Task :react-native-reanimated:generateJsonModelRelease
+> Task :react-native-reanimated:prefabReleaseConfigurePackage
+> Task :app:configureCMakeRelWithDebInfo[arm64-v8a]
+> Task :expo-modules-core:buildCMakeRelWithDebInfo[arm64-v8a]
+> Task :app:configureCMakeRelWithDebInfo[armeabi-v7a]
+> Task :app:configureCMakeRelWithDebInfo[x86]
+> Task :react-native-screens:buildCMakeRelWithDebInfo[armeabi-v7a]
+> Task :app:configureCMakeRelWithDebInfo[x86_64]
+> Task :react-native-gesture-handler:configureCMakeRelWithDebInfo[arm64-v8a]
+> Task :react-native-screens:configureCMakeRelWithDebInfo[x86]
+> Task :react-native-worklets:buildCMakeRelWithDebInfo[arm64-v8a][worklets]
+> Task :react-native-gesture-handler:configureCMakeRelWithDebInfo[armeabi-v7a]
+> Task :react-native-gesture-handler:configureCMakeRelWithDebInfo[x86]
+> Task :react-native-gesture-handler:configureCMakeRelWithDebInfo[x86_64]
+> Task :react-native-svg:bundleLibCompileToJarRelease
+> Task :react-native-gesture-handler:javaPreCompileRelease
+> Task :react-native-keyboard-controller:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :react-native-keyboard-controller:generateReleaseBuildConfig
+> Task :react-native-keyboard-controller:generateReleaseResValues
+> Task :react-native-keyboard-controller:generateReleaseResources
+> Task :react-native-keyboard-controller:packageReleaseResources
+> Task :react-native-keyboard-controller:parseReleaseLocalResources
+> Task :react-native-keyboard-controller:generateReleaseRFile
+> Task :expo-modules-core:configureCMakeRelWithDebInfo[armeabi-v7a]
+> Task :react-native-screens:buildCMakeRelWithDebInfo[x86]
+> Task :react-native-screens:configureCMakeRelWithDebInfo[x86_64]
+> Task :react-native-keyboard-controller:compileReleaseKotlin
+> Task :react-native-screens:buildCMakeRelWithDebInfo[x86_64]
+> Task :react-native-screens:mergeReleaseJniLibFolders
+> Task :expo-modules-core:buildCMakeRelWithDebInfo[armeabi-v7a]
+> Task :react-native-screens:mergeReleaseNativeLibs
+> Task :react-native-screens:copyReleaseJniLibsProjectOnly
+> Task :react-native-keyboard-controller:javaPreCompileRelease
+> Task :react-native-safe-area-context:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :react-native-safe-area-context:generateReleaseBuildConfig
+> Task :react-native-safe-area-context:generateReleaseResValues
+> Task :react-native-safe-area-context:generateReleaseResources
+> Task :react-native-safe-area-context:packageReleaseResources
+> Task :react-native-safe-area-context:parseReleaseLocalResources
+> Task :react-native-safe-area-context:generateReleaseRFile
+> Task :react-native-keyboard-controller:compileReleaseKotlin
+w: file:///home/expo/workingdir/build/node_modules/.pnpm/react-native-keyboard-controller@1.18.5_react-native-reanimated@4.1.7_react-native-work_fcfe858f08c40f4fabb70307ed883ead/node_modules/react-native-keyboard-controller/android/src/main/java/com/reactnativekeyboardcontroller/extensions/EditText.kt:69:42 Unchecked cast of 'ArrayList<*>' to 'ArrayList<TextWatcher>'.
+w: file:///home/expo/workingdir/build/node_modules/.pnpm/react-native-keyboard-controller@1.18.5_react-native-reanimated@4.1.7_react-native-work_fcfe858f08c40f4fabb70307ed883ead/node_modules/react-native-keyboard-controller/android/src/main/java/com/reactnativekeyboardcontroller/interactive/KeyboardAnimationController.kt:89:16 'static fun getWindowInsetsController(p0: View): WindowInsetsControllerCompat?' is deprecated. Deprecated in Java.
+w: file:///home/expo/workingdir/build/node_modules/.pnpm/react-native-keyboard-controller@1.18.5_react-native-reanimated@4.1.7_react-native-work_fcfe858f08c40f4fabb70307ed883ead/node_modules/react-native-keyboard-controller/android/src/main/java/com/reactnativekeyboardcontroller/managers/KeyboardControllerViewManagerImpl.kt:3:8 'object MapBuilder : Any' is deprecated. Use Kotlin's built-in collections extensions.
+w: file:///home/expo/workingdir/build/node_modules/.pnpm/react-native-keyboard-controller@1.18.5_react-native-reanimated@4.1.7_react-native-work_fcfe858f08c40f4fabb70307ed883ead/node_modules/react-native-keyboard-controller/android/src/main/java/com/reactnativekeyboardcontroller/managers/KeyboardControllerViewManagerImpl.kt:62:7 'object MapBuilder : Any' is deprecated. Use Kotlin's built-in collections extensions.
+w: file:///home/expo/workingdir/build/node_modules/.pnpm/react-native-keyboard-controller@1.18.5_react-native-reanimated@4.1.7_react-native-work_fcfe858f08c40f4fabb70307ed883ead/node_modules/react-native-keyboard-controller/android/src/main/java/com/reactnativekeyboardcontroller/managers/KeyboardControllerViewManagerImpl.kt:64:9 'object MapBuilder : Any' is deprecated. Use Kotlin's built-in collections extensions.
+w: file:///home/expo/workingdir/build/node_modules/.pnpm/react-native-keyboard-controller@1.18.5_react-native-reanimated@4.1.7_react-native-work_fcfe858f08c40f4fabb70307ed883ead/node_modules/react-native-keyboard-controller/android/src/main/java/com/reactnativekeyboardcontroller/managers/KeyboardControllerViewManagerImpl.kt:66:9 'object MapBuilder : Any' is deprecated. Use Kotlin's built-in collections extensions.
+w: file:///home/expo/workingdir/build/node_modules/.pnpm/react-native-keyboard-controller@1.18.5_react-native-reanimated@4.1.7_react-native-work_fcfe858f08c40f4fabb70307ed883ead/node_modules/react-native-keyboard-controller/android/src/main/java/com/reactnativekeyboardcontroller/managers/KeyboardControllerViewManagerImpl.kt:68:9 'object MapBuilder : Any' is deprecated. Use Kotlin's built-in collections extensions.
+w: file:///home/expo/workingdir/build/node_modules/.pnpm/react-native-keyboard-controller@1.18.5_react-native-reanimated@4.1.7_react-native-work_fcfe858f08c40f4fabb70307ed883ead/node_modules/react-native-keyboard-controller/android/src/main/java/com/reactnativekeyboardcontroller/managers/KeyboardControllerViewManagerImpl.kt:70:9 'object MapBuilder : Any' is deprecated. Use Kotlin's built-in collections extensions.
+w: file:///home/expo/workingdir/build/node_modules/.pnpm/react-native-keyboard-controller@1.18.5_react-native-reanimated@4.1.7_react-native-work_fcfe858f08c40f4fabb70307ed883ead/node_modules/react-native-keyboard-controller/android/src/main/java/com/reactnativekeyboardcontroller/managers/KeyboardControllerViewManagerImpl.kt:72:9 'object MapBuilder : Any' is deprecated. Use Kotlin's built-in collections extensions.
+w: file:///home/expo/workingdir/build/node_modules/.pnpm/react-native-keyboard-controller@1.18.5_react-native-reanimated@4.1.7_react-native-work_fcfe858f08c40f4fabb70307ed883ead/node_modules/react-native-keyboard-controller/android/src/main/java/com/reactnativekeyboardcontroller/managers/KeyboardControllerViewManagerImpl.kt:74:9 'object MapBuilder : Any' is deprecated. Use Kotlin's built-in collections extensions.
+w: file:///home/expo/workingdir/build/node_modules/.pnpm/react-native-keyboard-controller@1.18.5_react-native-reanimated@4.1.7_react-native-work_fcfe858f08c40f4fabb70307ed883ead/node_modules/react-native-keyboard-controller/android/src/main/java/com/reactnativekeyboardcontroller/managers/KeyboardControllerViewManagerImpl.kt:76:9 'object MapBuilder : Any' is deprecated. Use Kotlin's built-in collections extensions.
+w: file:///home/expo/workingdir/build/node_modules/.pnpm/react-native-keyboard-controller@1.18.5_react-native-reanimated@4.1.7_react-native-work_fcfe858f08c40f4fabb70307ed883ead/node_modules/react-native-keyboard-controller/android/src/main/java/com/reactnativekeyboardcontroller/modal/ModalAttachedWatcher.kt:29:111 'val DEFAULT: Int' is deprecated. UIManagerType.DEFAULT will be deleted in the next release of React Native. Use [LEGACY] instead.
+w: file:///home/expo/workingdir/build/node_modules/.pnpm/react-native-keyboard-controller@1.18.5_react-native-reanimated@4.1.7_react-native-work_fcfe858f08c40f4fabb70307ed883ead/node_modules/react-native-keyboard-controller/android/src/main/java/com/reactnativekeyboardcontroller/modules/statusbar/StatusBarManagerCompatModuleImpl.kt:62:36 'var statusBarColor: Int' is deprecated. Deprecated in Java.
+w: file:///home/expo/workingdir/build/node_modules/.pnpm/react-native-keyboard-controller@1.18.5_react-native-reanimated@4.1.7_react-native-work_fcfe858f08c40f4fabb70307ed883ead/node_modules/react-native-keyboard-controller/android/src/main/java/com/reactnativekeyboardcontroller/modules/statusbar/StatusBarManagerCompatModuleImpl.kt:65:18 'var statusBarColor: Int' is deprecated. Deprecated in Java.

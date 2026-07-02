@@ -1,0 +1,52 @@
+2026-05-14T15:33:11.669521168Z ==> Setting WEB_CONCURRENCY=1 by default, based on available CPUs in the instance
+2026-05-14T15:34:01.750909531Z ==> Running 'node --enable-source-maps artifacts/api-server/dist/index.mjs'
+2026-05-14T15:34:09.351876442Z (node:70) Warning: SECURITY WARNING: The SSL modes 'prefer', 'require', and 'verify-ca' are treated as aliases for 'verify-full'.
+2026-05-14T15:34:09.351899843Z In the next major version (pg-connection-string v3.0.0 and pg v9.0.0), these modes will adopt standard libpq semantics, which have weaker security guarantees.
+2026-05-14T15:34:09.351902863Z 
+2026-05-14T15:34:09.351906083Z To prepare for this change:
+2026-05-14T15:34:09.351909283Z - If you want the current behavior, explicitly use 'sslmode=verify-full'
+2026-05-14T15:34:09.351915063Z - If you want libpq compatibility now, use 'uselibpqcompat=true&sslmode=require'
+2026-05-14T15:34:09.351917443Z 
+2026-05-14T15:34:09.351921223Z See https://www.postgresql.org/docs/current/libpq-ssl.html for libpq SSL mode definitions.
+2026-05-14T15:34:09.351969424Z (Use `node --trace-warnings ...` to show where the warning was created)
+2026-05-14T15:34:09.562278273Z {"level":30,"time":1778772849561,"pid":70,"hostname":"srv-d7j4rvu7r5hc73chknh0-hibernate-67f99dc576-5ht7j","port":10000,"msg":"Server listening"}
+2026-05-14T15:34:10.250748131Z {"level":30,"time":1778772850247,"pid":70,"hostname":"srv-d7j4rvu7r5hc73chknh0-hibernate-67f99dc576-5ht7j","req":{"id":1,"method":"HEAD","url":"/"},"res":{"statusCode":404},"responseTime":4,"msg":"request completed"}
+2026-05-14T15:34:12.799503287Z ==> Your service is live 🎉
+2026-05-14T15:34:12.971462727Z {"level":30,"time":1778772852970,"pid":70,"hostname":"srv-d7j4rvu7r5hc73chknh0-hibernate-67f99dc576-5ht7j","req":{"id":2,"method":"GET","url":"/"},"res":{"statusCode":404},"responseTime":1,"msg":"request completed"}
+2026-05-14T15:34:13.067668783Z ==> 
+2026-05-14T15:34:13.072263583Z ==> ///////////////////////////////////////////////////////////
+2026-05-14T15:34:13.080104683Z ==> 
+2026-05-14T15:34:13.083646871Z ==> Available at your primary URL https://api.capsubvention.com + 1 more domain
+2026-05-14T15:34:13.092639107Z ==> 
+2026-05-14T15:34:13.097723758Z ==> ///////////////////////////////////////////////////////////
+2026-05-14T15:34:31.253442995Z {"level":30,"time":1778772871253,"pid":70,"hostname":"srv-d7j4rvu7r5hc73chknh0-hibernate-67f99dc576-5ht7j","req":{"id":4,"method":"GET","url":"/api/admin/frais"},"res":{"statusCode":403},"responseTime":91,"msg":"request completed"}
+2026-05-14T15:34:31.25414012Z {"level":30,"time":1778772871253,"pid":70,"hostname":"srv-d7j4rvu7r5hc73chknh0-hibernate-67f99dc576-5ht7j","req":{"id":3,"method":"GET","url":"/api/auth/me"},"res":{"statusCode":304},"responseTime":96,"msg":"request completed"}
+2026-05-14T15:34:31.346101462Z {"level":30,"time":1778772871345,"pid":70,"hostname":"srv-d7j4rvu7r5hc73chknh0-hibernate-67f99dc576-5ht7j","req":{"id":5,"method":"GET","url":"/api/admin/dossiers"},"res":{"statusCode":403},"responseTime":78,"msg":"request completed"}
+2026-05-14T15:34:32.502365474Z {"level":30,"time":1778772872502,"pid":70,"hostname":"srv-d7j4rvu7r5hc73chknh0-hibernate-67f99dc576-5ht7j","req":{"id":6,"method":"GET","url":"/api/admin/frais"},"res":{"statusCode":403},"responseTime":4,"msg":"request completed"}
+2026-05-14T15:34:32.595082881Z {"level":30,"time":1778772872594,"pid":70,"hostname":"srv-d7j4rvu7r5hc73chknh0-hibernate-67f99dc576-5ht7j","req":{"id":7,"method":"GET","url":"/api/admin/dossiers"},"res":{"statusCode":403},"responseTime":3,"msg":"request completed"}
+2026-05-14T15:34:35.480132555Z {"level":30,"time":1778772875479,"pid":70,"hostname":"srv-d7j4rvu7r5hc73chknh0-hibernate-67f99dc576-5ht7j","req":{"id":8,"method":"GET","url":"/api/admin/dossiers"},"res":{"statusCode":403},"responseTime":3,"msg":"request completed"}
+2026-05-14T15:34:35.484184599Z {"level":30,"time":1778772875483,"pid":70,"hostname":"srv-d7j4rvu7r5hc73chknh0-hibernate-67f99dc576-5ht7j","req":{"id":9,"method":"GET","url":"/api/auth/me"},"res":{"statusCode":304},"responseTime":6,"msg":"request completed"}
+2026-05-14T15:34:35.485108618Z {"level":30,"time":1778772875484,"pid":70,"hostname":"srv-d7j4rvu7r5hc73chknh0-hibernate-67f99dc576-5ht7j","req":{"id":10,"method":"GET","url":"/api/admin/frais"},"res":{"statusCode":403},"responseTime":3,"msg":"request completed"}
+2026-05-14T15:34:38.881359793Z {"level":30,"time":1778772878881,"pid":70,"hostname":"srv-d7j4rvu7r5hc73chknh0-hibernate-67f99dc576-5ht7j","req":{"id":11,"method":"GET","url":"/api/auth/me"},"res":{"statusCode":304},"responseTime":7,"msg":"request completed"}
+2026-05-14T15:34:39.121627002Z {"level":30,"time":1778772879120,"pid":70,"hostname":"srv-d7j4rvu7r5hc73chknh0-hibernate-67f99dc576-5ht7j","req":{"id":12,"method":"GET","url":"/api/admin/dossiers"},"res":{"statusCode":403},"responseTime":6,"msg":"request completed"}
+2026-05-14T15:34:39.153862809Z {"level":30,"time":1778772879153,"pid":70,"hostname":"srv-d7j4rvu7r5hc73chknh0-hibernate-67f99dc576-5ht7j","req":{"id":13,"method":"GET","url":"/api/admin/frais"},"res":{"statusCode":403},"responseTime":4,"msg":"request completed"}
+2026-05-14T15:34:40.433642475Z {"level":30,"time":1778772880428,"pid":70,"hostname":"srv-d7j4rvu7r5hc73chknh0-hibernate-67f99dc576-5ht7j","req":{"id":14,"method":"GET","url":"/api/admin/frais"},"res":{"statusCode":403},"responseTime":5,"msg":"request completed"}
+2026-05-14T15:34:40.442440837Z {"level":30,"time":1778772880442,"pid":70,"hostname":"srv-d7j4rvu7r5hc73chknh0-hibernate-67f99dc576-5ht7j","req":{"id":15,"method":"GET","url":"/api/admin/dossiers"},"res":{"statusCode":403},"responseTime":10,"msg":"request completed"}
+2026-05-14T15:34:41.537063813Z {"level":30,"time":1778772881536,"pid":70,"hostname":"srv-d7j4rvu7r5hc73chknh0-hibernate-67f99dc576-5ht7j","req":{"id":16,"method":"GET","url":"/api/admin/stats"},"res":{"statusCode":403},"responseTime":4,"msg":"request completed"}
+2026-05-14T15:34:41.537973432Z {"level":30,"time":1778772881537,"pid":70,"hostname":"srv-d7j4rvu7r5hc73chknh0-hibernate-67f99dc576-5ht7j","req":{"id":17,"method":"GET","url":"/api/admin/virements"},"res":{"statusCode":403},"responseTime":3,"msg":"request completed"}
+2026-05-14T15:34:41.558845294Z {"level":30,"time":1778772881558,"pid":70,"hostname":"srv-d7j4rvu7r5hc73chknh0-hibernate-67f99dc576-5ht7j","req":{"id":18,"method":"GET","url":"/api/admin/users"},"res":{"statusCode":403},"responseTime":5,"msg":"request completed"}
+2026-05-14T15:34:44.577036731Z {"level":30,"time":1778772884576,"pid":70,"hostname":"srv-d7j4rvu7r5hc73chknh0-hibernate-67f99dc576-5ht7j","req":{"id":19,"method":"GET","url":"/api/admin/dossiers"},"res":{"statusCode":403},"responseTime":3,"msg":"request completed"}
+2026-05-14T15:34:45.785164875Z {"level":30,"time":1778772885784,"pid":70,"hostname":"srv-d7j4rvu7r5hc73chknh0-hibernate-67f99dc576-5ht7j","req":{"id":20,"method":"GET","url":"/api/admin/dossiers"},"res":{"statusCode":403},"responseTime":3,"msg":"request completed"}
+2026-05-14T15:34:47.997368774Z {"level":30,"time":1778772887997,"pid":70,"hostname":"srv-d7j4rvu7r5hc73chknh0-hibernate-67f99dc576-5ht7j","req":{"id":21,"method":"GET","url":"/api/admin/dossiers"},"res":{"statusCode":403},"responseTime":4,"msg":"request completed"}
+2026-05-14T15:34:48.717566298Z {"level":30,"time":1778772888717,"pid":70,"hostname":"srv-d7j4rvu7r5hc73chknh0-hibernate-67f99dc576-5ht7j","req":{"id":22,"method":"GET","url":"/api/admin/frais"},"res":{"statusCode":403},"responseTime":4,"msg":"request completed"}
+2026-05-14T15:34:48.718104259Z {"level":30,"time":1778772888717,"pid":70,"hostname":"srv-d7j4rvu7r5hc73chknh0-hibernate-67f99dc576-5ht7j","req":{"id":23,"method":"GET","url":"/api/admin/dossiers"},"res":{"statusCode":403},"responseTime":2,"msg":"request completed"}
+2026-05-14T15:34:49.99810961Z {"level":30,"time":1778772889997,"pid":70,"hostname":"srv-d7j4rvu7r5hc73chknh0-hibernate-67f99dc576-5ht7j","req":{"id":24,"method":"GET","url":"/api/admin/dossiers"},"res":{"statusCode":403},"responseTime":3,"msg":"request completed"}
+2026-05-14T15:34:50.007402102Z {"level":30,"time":1778772890007,"pid":70,"hostname":"srv-d7j4rvu7r5hc73chknh0-hibernate-67f99dc576-5ht7j","req":{"id":25,"method":"GET","url":"/api/admin/frais"},"res":{"statusCode":403},"responseTime":4,"msg":"request completed"}
+2026-05-14T15:34:51.205571001Z {"level":30,"time":1778772891204,"pid":70,"hostname":"srv-d7j4rvu7r5hc73chknh0-hibernate-67f99dc576-5ht7j","req":{"id":26,"method":"GET","url":"/api/admin/virements"},"res":{"statusCode":403},"responseTime":4,"msg":"request completed"}
+2026-05-14T15:34:52.842142905Z {"level":30,"time":1778772892841,"pid":70,"hostname":"srv-d7j4rvu7r5hc73chknh0-hibernate-67f99dc576-5ht7j","req":{"id":27,"method":"GET","url":"/api/admin/users"},"res":{"statusCode":403},"responseTime":3,"msg":"request completed"}
+2026-05-14T15:34:54.590077123Z {"level":30,"time":1778772894589,"pid":70,"hostname":"srv-d7j4rvu7r5hc73chknh0-hibernate-67f99dc576-5ht7j","req":{"id":28,"method":"GET","url":"/api/admin/frais"},"res":{"statusCode":403},"responseTime":3,"msg":"request completed"}
+2026-05-14T15:34:54.601314665Z {"level":30,"time":1778772894601,"pid":70,"hostname":"srv-d7j4rvu7r5hc73chknh0-hibernate-67f99dc576-5ht7j","req":{"id":29,"method":"GET","url":"/api/admin/dossiers"},"res":{"statusCode":403},"responseTime":4,"msg":"request completed"}
+2026-05-14T15:34:55.815790631Z {"level":30,"time":1778772895815,"pid":70,"hostname":"srv-d7j4rvu7r5hc73chknh0-hibernate-67f99dc576-5ht7j","req":{"id":30,"method":"GET","url":"/api/admin/frais"},"res":{"statusCode":403},"responseTime":3,"msg":"request completed"}
+2026-05-14T15:34:55.821998349Z {"level":30,"time":1778772895821,"pid":70,"hostname":"srv-d7j4rvu7r5hc73chknh0-hibernate-67f99dc576-5ht7j","req":{"id":31,"method":"GET","url":"/api/admin/dossiers"},"res":{"statusCode":403},"responseTime":3,"msg":"request completed"}
+2026-05-14T15:35:18.789531901Z {"level":30,"time":1778772918789,"pid":70,"hostname":"srv-d7j4rvu7r5hc73chknh0-hibernate-67f99dc576-5ht7j","req":{"id":32,"method":"GET","url":"/api/auth/me"},"res":{"statusCode":304},"responseTime":6,"msg":"request completed"}
+2026-05-14T15:35:22.04766558Z {"level":30,"time":1778772922047,"pid":70,"hostname":"srv-d7j4rvu7r5hc73chknh0-hibernate-67f99dc576-5ht7j","req":{"id":33,"method":"GET","url":"/api/admin/users"},"res":{"statusCode":403},"responseTime":4,"msg":"request completed"}

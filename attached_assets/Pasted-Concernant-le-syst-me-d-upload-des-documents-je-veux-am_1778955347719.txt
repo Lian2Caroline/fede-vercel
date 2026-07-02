@@ -1,0 +1,57 @@
+Concernant le système d’upload des documents, je veux améliorer l’expérience utilisateur et éviter les dépôts multiples inutiles.
+
+Actuellement, après qu’un utilisateur clique sur “Déposer” et charge un fichier, le bouton garde exactement le même état visuel (“Déposer”), ce qui donne l’impression que rien ne s’est passé.
+
+Résultat :
+
+l’utilisateur peut recharger le même document indéfiniment,
+il n’a aucune confirmation visuelle claire,
+l’UX paraît incomplète et peu professionnelle.
+
+Je veux donc modifier complètement ce comportement.
+
+NOUVEAU COMPORTEMENT SOUHAITÉ :
+
+Quand un document est upload avec succès :
+
+Le bouton “Déposer” doit disparaître ou être désactivé.
+Remplacer l’état actuel par un état visuel clair du type :
+“Document envoyé”
+“Document reçu”
+“Fichier transmis”
+avec une icône verte de validation/check.
+Le badge “À fournir” doit automatiquement devenir :
+“Envoyé”
+ou “En attente de validation”.
+Le bouton upload NE DOIT PLUS être cliquable après un dépôt réussi.
+L’utilisateur ne doit plus pouvoir envoyer plusieurs fois le même document tant que le dossier n’a pas été traité.
+Si l’administrateur rejette le document :
+alors seulement le bouton “Déposer” redevient actif,
+avec un statut :
+“Document refusé — veuillez renvoyer un fichier”.
+Ajouter aussi un état :
+“Validation en cours”
+“Accepté”
+“Refusé”
+Je veux une UX beaucoup plus premium et professionnelle, similaire aux plateformes bancaires ou administratives modernes.
+Ajouter transitions fluides et feedback visuel immédiat après upload :
+loader pendant upload,
+animation de succès,
+état verrouillé après validation.
+Le système doit fonctionner côté frontend ET backend :
+sauvegarder le statut du document en base de données,
+empêcher les uploads multiples inutiles,
+gérer les états :
+pending
+uploaded
+approved
+rejected
+
+Exemple logique :
+
+Aucun document → bouton “Déposer”
+Document envoyé → bouton désactivé + badge vert
+Document rejeté → bouton réactivé
+Document accepté → état verrouillé définitivement
+
+Le rendu doit être moderne, clair et rassurant pour l’utilisateu

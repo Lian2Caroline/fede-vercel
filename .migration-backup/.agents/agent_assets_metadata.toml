@@ -1,0 +1,14 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "ev6CLJpXUa9hND571Iyuu"
+uri = "file://artifacts/financedom/public/hero-bg.png"
+type = "image"
+title = "Abstract professional background"
+
+[[generated]]
+id = "l25NdrUkk1GTFClJZiaku"
+uri = "file://artifacts/capsubvention-mobile/assets/images/icon.png"
+type = "image"
+title = "CapSubvention mobile app icon"

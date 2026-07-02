@@ -1,0 +1,64 @@
+{
+  "scene1": {
+    "label": "A probléma",
+    "title": "Támogatások szerzése\na tengerentúli területeken",
+    "desc": "Összetett folyamat, időigényes eljárások,\nsegítség nélkül elutasított kérelmek."
+  },
+  "scene2": {
+    "tagline": "A 100% digitális hivatalos platform\na vissza nem térítendő támogatásokhoz"
+  },
+  "scene3": {
+    "label": "Kérelem követése",
+    "title": "Kövesse\nkérelmét\nvalós időben",
+    "desc": "Személyes tanácsadója\nminden lépésnél tájékoztatja.",
+    "notif_title": "Státuszfrissítés",
+    "notif_body": "Kérelmét elbírálják — 30 nap van hátra",
+    "status_submitted": "Kérelem benyújtva",
+    "status_eligible": "Jogosultság ellenőrizve",
+    "status_processing": "Elbírálás alatt",
+    "status_awaiting": "Döntés folyamatban",
+    "status_notified": "Odaítélés értesítve",
+    "active_badge": "Folyamatban"
+  },
+  "scene4": {
+    "header": "Igazoló dokumentumok",
+    "label": "Dokumentumtér",
+    "title": "Töltse fel\ndokumentumait\nbiztonságosan",
+    "desc": "Minden dokumentuma\ncentralizálva, hozzáférhető\nés védett 24/7.",
+    "doc_id": "Személyazonosító okmány",
+    "doc_plan": "Finanszírozási terv",
+    "doc_statuts": "Társasági alapszabály",
+    "doc_rib": "Bankadatok",
+    "status_done": "Érvényesített",
+    "status_pending": "Folyamatban",
+    "secure_badge": "Végponttól végpontig titkosított — adatai védve vannak"
+  },
+  "scene5": {
+    "label": "Sikeres modell",
+    "title_1": "Csak akkor fizet,",
+    "title_2": "ha kérelmét",
+    "title_3": "",
+    "title_accent": "elfogadják",
+    "desc": "456 € + ÁFA kezelési díj — csak kedvező\ndöntés esetén esedékes.",
+    "banner_title": "Odaítélési értesítés",
+    "banner_sub": "Kérelmét elfogadták",
+    "fee_label": "Kezelési díj",
+    "payment_title": "Biztonságos fizetés",
+    "payment_methods": "Bankkártya · Átutalás · Csekk",
+    "grant_label": "Támogatás megszerezve"
+  },
+  "scene6": {
+    "tagline": "Partnere a vissza nem térítendő közfinanszírozáshoz"
+  },
+  "video": {
+    "enable_audio": "Hang engedélyezése",
+    "click_audio": "Kattintson a hang engedélyezéséhez",
+    "loop_on": "Jelenet ismétlése: be",
+    "loop_off": "Jelenet ismétlése: ki",
+    "narration_on": "Narráció engedélyezése",
+    "narration_off": "Narráció némítása",
+    "show_controls": "Vezérlők megjelenítése",
+    "hide_controls": "Vezérlők elrejtése",
+    "jump_to_scene": "Ugrás a(z) {{n}}. jelenethez"
+  }
+}

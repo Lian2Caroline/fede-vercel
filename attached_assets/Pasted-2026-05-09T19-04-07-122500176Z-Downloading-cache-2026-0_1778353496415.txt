@@ -1,0 +1,32 @@
+2026-05-09T19:04:07.122500176Z ==> Downloading cache...
+2026-05-09T19:04:07.158131581Z ==> Cloning from https://github.com/replitprojet97-del/Financement-non-remboursable-Pro-apk
+2026-05-09T19:04:08.494594304Z ==> Checking out commit 7f315495c4001584fa31324ea20764f4895d8e1a in branch main
+2026-05-09T19:04:15.926274038Z ==> Downloaded 256MB in 1s. Extraction took 6s.
+2026-05-09T19:04:20.238208078Z ==> Using Node.js version 22.22.0 (default)
+2026-05-09T19:04:20.262895616Z ==> Docs on specifying a Node.js version: https://render.com/docs/node-version
+2026-05-09T19:04:20.373708675Z ==> Running build command 'npm install -g pnpm && pnpm install && pnpm --filter @workspace/api-server run build'...
+2026-05-09T19:04:21.087320371Z 
+2026-05-09T19:04:21.087350053Z changed 1 package in 647ms
+2026-05-09T19:04:21.08747963Z 
+2026-05-09T19:04:21.087493701Z 1 package is looking for funding
+2026-05-09T19:04:21.087498811Z   run `npm fund` for details
+2026-05-09T19:04:21.711224457Z Scope: all 11 workspace projects
+2026-05-09T19:04:21.785375886Z Lockfile is up to date, resolution step is skipped
+2026-05-09T19:04:21.867211869Z Progress: resolved 1, reused 0, downloaded 0, added 0
+2026-05-09T19:04:21.983049227Z Packages: +1131
+2026-05-09T19:04:21.983069698Z ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2026-05-09T19:04:22.86862342Z Progress: resolved 1131, reused 649, downloaded 0, added 0
+2026-05-09T19:04:23.869848131Z Progress: resolved 1131, reused 1035, downloaded 0, added 0
+2026-05-09T19:04:24.870298529Z Progress: resolved 1131, reused 1105, downloaded 0, added 512
+2026-05-09T19:04:25.870537645Z Progress: resolved 1131, reused 1105, downloaded 0, added 976
+2026-05-09T19:04:26.384490519Z Progress: resolved 1131, reused 1105, downloaded 0, added 1131, done
+2026-05-09T19:04:26.942923988Z 
+2026-05-09T19:04:26.94295279Z devDependencies:
+2026-05-09T19:04:26.94295855Z + prettier 3.8.1
+2026-05-09T19:04:26.94296407Z + typescript 5.9.3
+2026-05-09T19:04:26.94296836Z 
+2026-05-09T19:04:27.135138697Z [ERR_PNPM_IGNORED_BUILDS] Ignored build scripts: esbuild@0.27.3
+2026-05-09T19:04:27.135164249Z 
+2026-05-09T19:04:27.135169609Z Run "pnpm approve-builds" to pick which dependencies should be allowed to run scripts.
+2026-05-09T19:04:27.237912281Z ==> Build failed 😞
+2026-05-09T19:04:27.237932422Z ==> Common ways to troubleshoot your deploy: https://render.com/docs/troubleshooting-deploys

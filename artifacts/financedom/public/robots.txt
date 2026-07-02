@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+
+Disallow: /*/dashboard
+Disallow: /*/dossier
+Disallow: /*/documents
+Disallow: /*/messages
+Disallow: /*/paiement
+Disallow: /*/transfert
+Disallow: /*/parametres
+Disallow: /*/suivi
+Disallow: /*/admin
+Disallow: /*/apercu
+Disallow: /*/demo
+Disallow: /*/reset-password
+
+Sitemap: https://www.capsubvention.com/sitemap.xml

@@ -1,0 +1,50 @@
+2026-05-10T02:33:36.896869465Z {"level":30,"time":1778380416896,"pid":68,"hostname":"srv-d7j4rvu7r5hc73chknh0-hibernate-768dd4f9d8-8zknc","req":{"id":50,"method":"GET","url":"/api/dashboard/stats"},"res":{"statusCode":401},"responseTime":1,"msg":"request completed"}
+2026-05-10T02:33:50.924288014Z {"level":30,"time":1778380430924,"pid":68,"hostname":"srv-d7j4rvu7r5hc73chknh0-hibernate-768dd4f9d8-8zknc","req":{"id":51,"method":"POST","url":"/api/dossiers"},"res":{"statusCode":401},"responseTime":1,"msg":"request completed"}
+2026-05-10T02:35:02.888898628Z {"level":30,"time":1778380502888,"pid":68,"hostname":"srv-d7j4rvu7r5hc73chknh0-hibernate-768dd4f9d8-8zknc","req":{"id":52,"method":"GET","url":"/api/auth/me"},"res":{"statusCode":401},"responseTime":0,"msg":"request completed"}
+2026-05-10T02:35:02.899273801Z {"level":30,"time":1778380502899,"pid":68,"hostname":"srv-d7j4rvu7r5hc73chknh0-hibernate-768dd4f9d8-8zknc","req":{"id":53,"method":"GET","url":"/api/dashboard/stats"},"res":{"statusCode":401},"responseTime":1,"msg":"request completed"}
+2026-05-10T02:35:04.109422593Z {"level":30,"time":1778380504109,"pid":68,"hostname":"srv-d7j4rvu7r5hc73chknh0-hibernate-768dd4f9d8-8zknc","req":{"id":54,"method":"GET","url":"/api/dashboard/stats"},"res":{"statusCode":401},"responseTime":1,"msg":"request completed"}
+2026-05-10T02:38:13.36140938Z {"level":30,"time":1778380693361,"pid":68,"hostname":"srv-d7j4rvu7r5hc73chknh0-hibernate-768dd4f9d8-8zknc","req":{"id":55,"method":"GET","url":"/api/dashboard/stats"},"res":{"statusCode":401},"responseTime":1,"msg":"request completed"}
+2026-05-10T02:38:13.362491785Z {"level":30,"time":1778380693362,"pid":68,"hostname":"srv-d7j4rvu7r5hc73chknh0-hibernate-768dd4f9d8-8zknc","req":{"id":56,"method":"GET","url":"/api/auth/me"},"res":{"statusCode":401},"responseTime":1,"msg":"request completed"}
+2026-05-10T02:38:17.599277571Z {"level":30,"time":1778380697599,"pid":68,"hostname":"srv-d7j4rvu7r5hc73chknh0-hibernate-768dd4f9d8-8zknc","req":{"id":57,"method":"GET","url":"/api/dashboard/stats"},"res":{"statusCode":401},"responseTime":1,"msg":"request completed"}
+2026-05-10T02:39:42.596281371Z ==> Deploying...
+2026-05-10T02:39:42.802867687Z ==> Setting WEB_CONCURRENCY=1 by default, based on available CPUs in the instance
+2026-05-10T02:40:22.128505877Z ==> Running 'node --enable-source-maps artifacts/api-server/dist/index.mjs'
+2026-05-10T02:40:27.822231667Z {"level":30,"time":1778380827821,"pid":69,"hostname":"srv-d7j4rvu7r5hc73chknh0-hibernate-5b5f8d84-6t29d","port":10000,"msg":"Server listening"}
+2026-05-10T02:40:28.085771415Z {"level":30,"time":1778380828085,"pid":69,"hostname":"srv-d7j4rvu7r5hc73chknh0-hibernate-5b5f8d84-6t29d","req":{"id":1,"method":"HEAD","url":"/"},"res":{"statusCode":404},"responseTime":6,"msg":"request completed"}
+2026-05-10T02:40:33.619367038Z ==> Your service is live 🎉
+2026-05-10T02:40:33.856911141Z ==> 
+2026-05-10T02:40:33.861953443Z ==> ///////////////////////////////////////////////////////////
+2026-05-10T02:40:33.86636303Z ==> 
+2026-05-10T02:40:33.874006345Z ==> Available at your primary URL https://api.capsubvention.com + 1 more domain
+2026-05-10T02:40:33.885450932Z ==> 
+2026-05-10T02:40:33.891362675Z ==> ///////////////////////////////////////////////////////////
+2026-05-10T02:40:34.066106809Z {"level":30,"time":1778380834065,"pid":69,"hostname":"srv-d7j4rvu7r5hc73chknh0-hibernate-5b5f8d84-6t29d","req":{"id":2,"method":"GET","url":"/"},"res":{"statusCode":404},"responseTime":1,"msg":"request completed"}
+2026-05-10T02:41:05.854892116Z {"level":30,"time":1778380865854,"pid":69,"hostname":"srv-d7j4rvu7r5hc73chknh0-hibernate-5b5f8d84-6t29d","req":{"id":3,"method":"GET","url":"/api/dashboard/stats"},"res":{"statusCode":401},"responseTime":2,"msg":"request completed"}
+2026-05-10T02:41:05.879453882Z {"level":30,"time":1778380865878,"pid":69,"hostname":"srv-d7j4rvu7r5hc73chknh0-hibernate-5b5f8d84-6t29d","req":{"id":4,"method":"GET","url":"/api/auth/me"},"res":{"statusCode":401},"responseTime":1,"msg":"request completed"}
+2026-05-10T02:41:07.140687291Z {"level":30,"time":1778380867140,"pid":69,"hostname":"srv-d7j4rvu7r5hc73chknh0-hibernate-5b5f8d84-6t29d","req":{"id":5,"method":"GET","url":"/api/dashboard/stats"},"res":{"statusCode":401},"responseTime":1,"msg":"request completed"}
+2026-05-10T02:41:09.724101585Z {"level":30,"time":1778380869723,"pid":69,"hostname":"srv-d7j4rvu7r5hc73chknh0-hibernate-5b5f8d84-6t29d","req":{"id":6,"method":"GET","url":"/api/dashboard/stats"},"res":{"statusCode":401},"responseTime":0,"msg":"request completed"}
+2026-05-10T02:41:10.941083938Z {"level":30,"time":1778380870940,"pid":69,"hostname":"srv-d7j4rvu7r5hc73chknh0-hibernate-5b5f8d84-6t29d","req":{"id":7,"method":"GET","url":"/api/auth/me"},"res":{"statusCode":401},"responseTime":0,"msg":"request completed"}
+2026-05-10T02:41:52.338712586Z {"level":30,"time":1778380912338,"pid":69,"hostname":"srv-d7j4rvu7r5hc73chknh0-hibernate-5b5f8d84-6t29d","req":{"id":8,"method":"GET","url":"/api/auth/me"},"res":{"statusCode":401},"responseTime":1,"msg":"request completed"}
+2026-05-10T02:41:55.849134631Z (node:69) Warning: SECURITY WARNING: The SSL modes 'prefer', 'require', and 'verify-ca' are treated as aliases for 'verify-full'.
+2026-05-10T02:41:55.849169392Z In the next major version (pg-connection-string v3.0.0 and pg v9.0.0), these modes will adopt standard libpq semantics, which have weaker security guarantees.
+2026-05-10T02:41:55.849174642Z 
+2026-05-10T02:41:55.849182692Z To prepare for this change:
+2026-05-10T02:41:55.849187592Z - If you want the current behavior, explicitly use 'sslmode=verify-full'
+2026-05-10T02:41:55.849191772Z - If you want libpq compatibility now, use 'uselibpqcompat=true&sslmode=require'
+2026-05-10T02:41:55.849195612Z 
+2026-05-10T02:41:55.849213453Z See https://www.postgresql.org/docs/current/libpq-ssl.html for libpq SSL mode definitions.
+2026-05-10T02:41:55.849218823Z (Use `node --trace-warnings ...` to show where the warning was created)
+2026-05-10T02:41:59.238021781Z {"level":30,"time":1778380919237,"pid":69,"hostname":"srv-d7j4rvu7r5hc73chknh0-hibernate-5b5f8d84-6t29d","req":{"id":9,"method":"POST","url":"/api/auth/login"},"res":{"statusCode":200},"responseTime":3400,"msg":"request completed"}
+2026-05-10T02:41:59.238640733Z Error: ENOENT: no such file or directory, open '/opt/render/project/src/artifacts/api-server/dist/table.sql'
+2026-05-10T02:41:59.238650533Z     at async open (node:internal/fs/promises:636:25)
+2026-05-10T02:41:59.238654143Z     at async Object.readFile (node:internal/fs/promises:1235:14)
+2026-05-10T02:41:59.238657744Z     at async PGStore._rawEnsureSessionStoreTable (/opt/render/project/src/node_modules/.pnpm/connect-pg-simple@10.0.0/node_modules/connect-pg-simple/index.js:183:32)
+2026-05-10T02:41:59.238672064Z     at async PGStore._asyncQuery (/opt/render/project/src/node_modules/.pnpm/connect-pg-simple@10.0.0/node_modules/connect-pg-simple/index.js:315:7)
+2026-05-10T02:41:59.433083973Z {"level":30,"time":1778380919432,"pid":69,"hostname":"srv-d7j4rvu7r5hc73chknh0-hibernate-5b5f8d84-6t29d","req":{"id":10,"method":"GET","url":"/api/auth/me"},"res":{"statusCode":401},"responseTime":0,"msg":"request completed"}
+2026-05-10T02:42:15.626505912Z {"level":30,"time":1778380935626,"pid":69,"hostname":"srv-d7j4rvu7r5hc73chknh0-hibernate-5b5f8d84-6t29d","req":{"id":11,"method":"POST","url":"/api/auth/login"},"res":{"statusCode":200},"responseTime":2097,"msg":"request completed"}
+2026-05-10T02:42:15.626684465Z Error: ENOENT: no such file or directory, open '/opt/render/project/src/artifacts/api-server/dist/table.sql'
+2026-05-10T02:42:15.626697446Z     at async open (node:internal/fs/promises:636:25)
+2026-05-10T02:42:15.626702446Z     at async Object.readFile (node:internal/fs/promises:1235:14)
+2026-05-10T02:42:15.626707866Z     at async PGStore._rawEnsureSessionStoreTable (/opt/render/project/src/node_modules/.pnpm/connect-pg-simple@10.0.0/node_modules/connect-pg-simple/index.js:183:32)
+2026-05-10T02:42:15.626712766Z     at async PGStore._asyncQuery (/opt/render/project/src/node_modules/.pnpm/connect-pg-simple@10.0.0/node_modules/connect-pg-simple/index.js:315:7)
+2026-05-10T02:42:15.808043156Z {"level":30,"time":1778380935807,"pid":69,"hostname":"srv-d7j4rvu7r5hc73chknh0-hibernate-5b5f8d84-6t29d","req":{"id":12,"method":"GET","url":"/api/auth/me"},"res":{"statusCode":401},"responseTime":0,"msg":"request completed"}

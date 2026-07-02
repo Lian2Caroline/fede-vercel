@@ -1,0 +1,64 @@
+{
+  "scene1": {
+    "label": "Le problème",
+    "title": "Obtenir des subventions\nen Outre-Mer",
+    "desc": "Un processus complexe, des démarches chronophages,\ndes dossiers rejetés faute d'accompagnement."
+  },
+  "scene2": {
+    "tagline": "La plateforme officielle 100% digitale\npour accéder aux subventions non remboursables"
+  },
+  "scene3": {
+    "label": "Suivi de dossier",
+    "title": "Suivez votre\ndossier en\ntemps réel",
+    "desc": "Votre conseiller dédié vous\ninforme à chaque étape.",
+    "notif_title": "Mise à jour de statut",
+    "notif_body": "Votre dossier est en cours d'instruction — 30 jours restants",
+    "status_submitted": "Dossier soumis",
+    "status_eligible": "Éligibilité vérifiée",
+    "status_processing": "Instruction en cours",
+    "status_awaiting": "Décision attendue",
+    "status_notified": "Attribution notifiée",
+    "active_badge": "En cours"
+  },
+  "scene4": {
+    "header": "Pièces justificatives",
+    "label": "Espace documents",
+    "title": "Déposez vos\njustificatifs en\ntoute sécurité",
+    "desc": "Tous vos documents\ncentralisés, accessibles\net sécurisés 24h/24.",
+    "doc_id": "Pièce d'identité",
+    "doc_plan": "Plan de financement",
+    "doc_statuts": "Statuts de la société",
+    "doc_rib": "RIB bancaire",
+    "status_done": "Validé",
+    "status_pending": "En attente",
+    "secure_badge": "Chiffrement de bout en bout — vos données sont protégées"
+  },
+  "scene5": {
+    "label": "Modèle au succès",
+    "title_1": "Vous payez",
+    "title_2": "uniquement si votre",
+    "title_3": "dossier est",
+    "title_accent": "accepté",
+    "desc": "Frais d'instruction de 456 € TTC — exigibles\nuniquement après décision favorable.",
+    "banner_title": "Notification d'attribution",
+    "banner_sub": "Votre dossier a été accepté",
+    "fee_label": "Frais d'instruction",
+    "payment_title": "Paiement sécurisé",
+    "payment_methods": "Carte bancaire · Virement · Chèque",
+    "grant_label": "Subvention obtenue"
+  },
+  "scene6": {
+    "tagline": "Votre partenaire pour les financements publics non remboursables"
+  },
+  "video": {
+    "enable_audio": "Activer le son",
+    "click_audio": "Cliquez pour activer le son",
+    "loop_on": "Boucle scène : activée",
+    "loop_off": "Boucle scène : désactivée",
+    "narration_on": "Activer la narration",
+    "narration_off": "Couper la narration",
+    "show_controls": "Afficher les contrôles",
+    "hide_controls": "Masquer les contrôles",
+    "jump_to_scene": "Aller à la scène {{n}}"
+  }
+}

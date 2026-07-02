@@ -1,0 +1,64 @@
+{
+  "scene1": {
+    "label": "Težava",
+    "title": "Pridobivanje subvencij\nna čezmorskih ozemljih",
+    "desc": "Zapleten proces, dolgotrajni postopki,\nvloge zavrnjene zaradi pomanjkanja podpore."
+  },
+  "scene2": {
+    "tagline": "Uradna 100% digitalna platforma\nza dostop do nepovratnih subvencij"
+  },
+  "scene3": {
+    "label": "Sledenje vlogi",
+    "title": "Sledite\nsvoji vlogi\nv realnem času",
+    "desc": "Vaš namenjeni svetovalec\nvas obvešča na vsakem koraku.",
+    "notif_title": "Posodobitev statusa",
+    "notif_body": "Vaša vloga se obravnava — še 30 dni",
+    "status_submitted": "Vloga vložena",
+    "status_eligible": "Upravičenost preverjena",
+    "status_processing": "V obravnavi",
+    "status_awaiting": "Odločitev v čakanju",
+    "status_notified": "Dodelitev sporočena",
+    "active_badge": "V teku"
+  },
+  "scene4": {
+    "header": "Dokazila",
+    "label": "Prostor za dokumente",
+    "title": "Naložite\nsvoja dokazila\nvarno",
+    "desc": "Vsi vaši dokumenti\ncentralizirani, dostopni\nin zaščiteni 24/7.",
+    "doc_id": "Osebni dokument",
+    "doc_plan": "Finančni načrt",
+    "doc_statuts": "Statut podjetja",
+    "doc_rib": "Bančni podatki",
+    "status_done": "Potrjeno",
+    "status_pending": "V čakanju",
+    "secure_badge": "Šifriranje od konca do konca — vaši podatki so zaščiteni"
+  },
+  "scene5": {
+    "label": "Model uspeha",
+    "title_1": "Plačate",
+    "title_2": "samo, če je vaša",
+    "title_3": "vloga",
+    "title_accent": "sprejeta",
+    "desc": "Taksa za obravnavo 456 € z DDV — plačljiva\nle po ugodni odločitvi.",
+    "banner_title": "Obvestilo o dodelitvi",
+    "banner_sub": "Vaša vloga je bila sprejeta",
+    "fee_label": "Taksa za obravnavo",
+    "payment_title": "Varno plačilo",
+    "payment_methods": "Bančna kartica · Nakazilo · Ček",
+    "grant_label": "Subvencija pridobljena"
+  },
+  "scene6": {
+    "tagline": "Vaš partner za nepovratno javno financiranje"
+  },
+  "video": {
+    "enable_audio": "Aktiviraj zvok",
+    "click_audio": "Kliknite za aktivacijo zvoka",
+    "loop_on": "Zanka prizora: vklopljeno",
+    "loop_off": "Zanka prizora: izklopljeno",
+    "narration_on": "Aktiviraj pripovedovanje",
+    "narration_off": "Utišaj pripovedovanje",
+    "show_controls": "Pokaži kontrole",
+    "hide_controls": "Skrij kontrole",
+    "jump_to_scene": "Skoči na prizor {{n}}"
+  }
+}

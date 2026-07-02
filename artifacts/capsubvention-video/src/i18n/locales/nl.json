@@ -1,0 +1,64 @@
+{
+  "scene1": {
+    "label": "Het probleem",
+    "title": "Subsidies verkrijgen\nin overzeese gebieden",
+    "desc": "Een complex proces, tijdrovende procedures,\naanvragen afgewezen bij gebrek aan begeleiding."
+  },
+  "scene2": {
+    "tagline": "Het 100% digitale officiële platform\nvoor toegang tot niet-terugvorderbare subsidies"
+  },
+  "scene3": {
+    "label": "Dossiertracking",
+    "title": "Volg uw\ndossier\nin real time",
+    "desc": "Uw toegewezen adviseur\ninformeert u bij elke stap.",
+    "notif_title": "Statusupdate",
+    "notif_body": "Uw dossier wordt beoordeeld — 30 dagen resterend",
+    "status_submitted": "Dossier ingediend",
+    "status_eligible": "Geschiktheid geverifieerd",
+    "status_processing": "Onder beoordeling",
+    "status_awaiting": "Beslissing in afwachting",
+    "status_notified": "Toewijzing gemeld",
+    "active_badge": "Bezig"
+  },
+  "scene4": {
+    "header": "Bewijsdocumenten",
+    "label": "Documentruimte",
+    "title": "Upload uw\ndocumenten\nveilig",
+    "desc": "Al uw documenten\ngecentraliseerd, toegankelijk\nen beveiligd 24/7.",
+    "doc_id": "Identiteitsdocument",
+    "doc_plan": "Financieringsplan",
+    "doc_statuts": "Statuten van de vennootschap",
+    "doc_rib": "Bankgegevens",
+    "status_done": "Gevalideerd",
+    "status_pending": "In afwachting",
+    "secure_badge": "End-to-end encryptie — uw gegevens zijn beschermd"
+  },
+  "scene5": {
+    "label": "Succesmodel",
+    "title_1": "U betaalt",
+    "title_2": "alleen als uw",
+    "title_3": "dossier wordt",
+    "title_accent": "goedgekeurd",
+    "desc": "Behandelingskosten van €456 incl. btw — verschuldigd\nalleen na een gunstige beslissing.",
+    "banner_title": "Toewijzingsbericht",
+    "banner_sub": "Uw dossier is goedgekeurd",
+    "fee_label": "Behandelingskosten",
+    "payment_title": "Veilige betaling",
+    "payment_methods": "Bankkaart · Overschrijving · Cheque",
+    "grant_label": "Subsidie verkregen"
+  },
+  "scene6": {
+    "tagline": "Uw partner voor niet-terugvorderbare overheidsfinanciering"
+  },
+  "video": {
+    "enable_audio": "Geluid inschakelen",
+    "click_audio": "Klik om geluid in te schakelen",
+    "loop_on": "Scène herhalen: aan",
+    "loop_off": "Scène herhalen: uit",
+    "narration_on": "Vertelling inschakelen",
+    "narration_off": "Vertelling dempen",
+    "show_controls": "Besturingselementen weergeven",
+    "hide_controls": "Besturingselementen verbergen",
+    "jump_to_scene": "Spring naar scène {{n}}"
+  }
+}

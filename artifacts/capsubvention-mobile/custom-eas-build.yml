@@ -1,0 +1,9 @@
+build:
+  name: Custom monorepo build
+  steps:
+    - eas/checkout
+    - run:
+        name: Install dependencies (monorepo)
+        command: pnpm install --no-frozen-lockfile
+    - eas/prebuild
+    - eas/build

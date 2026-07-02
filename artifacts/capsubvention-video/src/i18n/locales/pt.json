@@ -1,0 +1,64 @@
+{
+  "scene1": {
+    "label": "O problema",
+    "title": "Obter subsídios\nnos territórios ultramarinos",
+    "desc": "Um processo complexo, procedimentos demorados,\ncandidaturas rejeitadas por falta de apoio."
+  },
+  "scene2": {
+    "tagline": "A plataforma oficial 100% digital\npara aceder a subsídios não reembolsáveis"
+  },
+  "scene3": {
+    "label": "Acompanhamento do processo",
+    "title": "Acompanhe\no seu processo\nem tempo real",
+    "desc": "O seu conselheiro dedicado\ninforma-o em cada etapa.",
+    "notif_title": "Atualização de estado",
+    "notif_body": "O seu processo está em instrução — 30 dias restantes",
+    "status_submitted": "Processo apresentado",
+    "status_eligible": "Elegibilidade verificada",
+    "status_processing": "Em instrução",
+    "status_awaiting": "Decisão pendente",
+    "status_notified": "Atribuição notificada",
+    "active_badge": "Em curso"
+  },
+  "scene4": {
+    "header": "Documentos comprovativos",
+    "label": "Espaço de documentos",
+    "title": "Carregue os seus\njustificativos\ncom segurança",
+    "desc": "Todos os seus documentos\ncentralizados, acessíveis\ne seguros 24h/24.",
+    "doc_id": "Documento de identidade",
+    "doc_plan": "Plano de financiamento",
+    "doc_statuts": "Estatutos da sociedade",
+    "doc_rib": "Dados bancários",
+    "status_done": "Validado",
+    "status_pending": "Pendente",
+    "secure_badge": "Encriptação de ponta a ponta — os seus dados estão protegidos"
+  },
+  "scene5": {
+    "label": "Modelo de sucesso",
+    "title_1": "Paga",
+    "title_2": "apenas se o seu",
+    "title_3": "processo for",
+    "title_accent": "aceite",
+    "desc": "Taxa de instrução de 456 € IVA incl. — exigível\nsomente após decisão favorável.",
+    "banner_title": "Notificação de atribuição",
+    "banner_sub": "O seu processo foi aceite",
+    "fee_label": "Taxa de instrução",
+    "payment_title": "Pagamento seguro",
+    "payment_methods": "Cartão bancário · Transferência · Cheque",
+    "grant_label": "Subsídio obtido"
+  },
+  "scene6": {
+    "tagline": "O seu parceiro para financiamentos públicos não reembolsáveis"
+  },
+  "video": {
+    "enable_audio": "Ativar som",
+    "click_audio": "Clique para ativar o som",
+    "loop_on": "Loop de cena: ativado",
+    "loop_off": "Loop de cena: desativado",
+    "narration_on": "Ativar narração",
+    "narration_off": "Silenciar narração",
+    "show_controls": "Mostrar controlos",
+    "hide_controls": "Ocultar controlos",
+    "jump_to_scene": "Ir para a cena {{n}}"
+  }
+}

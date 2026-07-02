@@ -1,0 +1,22 @@
+Questions importantes, est-ce que de simple particulier peuvent postuler pour un financement non remboursable? 
+Et si oui, alors quels sont les conditions à remplir?  
+
+- En parrallele, ajoute un vrai logo pour le site et créé également le favicon ( image qui se situe en haut dans l'onglet au dessus de la barre d'adresse du navigateur et également disponible dans google et bing suite au recherches).
+
+
+Il faut que les utilisateurs sachent que nous n'avons pas de canal télégram, de compte facebook et que toutes les demandes sont traitées ici sur la plateforme. Capsubvention ne vous demandera jamais de transférer les fonds reçus sur un autre compte pour des raisons ( évoques les raisons des escrocs). 
+Aucun de nos agents, conseillers etc. ( tu cites tout ceux qui sont nécessaires) ne leur contactera jamais pour demander leurs informations de compte. ENRICHIR LE TEXTE pour faire comprendre à tout les utilisateurs que toute tentative de ce genre est une escroquerie. 
+L'objectif sensibilisé. Réécrit le message et affiche le sur la page d'accueil et partout ou tu le juges nécessaire de façon professionnel et bien visible. Peut-être lorsque la page s'affiche pour la première fois sur un support ordinateur ou mobile. Tout ceci n'est que Suggestion.
+
+ Je te laisse faire le meilleur choix pour le message de sensibilisation en tant que professionnel de la programmation et webmaster - designer.
+
+
+ Améliore le SEO pour qu'il soit robuste et parfait avec des mots clés faisant passer le site à coup sur en tête de liste dans les recherches). NB: Toute référence à FinanceDom, ou mauvaise redirection entre pages, ou encore omission doit être corrigé. ANALYSE DE FACON OBJECTIVE LE SITE ET DIS MOI CE QUI MANQUE. 
+
+EST-CE QU'EN TANT QU'UTILISATEUR, CE SITE TE SEMBLE ATTIRANT ET SURTOUT SON CONTENU EST-IL A LA HAUTEUR DU SERVICE OFFERT?
+
+En Passant, ajoute aussi un bouton WhatsApp Flottant sur le site. 
+Avant de le faire, dis moi si c'est justifié et adapté pour ce type de site. 
+
+
+Aussi est-ce qu'il est possible de créer et d'ajouter une apk et l'ajouter sur ce site tout en utilisant la version render gratuit avec un cron job render integré et vercel comme front-end?

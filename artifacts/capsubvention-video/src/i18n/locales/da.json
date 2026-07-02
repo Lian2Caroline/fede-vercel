@@ -1,0 +1,64 @@
+{
+  "scene1": {
+    "label": "Problemet",
+    "title": "Få tilskud\ni oversøiske territorier",
+    "desc": "En kompleks proces, tidskrævende procedurer,\nansøgninger afvist på grund af mangel på støtte."
+  },
+  "scene2": {
+    "tagline": "Den officielle 100% digitale platform\ntil adgang til ikke-tilbagebetalingspligtige tilskud"
+  },
+  "scene3": {
+    "label": "Ansøgningssporing",
+    "title": "Spor din\nansøgning\ni realtid",
+    "desc": "Din dedikerede rådgiver\nholdes dig informeret ved hvert trin.",
+    "notif_title": "Statusopdatering",
+    "notif_body": "Din ansøgning er under behandling — 30 dage tilbage",
+    "status_submitted": "Ansøgning indsendt",
+    "status_eligible": "Berettigelse verificeret",
+    "status_processing": "Under behandling",
+    "status_awaiting": "Afgørelse afventes",
+    "status_notified": "Tildeling meddelt",
+    "active_badge": "I gang"
+  },
+  "scene4": {
+    "header": "Dokumentation",
+    "label": "Dokumentrum",
+    "title": "Upload dine\ndokumenter\nsikkert",
+    "desc": "Alle dine dokumenter\ncentraliserede, tilgængelige\nog sikret 24/7.",
+    "doc_id": "Identitetsdokument",
+    "doc_plan": "Finansieringsplan",
+    "doc_statuts": "Selskabsvedtægter",
+    "doc_rib": "Bankoplysninger",
+    "status_done": "Valideret",
+    "status_pending": "Afventer",
+    "secure_badge": "End-to-end kryptering — dine data er beskyttet"
+  },
+  "scene5": {
+    "label": "Succesmodel",
+    "title_1": "Du betaler",
+    "title_2": "kun hvis din",
+    "title_3": "ansøgning",
+    "title_accent": "godkendes",
+    "desc": "Sagsbehandlingsgebyr på 456 € inkl. moms — forfalder\nkun ved en positiv afgørelse.",
+    "banner_title": "Tildelingsmeddelelse",
+    "banner_sub": "Din ansøgning er blevet godkendt",
+    "fee_label": "Sagsbehandlingsgebyr",
+    "payment_title": "Sikker betaling",
+    "payment_methods": "Bankkort · Overførsel · Check",
+    "grant_label": "Tilskud modtaget"
+  },
+  "scene6": {
+    "tagline": "Din partner til ikke-tilbagebetalingspligtig offentlig finansiering"
+  },
+  "video": {
+    "enable_audio": "Aktiver lyd",
+    "click_audio": "Klik for at aktivere lyd",
+    "loop_on": "Gentag scene: til",
+    "loop_off": "Gentag scene: fra",
+    "narration_on": "Aktiver fortælling",
+    "narration_off": "Slå fortælling fra",
+    "show_controls": "Vis kontrolelementer",
+    "hide_controls": "Skjul kontrolelementer",
+    "jump_to_scene": "Hop til scene {{n}}"
+  }
+}

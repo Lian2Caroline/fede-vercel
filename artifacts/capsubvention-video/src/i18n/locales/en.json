@@ -1,0 +1,64 @@
+{
+  "scene1": {
+    "label": "The problem",
+    "title": "Accessing Grants\nin Overseas Territories",
+    "desc": "A complex process, time-consuming procedures,\napplications rejected for lack of support."
+  },
+  "scene2": {
+    "tagline": "The 100% digital official platform\nfor accessing non-reimbursable grants"
+  },
+  "scene3": {
+    "label": "Application tracking",
+    "title": "Track your\napplication\nin real time",
+    "desc": "Your dedicated advisor\nkeeps you informed at every step.",
+    "notif_title": "Status update",
+    "notif_body": "Your application is under review — 30 days remaining",
+    "status_submitted": "Application submitted",
+    "status_eligible": "Eligibility verified",
+    "status_processing": "Under review",
+    "status_awaiting": "Decision pending",
+    "status_notified": "Award notified",
+    "active_badge": "In progress"
+  },
+  "scene4": {
+    "header": "Supporting documents",
+    "label": "Document space",
+    "title": "Upload your\ndocuments\nsecurely",
+    "desc": "All your documents\ncentralized, accessible\nand secured 24/7.",
+    "doc_id": "Identity document",
+    "doc_plan": "Financing plan",
+    "doc_statuts": "Company articles",
+    "doc_rib": "Bank account details",
+    "status_done": "Validated",
+    "status_pending": "Pending",
+    "secure_badge": "End-to-end encryption — your data is protected"
+  },
+  "scene5": {
+    "label": "Success-based model",
+    "title_1": "You pay",
+    "title_2": "only if your",
+    "title_3": "application is",
+    "title_accent": "accepted",
+    "desc": "Processing fee of €456 incl. tax — due\nonly after a favorable decision.",
+    "banner_title": "Award notification",
+    "banner_sub": "Your application has been accepted",
+    "fee_label": "Processing fee",
+    "payment_title": "Secure payment",
+    "payment_methods": "Credit card · Transfer · Cheque",
+    "grant_label": "Grant obtained"
+  },
+  "scene6": {
+    "tagline": "Your partner for non-reimbursable public funding"
+  },
+  "video": {
+    "enable_audio": "Enable sound",
+    "click_audio": "Click to enable sound",
+    "loop_on": "Loop scene: on",
+    "loop_off": "Loop scene: off",
+    "narration_on": "Enable narration",
+    "narration_off": "Mute narration",
+    "show_controls": "Show controls",
+    "hide_controls": "Hide controls",
+    "jump_to_scene": "Jump to scene {{n}}"
+  }
+}

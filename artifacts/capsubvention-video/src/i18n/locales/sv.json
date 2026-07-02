@@ -1,0 +1,64 @@
+{
+  "scene1": {
+    "label": "Problemet",
+    "title": "Erhålla bidrag\ni utomeuropeiska territorier",
+    "desc": "En komplex process, tidskrävande procedurer,\nansökningar som avvisas på grund av brist på stöd."
+  },
+  "scene2": {
+    "tagline": "Den officiella 100% digitala plattformen\nför att få icke-återbetalningsbara bidrag"
+  },
+  "scene3": {
+    "label": "Ansökningsspårning",
+    "title": "Spåra din\nansökan\ni realtid",
+    "desc": "Din dedikerade rådgivare\ninformerar dig vid varje steg.",
+    "notif_title": "Statusuppdatering",
+    "notif_body": "Din ansökan granskas — 30 dagar kvar",
+    "status_submitted": "Ansökan inlämnad",
+    "status_eligible": "Behörighet verifierad",
+    "status_processing": "Under granskning",
+    "status_awaiting": "Beslut väntar",
+    "status_notified": "Tilldelning meddelad",
+    "active_badge": "Pågår"
+  },
+  "scene4": {
+    "header": "Styrkande handlingar",
+    "label": "Dokumentutrymme",
+    "title": "Ladda upp dina\nhandlingar\nsäkert",
+    "desc": "Alla dina dokument\ncentraliserade, tillgängliga\noch säkrade 24/7.",
+    "doc_id": "Identitetshandling",
+    "doc_plan": "Finansieringsplan",
+    "doc_statuts": "Bolagsordning",
+    "doc_rib": "Bankuppgifter",
+    "status_done": "Validerat",
+    "status_pending": "Väntar",
+    "secure_badge": "End-to-end-kryptering — dina uppgifter är skyddade"
+  },
+  "scene5": {
+    "label": "Framgångsmodell",
+    "title_1": "Du betalar",
+    "title_2": "bara om din",
+    "title_3": "ansökan",
+    "title_accent": "godkänns",
+    "desc": "Handläggningsavgift på 456 € inkl. moms — förfaller\nendast vid ett positivt beslut.",
+    "banner_title": "Tilldelningsavisering",
+    "banner_sub": "Din ansökan har godkänts",
+    "fee_label": "Handläggningsavgift",
+    "payment_title": "Säker betalning",
+    "payment_methods": "Bankkort · Överföring · Check",
+    "grant_label": "Bidrag erhållet"
+  },
+  "scene6": {
+    "tagline": "Din partner för icke-återbetalningsbar offentlig finansiering"
+  },
+  "video": {
+    "enable_audio": "Aktivera ljud",
+    "click_audio": "Klicka för att aktivera ljud",
+    "loop_on": "Loopar scen: på",
+    "loop_off": "Loopar scen: av",
+    "narration_on": "Aktivera berättarröst",
+    "narration_off": "Stäng av berättarröst",
+    "show_controls": "Visa kontroller",
+    "hide_controls": "Dölj kontroller",
+    "jump_to_scene": "Hoppa till scen {{n}}"
+  }
+}

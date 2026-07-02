@@ -1,0 +1,64 @@
+{
+  "scene1": {
+    "label": "El problema",
+    "title": "Obtener subvenciones\nen territorios de ultramar",
+    "desc": "Un proceso complejo, trámites costosos,\nsolicitudes rechazadas por falta de acompañamiento."
+  },
+  "scene2": {
+    "tagline": "La plataforma oficial 100% digital\npara acceder a las subvenciones no reembolsables"
+  },
+  "scene3": {
+    "label": "Seguimiento del expediente",
+    "title": "Siga su\nexpediente\nen tiempo real",
+    "desc": "Su asesor dedicado\nle informa en cada etapa.",
+    "notif_title": "Actualización de estado",
+    "notif_body": "Su expediente está en instrucción — 30 días restantes",
+    "status_submitted": "Expediente presentado",
+    "status_eligible": "Elegibilidad verificada",
+    "status_processing": "En instrucción",
+    "status_awaiting": "Decisión pendiente",
+    "status_notified": "Atribución notificada",
+    "active_badge": "En curso"
+  },
+  "scene4": {
+    "header": "Documentación justificativa",
+    "label": "Espacio de documentos",
+    "title": "Suba sus\njustificantes\nde forma segura",
+    "desc": "Todos sus documentos\ncentralizados, accesibles\ny protegidos 24h/24.",
+    "doc_id": "Documento de identidad",
+    "doc_plan": "Plan de financiación",
+    "doc_statuts": "Estatutos de la sociedad",
+    "doc_rib": "Datos bancarios",
+    "status_done": "Validado",
+    "status_pending": "Pendiente",
+    "secure_badge": "Cifrado de extremo a extremo — sus datos están protegidos"
+  },
+  "scene5": {
+    "label": "Modelo de éxito",
+    "title_1": "Paga",
+    "title_2": "solo si su",
+    "title_3": "expediente es",
+    "title_accent": "aceptado",
+    "desc": "Honorarios de instrucción de 456 € IVA incl. — exigibles\nsolo tras decisión favorable.",
+    "banner_title": "Notificación de atribución",
+    "banner_sub": "Su expediente ha sido aceptado",
+    "fee_label": "Honorarios de instrucción",
+    "payment_title": "Pago seguro",
+    "payment_methods": "Tarjeta bancaria · Transferencia · Cheque",
+    "grant_label": "Subvención obtenida"
+  },
+  "scene6": {
+    "tagline": "Su socio para la financiación pública no reembolsable"
+  },
+  "video": {
+    "enable_audio": "Activar sonido",
+    "click_audio": "Haga clic para activar el sonido",
+    "loop_on": "Bucle de escena: activado",
+    "loop_off": "Bucle de escena: desactivado",
+    "narration_on": "Activar narración",
+    "narration_off": "Silenciar narración",
+    "show_controls": "Mostrar controles",
+    "hide_controls": "Ocultar controles",
+    "jump_to_scene": "Ir a la escena {{n}}"
+  }
+}

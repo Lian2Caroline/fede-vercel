@@ -1,0 +1,64 @@
+{
+  "scene1": {
+    "label": "Problema",
+    "title": "Gauti dotacijas\nužjūrio teritorijose",
+    "desc": "Sudėtingas procesas, daug laiko reikalaujančios procedūros,\nparaiškos atmestos dėl paramos trūkumo."
+  },
+  "scene2": {
+    "tagline": "Oficiali 100% skaitmeninė platforma\nnegrąžintinoms dotacijoms gauti"
+  },
+  "scene3": {
+    "label": "Paraiškos stebėjimas",
+    "title": "Stebėkite\nsavo paraišką\nrealiuoju laiku",
+    "desc": "Jūsų paskirtas konsultantas\ninformuoja kiekviename etape.",
+    "notif_title": "Statuso atnaujinimas",
+    "notif_body": "Jūsų paraiška nagrinėjama — liko 30 dienų",
+    "status_submitted": "Paraiška pateikta",
+    "status_eligible": "Tinkamumas patikrintas",
+    "status_processing": "Nagrinėjama",
+    "status_awaiting": "Sprendimas laukiamas",
+    "status_notified": "Skyrimas praneštas",
+    "active_badge": "Vykdoma"
+  },
+  "scene4": {
+    "header": "Patvirtinamieji dokumentai",
+    "label": "Dokumentų erdvė",
+    "title": "Įkelkite savo\ndokumentus\nsaugiai",
+    "desc": "Visi jūsų dokumentai\ncentralizuoti, prieinami\nir apsaugoti 24/7.",
+    "doc_id": "Asmens dokumentas",
+    "doc_plan": "Finansavimo planas",
+    "doc_statuts": "Įmonės įstatai",
+    "doc_rib": "Banko rekvizitai",
+    "status_done": "Patvirtinta",
+    "status_pending": "Laukiama",
+    "secure_badge": "Nuo galo iki galo šifravimas — jūsų duomenys apsaugoti"
+  },
+  "scene5": {
+    "label": "Sėkmės modelis",
+    "title_1": "Mokate",
+    "title_2": "tik jei jūsų",
+    "title_3": "paraiška",
+    "title_accent": "patvirtinta",
+    "desc": "Nagrinėjimo mokestis 456 € su PVM — mokamas\ntik po palankaus sprendimo.",
+    "banner_title": "Pranešimas apie skyrimą",
+    "banner_sub": "Jūsų paraiška priimta",
+    "fee_label": "Nagrinėjimo mokestis",
+    "payment_title": "Saugus mokėjimas",
+    "payment_methods": "Banko kortele · Pavedimu · Čekiu",
+    "grant_label": "Dotacija gauta"
+  },
+  "scene6": {
+    "tagline": "Jūsų partneris negrąžintiniam viešajam finansavimui"
+  },
+  "video": {
+    "enable_audio": "Įjungti garsą",
+    "click_audio": "Spustelėkite, norėdami įjungti garsą",
+    "loop_on": "Scenos kartojimas: įjungtas",
+    "loop_off": "Scenos kartojimas: išjungtas",
+    "narration_on": "Įjungti pasakojimą",
+    "narration_off": "Nutildyti pasakojimą",
+    "show_controls": "Rodyti valdiklius",
+    "hide_controls": "Slėpti valdiklius",
+    "jump_to_scene": "Šokinėkite į sceną {{n}}"
+  }
+}

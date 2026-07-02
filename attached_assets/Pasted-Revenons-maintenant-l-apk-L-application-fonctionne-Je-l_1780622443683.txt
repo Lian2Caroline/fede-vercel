@@ -1,0 +1,16 @@
+Revenons maintenant à l'apk. 
+L'application fonctionne. Je l'ai même installé sur mon tel mobile et ça marche. Mais il y a quelques erreurs a corriger. La premiere: 
+- Il n'y a pas de bouton qui envoie les documents. 
+- Il n'y a pas de document qui soit jugé obligatoire, donc l'utilisateur ne sait pas exactement quel document.
+- Aucun mail n'est reçu par l'admin contenant concernant la demande faite depuis l'application. 
+- Dans l'espace admin, les pieces/documents chargé depuis l'application sont tout de meme dispo pour soit etre accepté ou rejeter. 
+- La messagerie n'affiche pas de compteur de message pour notifier l'utilisateur de message non lu. 
+- Aucune notification dans l'application quand l'admin commence a suivre le workflow. En clair, lorsque les document sont dispo ( accusé de reception, rapport d'eligibilité, fiche de renseignement et autres)
+- En essayant de telecharger les documents ( accusé de reception, rapport d'eligibilité, etc... depuis le navigateur, cela ouvre le navigateur avec le message ( voir capture). Le lien qui ouvert dans le navigateur est: api.capsubvention.com/api/dossiers/…..
+
+- J'ai testé jusqu'au transfert et les fonds sont dispo dans le menu FRAIS de l'application. J'ai pu entrer les donnés et initialiser le transfert. Le premier code a été envoyé a l'adresse email, et je l'ai inseré avec succès. Normalement a partir de là, le second code et tout les autres devrait provenir de l'admin, mais ce n'est pas le cas. Ici, il dit qu'un autre code a été envoyé a mon mail, code qui n'a d'ailleurs jamais été reçu. Il y a donc un incoherence à ce niveau en comparaison avec la version web. 
+
+Tu as ici la capture de tout les messages qui se sont affiché automatiquement dans la messagerie. Verifie la coherence avec les messages de la version web. 
+
+
+Je suis conscient que ça fait beaucoup d'un coup. Donc nous allons traiter les sujets les uns apres les autres avec une totale coherence. A chaque fois analyse, compare et expose les corrections que tu comptes apportés. N'oublie pas. Actuellement, pour faire un test de l'application, il faudra le recompiler entierement depuis expo.dev. Donc il est essentiel d'eviter les erreurs et faire les corrections proprement. 
