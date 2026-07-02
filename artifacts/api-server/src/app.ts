@@ -19,6 +19,21 @@ if (process.env.NODE_ENV === "production" && !allowedOrigin) {
   console.error("[FATAL] CORS_ORIGIN is not set in production — CORS will be open. Set this variable in Vercel.");
 }
 
+// Accepte les deux variantes www / sans-www automatiquement
+function buildAllowedOrigins(base: string | undefined): string[] | null {
+  if (!base) return null;
+  const origins = new Set([base]);
+  // Ajoute la variante www ↔ non-www
+  if (base.startsWith("https://www.")) {
+    origins.add(base.replace("https://www.", "https://"));
+  } else if (base.startsWith("https://")) {
+    origins.add(base.replace("https://", "https://www."));
+  }
+  return [...origins];
+}
+
+const allowedOrigins = buildAllowedOrigins(allowedOrigin);
+
 // ── Sécurité ─────────────────────────────────────────────────────────────────
 app.use(
   helmet({
@@ -38,9 +53,9 @@ app.use(globalRateLimit);
 
 app.use(
   cors({
-    origin: allowedOrigin
+    origin: allowedOrigins
       ? (origin, cb) => {
-          if (!origin || origin === allowedOrigin) return cb(null, true);
+          if (!origin || allowedOrigins.includes(origin)) return cb(null, true);
           cb(new Error(`Origin ${origin} not allowed by CORS`));
         }
       : true,
