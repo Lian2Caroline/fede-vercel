@@ -1,3 +1,4 @@
+- [Cloudflare + Vercel setup](cloudflare-setup.md) — étapes complètes à faire après que le déploiement Vercel fonctionne ; code déjà préparé (trust proxy, headers)
 - [Email reduction plan](email-reduction.md) — 18 mails aujourd'hui, décision reportée à fin de projet ; rappel à faire
 - [Email i18n completion](email-i18n-completion.md) — toutes les strings email user-facing sont i18n'd ; admin emails restent hardcodés FR par décision
 - [Mobile responsive fixes](mobile-responsive.md) — patterns non-responsifs récurrents identifiés et corrigés ; règles à respecter
