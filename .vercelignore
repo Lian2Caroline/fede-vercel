@@ -3,9 +3,6 @@ artifacts/capsubvention-mobile/
 artifacts/capsubvention-video/
 artifacts/mockup-sandbox/
 
-# Long-running server entry (serverless uses api/index.ts + app.ts instead)
-artifacts/api-server/src/index.ts
-
 # Development/reference assets
 attached_assets/
 scripts/
