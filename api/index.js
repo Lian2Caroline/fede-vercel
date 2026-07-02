@@ -10,15 +10,18 @@ let initError = null;
 const initPromise = ensureSessionTable()
   .then(() =>
     seedCountriesIfEmpty().catch((err) => {
-      console.error("[init] Country seed failed — continuing:", err);
+      console.error("[init] Country seed failed:", err?.message ?? err);
+      console.error("[init] Stack:", err?.stack);
     }),
   )
   .then(() => {
     initDone = true;
+    console.log("[init] Startup complete");
   })
   .catch((err) => {
     initError = err;
-    console.error("[init] Startup failed:", err);
+    console.error("[init] Fatal startup error:", err?.message ?? err);
+    console.error("[init] Stack:", err?.stack);
   });
 
 export default async function handler(req, res) {

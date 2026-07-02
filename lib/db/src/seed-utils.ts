@@ -331,36 +331,31 @@ export async function seedCountriesIfEmpty(): Promise<void> {
   const existing = await db.select().from(countriesTable).limit(1);
   if (existing.length > 0) return;
 
-  console.log("🌍 Seeding countries and programs...");
+  console.log("[seed] Countries table empty — seeding...");
 
-  for (const country of COUNTRIES) {
-    await db
-      .insert(countriesTable)
-      .values({
-        code: country.code,
-        name: country.name,
-        currency: country.currency,
-        isEu: country.isEu,
-        isActive: true,
-        sortOrder: country.sortOrder,
-      })
-      .onConflictDoNothing();
+  const countryRows = COUNTRIES.map((c) => ({
+    code: c.code,
+    name: c.name,
+    currency: c.currency,
+    isEu: c.isEu,
+    isActive: true as const,
+    sortOrder: c.sortOrder,
+  }));
 
-    for (const program of country.programs) {
-      await db
-        .insert(programsTable)
-        .values({
-          countryCode: country.code,
-          name: program.name,
-          type: program.type,
-          description: program.description,
-          maxAmountEur: program.maxAmountEur,
-          isActive: true,
-          sortOrder: program.sortOrder,
-        })
-        .onConflictDoNothing();
-    }
-  }
+  const programRows = COUNTRIES.flatMap((c) =>
+    c.programs.map((p) => ({
+      countryCode: c.code,
+      name: p.name,
+      type: p.type,
+      description: p.description,
+      maxAmountEur: p.maxAmountEur,
+      isActive: true as const,
+      sortOrder: p.sortOrder,
+    }))
+  );
 
-  console.log(`✅ Seeded ${COUNTRIES.length} countries and ${COUNTRIES.reduce((a, c) => a + c.programs.length, 0)} programs`);
+  await db.insert(countriesTable).values(countryRows).onConflictDoNothing();
+  await db.insert(programsTable).values(programRows).onConflictDoNothing();
+
+  console.log(`[seed] Done — ${countryRows.length} countries, ${programRows.length} programs`);
 }
