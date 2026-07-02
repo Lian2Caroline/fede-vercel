@@ -6,6 +6,7 @@ import { useTranslation } from "react-i18next";
 import { LanguageSelector } from "@/components/LanguageSelector";
 import { useCountries } from "@/hooks/use-countries";
 import { CSLogo } from "@/components/CSLogo";
+import { Turnstile } from "@marsidev/react-turnstile";
 
 const TYPE_KEYS = [
   "type_entrepreneur",
@@ -145,7 +146,11 @@ export default function Register() {
   const [form, setForm] = useState({ prenom: "", nom: "", email: "", tel: "", territoire: "", type: "", org: "", pwd: "", confirm: "", cgu: false });
   const [show, setShow] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [turnstileToken, setTurnstileToken] = useState<string>("");
   const { register } = useAuth();
+
+  const siteKey = (import.meta.env.VITE_TURNSTILE_SITE_KEY as string | undefined) || "1x00000000000000000000AA";
+  const captchaRequired = !!import.meta.env.VITE_TURNSTILE_SITE_KEY;
 
   const up = (k: string, v: string | boolean) => setForm(f => ({ ...f, [k]: v }));
 
@@ -153,6 +158,7 @@ export default function Register() {
     if (!form.prenom || !form.nom || !form.email || !form.territoire || !form.type || !form.pwd) return;
     if (form.pwd !== form.confirm) return;
     if (!form.cgu) return;
+    if (captchaRequired && !turnstileToken) return;
     setLoading(true);
     try {
       await register({
@@ -163,7 +169,8 @@ export default function Register() {
         telephone: form.tel,
         territoire: form.territoire,
         typePorteur: form.type,
-        organisation: form.org
+        organisation: form.org,
+        turnstileToken: turnstileToken || undefined,
       });
     } catch (err) {
     } finally {
@@ -315,11 +322,20 @@ export default function Register() {
                   <span className="text-xs sm:text-sm text-[#5B6580] leading-relaxed">{t("register.cgu")}</span>
                 </label>
               </div>
+              <div className="flex justify-center">
+                <Turnstile
+                  siteKey={siteKey}
+                  onSuccess={setTurnstileToken}
+                  onError={() => setTurnstileToken("")}
+                  onExpire={() => setTurnstileToken("")}
+                  options={{ theme: "light", size: "normal" }}
+                />
+              </div>
               <div className="flex gap-2 sm:gap-3">
                 <button onClick={() => setStep(2)} disabled={loading} className="flex-1 border border-[#DDE2EC] text-[#4B5574] font-semibold py-2.5 sm:py-3 rounded-xl text-xs sm:text-sm hover:bg-[#F1F4FA] disabled:opacity-50 transition-all">{t("register.back_step")}</button>
                 <button
                   onClick={handleSubmit}
-                  disabled={loading || !form.pwd || form.pwd !== form.confirm || !form.cgu}
+                  disabled={loading || !form.pwd || form.pwd !== form.confirm || !form.cgu || (captchaRequired && !turnstileToken)}
                   className="flex-[2] bg-[#FFD500] hover:bg-[#FFC900] disabled:bg-[#DDE2EC] disabled:text-[#A0AABF] text-[#0A1628] font-bold py-2.5 sm:py-3 rounded-xl transition-all text-xs sm:text-sm shadow-md hover:shadow-lg active:scale-[0.98]"
                 >
                   {loading ? t("register.creating") : t("register.create")}

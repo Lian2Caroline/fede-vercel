@@ -15,4 +15,5 @@ export interface RegisterBody {
   territoire: string;
   typePorteur: string;
   organisation?: string;
+  turnstileToken?: string;
 }

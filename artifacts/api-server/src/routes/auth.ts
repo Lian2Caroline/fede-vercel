@@ -11,6 +11,22 @@ import { authRateLimit, otpRateLimit } from "../lib/security";
 import { territoireToLang } from "../lib/i18n";
 import crypto from "crypto";
 
+async function verifyTurnstile(token: string): Promise<boolean> {
+  const secret = process.env.TURNSTILE_SECRET_KEY;
+  if (!secret) return true;
+  try {
+    const resp = await fetch("https://challenges.cloudflare.com/turnstile/v0/siteverify", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ secret, response: token }),
+    });
+    const data = await resp.json() as { success: boolean };
+    return data.success === true;
+  } catch {
+    return false;
+  }
+}
+
 // Persists lastLoginIp/Country/At for a user. Tolerant: failure of geo lookup
 // must never block login (we still write IP + timestamp).
 async function persistLoginLocation(userId: number, ip: string, mobileToken: string): Promise<void> {
@@ -142,8 +158,20 @@ router.post("/auth/register", authRateLimit, async (req, res): Promise<void> => 
     return;
   }
 
-  const { prenom, nom, email, password, telephone, territoire, typePorteur, organisation } = parsed.data;
+  const { prenom, nom, email, password, telephone, territoire, typePorteur, organisation, turnstileToken } = parsed.data;
   const clientIp = getClientIp(req);
+
+  if (process.env.TURNSTILE_SECRET_KEY) {
+    if (!turnstileToken) {
+      res.status(400).json({ error: "Vérification CAPTCHA requise." });
+      return;
+    }
+    const valid = await verifyTurnstile(turnstileToken);
+    if (!valid) {
+      res.status(400).json({ error: "Vérification CAPTCHA échouée. Veuillez réessayer." });
+      return;
+    }
+  }
 
   const [existing] = await db.select().from(usersTable).where(eq(usersTable.email, email));
   if (existing) {

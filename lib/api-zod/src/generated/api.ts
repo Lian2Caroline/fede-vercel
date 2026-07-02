@@ -23,6 +23,7 @@ export const RegisterBody = zod.object({
   territoire: zod.string(),
   typePorteur: zod.string(),
   organisation: zod.string().optional(),
+  turnstileToken: zod.string().optional(),
 });
 
 export const LoginBody = zod.object({
