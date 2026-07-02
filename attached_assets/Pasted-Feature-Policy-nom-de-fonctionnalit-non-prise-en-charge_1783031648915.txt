@@ -1,0 +1,35 @@
+Feature Policy : nom de fonctionnalité non prise en charge ignoré « cross-origin-isolated ». api.js:1:51401
+Feature Policy : nom de fonctionnalité non prise en charge ignoré « autoplay ». api.js:1:51401
+Feature Policy : nom de fonctionnalité non prise en charge ignoré « keyboard-map ». api.js:1:51401
+Feature Policy : nom de fonctionnalité non prise en charge ignoré « xr-spatial-tracking ». api.js:1:51401
+Feature Policy : nom de fonctionnalité non prise en charge ignoré « cross-origin-isolated ». api.js:1:51439
+Feature Policy : nom de fonctionnalité non prise en charge ignoré « autoplay ». api.js:1:51439
+Feature Policy : nom de fonctionnalité non prise en charge ignoré « keyboard-map ». api.js:1:51439
+Feature Policy : nom de fonctionnalité non prise en charge ignoré « xr-spatial-tracking ». api.js:1:51439
+Feature Policy : nom de fonctionnalité non prise en charge ignoré « cross-origin-isolated ». api.js:1:51687
+Feature Policy : nom de fonctionnalité non prise en charge ignoré « autoplay ». api.js:1:51687
+Feature Policy : nom de fonctionnalité non prise en charge ignoré « keyboard-map ». api.js:1:51687
+Feature Policy : nom de fonctionnalité non prise en charge ignoré « xr-spatial-tracking ». api.js:1:51687
+Un accès partitionné à un cookie ou au stockage a été fourni à « https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/turnstile/f/av0/rch/e7n4q/0x4AAAAAADuqXjOKAGYeUi2M/light/fbE/new/normal?lang=auto » car il est chargé dans le contexte tiers et le partitionnement d’état dynamique est activé. normal:1:102535
+La ressource à l’adresse « https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/cmg/1 » préchargée avec le préchargement de lien n’a pas été utilisée après quelques secondes. Assurez-vous que tous les attributs de la balise de préchargement sont définis correctement. normal
+[Cloudflare Turnstile] Error: 300010. api.js:1:11425
+Feature Policy : nom de fonctionnalité non prise en charge ignoré « cross-origin-isolated ». api.js:1:44857
+Feature Policy : nom de fonctionnalité non prise en charge ignoré « autoplay ». api.js:1:44857
+Feature Policy : nom de fonctionnalité non prise en charge ignoré « keyboard-map ». api.js:1:44857
+Feature Policy : nom de fonctionnalité non prise en charge ignoré « xr-spatial-tracking ». api.js:1:44857
+Feature Policy : nom de fonctionnalité non prise en charge ignoré « cross-origin-isolated ». api.js:1:44857
+Feature Policy : nom de fonctionnalité non prise en charge ignoré « autoplay ». api.js:1:44857
+Feature Policy : nom de fonctionnalité non prise en charge ignoré « keyboard-map ». api.js:1:44857
+Feature Policy : nom de fonctionnalité non prise en charge ignoré « xr-spatial-tracking ». api.js:1:44857
+Feature Policy : nom de fonctionnalité non prise en charge ignoré « cross-origin-isolated ». api.js:1:45057
+Feature Policy : nom de fonctionnalité non prise en charge ignoré « autoplay ». api.js:1:45057
+Feature Policy : nom de fonctionnalité non prise en charge ignoré « keyboard-map ». api.js:1:45057
+Feature Policy : nom de fonctionnalité non prise en charge ignoré « xr-spatial-tracking ». api.js:1:45057
+Feature Policy : nom de fonctionnalité non prise en charge ignoré « cross-origin-isolated ». api.js:1:45133
+Feature Policy : nom de fonctionnalité non prise en charge ignoré « autoplay ». api.js:1:45133
+Feature Policy : nom de fonctionnalité non prise en charge ignoré « keyboard-map ». api.js:1:45133
+Feature Policy : nom de fonctionnalité non prise en charge ignoré « xr-spatial-tracking ». api.js:1:45133
+Impossible d’exécuter « postMessage » sur « DOMWindow » : l’origine cible fournie (« https://challenges.cloudflare.com ») ne correspond pas à l’origine de la fenêtre du destinataire (« https://www.fede-financement.com »). register
+La ressource à l’adresse « https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/cmg/1 » préchargée avec le préchargement de lien n’a pas été utilisée après quelques secondes. Assurez-vous que tous les attributs de la balise de préchargement sont définis correctement. normal
+Un accès partitionné à un cookie ou au stockage a été fourni à « https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/turnstile/f/av0/rchP0rOAaHRACTGAekdON0mXzDq.1VN5Roetxfbpl6WLRk-1783031541-1.3.1.1-2dANrQkvsleDfMgczCLkfLogEkaTdMNNrfoIeNUo530/e7n4q/0x4AAAAAADuqXjOKAGYeUi2M/light/fbE/failure_retry/normal?lang=auto » car il est chargé dans le contexte tiers et le partitionnement d’état dynamique est activé. normal:1:216029
+[Cloudflare Turnstile] Error: 300010.
