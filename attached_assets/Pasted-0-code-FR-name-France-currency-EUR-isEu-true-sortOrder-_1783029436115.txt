@@ -1,0 +1,224 @@
+0	
+code	"FR"
+name	"France"
+currency	"EUR"
+isEu	true
+sortOrder	1
+programCount	5
+1	
+code	"ES"
+name	"Espagne"
+currency	"EUR"
+isEu	true
+sortOrder	2
+programCount	5
+2	
+code	"IT"
+name	"Italie"
+currency	"EUR"
+isEu	true
+sortOrder	3
+programCount	5
+3	
+code	"DE"
+name	"Allemagne"
+currency	"EUR"
+isEu	true
+sortOrder	4
+programCount	5
+4	
+code	"PT"
+name	"Portugal"
+currency	"EUR"
+isEu	true
+sortOrder	5
+programCount	5
+5	
+code	"NL"
+name	"Pays-Bas"
+currency	"EUR"
+isEu	true
+sortOrder	6
+programCount	5
+6	
+code	"BE"
+name	"Belgique"
+currency	"EUR"
+isEu	true
+sortOrder	7
+programCount	5
+7	
+code	"PL"
+name	"Pologne"
+currency	"PLN"
+isEu	true
+sortOrder	8
+programCount	5
+8	
+code	"RO"
+name	"Roumanie"
+currency	"RON"
+isEu	true
+sortOrder	9
+programCount	5
+9	
+code	"GR"
+name	"Grèce"
+currency	"EUR"
+isEu	true
+sortOrder	10
+programCount	5
+10	
+code	"HU"
+name	"Hongrie"
+currency	"HUF"
+isEu	true
+sortOrder	11
+programCount	5
+11	
+code	"SE"
+name	"Suède"
+currency	"SEK"
+isEu	true
+sortOrder	12
+programCount	5
+12	
+code	"DK"
+name	"Danemark"
+currency	"DKK"
+isEu	true
+sortOrder	13
+programCount	5
+13	
+code	"AT"
+name	"Autriche"
+currency	"EUR"
+isEu	true
+sortOrder	14
+programCount	5
+14	
+code	"FI"
+name	"Finlande"
+currency	"EUR"
+isEu	true
+sortOrder	15
+programCount	5
+15	
+code	"IE"
+name	"Irlande"
+currency	"EUR"
+isEu	true
+sortOrder	16
+programCount	5
+16	
+code	"SK"
+name	"Slovaquie"
+currency	"EUR"
+isEu	true
+sortOrder	17
+programCount	5
+17	
+code	"HR"
+name	"Croatie"
+currency	"EUR"
+isEu	true
+sortOrder	18
+programCount	5
+18	
+code	"LT"
+name	"Lituanie"
+currency	"EUR"
+isEu	true
+sortOrder	19
+programCount	5
+19	
+code	"BG"
+name	"Bulgarie"
+currency	"BGN"
+isEu	true
+sortOrder	20
+programCount	5
+20	
+code	"LV"
+name	"Lettonie"
+currency	"EUR"
+isEu	true
+sortOrder	21
+programCount	5
+21	
+code	"SI"
+name	"Slovénie"
+currency	"EUR"
+isEu	true
+sortOrder	22
+programCount	5
+22	
+code	"LU"
+name	"Luxembourg"
+currency	"EUR"
+isEu	true
+sortOrder	23
+programCount	5
+23	
+code	"EE"
+name	"Estonie"
+currency	"EUR"
+isEu	true
+sortOrder	24
+programCount	5
+24	
+code	"CY"
+name	"Chypre"
+currency	"EUR"
+isEu	true
+sortOrder	25
+programCount	5
+25	
+code	"MT"
+name	"Malte"
+currency	"EUR"
+isEu	true
+sortOrder	26
+programCount	5
+26	
+code	"CZ"
+name	"République tchèque"
+currency	"CZK"
+isEu	true
+sortOrder	27
+programCount	5
+27	
+code	"NC"
+name	"Nouvelle-Calédonie"
+currency	"XPF"
+isEu	false
+sortOrder	28
+programCount	5
+28	
+code	"MQ"
+name	"Martinique"
+currency	"EUR"
+isEu	false
+sortOrder	29
+programCount	5
+29	
+code	"PF"
+name	"Polynésie française"
+currency	"XPF"
+isEu	false
+sortOrder	30
+programCount	5
+30	
+code	"GP"
+name	"Guadeloupe"
+currency	"EUR"
+isEu	false
+sortOrder	31
+programCount	5
+31	
+code	"RE"
+name	"La Réunion"
+currency	"EUR"
+isEu	false
+sortOrder	32
+programCount	5
