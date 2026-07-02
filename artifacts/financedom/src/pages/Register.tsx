@@ -146,6 +146,7 @@ export default function Register() {
   const [form, setForm] = useState({ prenom: "", nom: "", email: "", tel: "", territoire: "", type: "", org: "", pwd: "", confirm: "", cgu: false });
   const [show, setShow] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [regError, setRegError] = useState("");
   const [turnstileToken, setTurnstileToken] = useState<string>("");
   const { register } = useAuth();
 
@@ -160,6 +161,7 @@ export default function Register() {
     if (!form.cgu) return;
     if (captchaRequired && !turnstileToken) return;
     setLoading(true);
+    setRegError("");
     try {
       await register({
         prenom: form.prenom,
@@ -172,7 +174,9 @@ export default function Register() {
         organisation: form.org,
         turnstileToken: turnstileToken || undefined,
       });
-    } catch (err) {
+    } catch (err: any) {
+      const msg = err?.data?.error ?? err?.message ?? t("login.error_default");
+      setRegError(msg);
     } finally {
       setLoading(false);
     }
@@ -331,6 +335,12 @@ export default function Register() {
                   options={{ theme: "light", size: "normal" }}
                 />
               </div>
+              {regError && (
+                <div className="flex items-start gap-2 bg-red-50 border border-red-200 rounded-xl px-3 py-2.5 text-sm text-red-700">
+                  <span className="shrink-0 mt-0.5">⚠</span>
+                  <span>{regError}</span>
+                </div>
+              )}
               <div className="flex gap-2 sm:gap-3">
                 <button onClick={() => setStep(2)} disabled={loading} className="flex-1 border border-[#DDE2EC] text-[#4B5574] font-semibold py-2.5 sm:py-3 rounded-xl text-xs sm:text-sm hover:bg-[#F1F4FA] disabled:opacity-50 transition-all">{t("register.back_step")}</button>
                 <button
