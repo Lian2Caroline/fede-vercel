@@ -14,4 +14,4 @@ Disallow: /*/apercu
 Disallow: /*/demo
 Disallow: /*/reset-password
 
-Sitemap: https://www.capsubvention.com/sitemap.xml
+Sitemap: https://www.fede-financement.com/sitemap.xml
