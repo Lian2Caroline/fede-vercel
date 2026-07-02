@@ -9,7 +9,9 @@ import { blockBots, globalRateLimit, securityHeaders } from "./lib/security";
 
 const app: Express = express();
 
-app.set("trust proxy", 1);
+// Production = Cloudflare → Vercel → Express (2 hops)
+// Development = Replit proxy → Express (1 hop)
+app.set("trust proxy", process.env.NODE_ENV === "production" ? 2 : 1);
 
 const allowedOrigin = process.env.CORS_ORIGIN;
 

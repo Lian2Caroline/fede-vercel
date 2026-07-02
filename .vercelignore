@@ -1,0 +1,25 @@
+# Mobile & video artifacts — not deployed to Vercel
+artifacts/capsubvention-mobile/
+artifacts/capsubvention-video/
+artifacts/mockup-sandbox/
+
+# Long-running server entry (serverless uses api/index.ts + app.ts instead)
+artifacts/api-server/src/index.ts
+
+# Development/reference assets
+attached_assets/
+scripts/
+
+# Agent memory & tooling state
+.agents/
+.local/
+.canvas/
+.migration-backup/
+
+# Replit-specific
+.replit
+.replitignore
+replit.nix
+
+# Mobile build config
+eas.json
