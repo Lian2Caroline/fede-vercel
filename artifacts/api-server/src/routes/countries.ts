@@ -45,7 +45,8 @@ router.get("/countries/:code/programs", async (req, res) => {
     .limit(1);
 
   if (country.length === 0) {
-    return res.status(404).json({ error: "Country not found" });
+    res.status(404).json({ error: "Country not found" });
+    return;
   }
 
   const programs = await db

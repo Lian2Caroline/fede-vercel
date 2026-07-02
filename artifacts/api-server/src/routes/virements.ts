@@ -130,7 +130,7 @@ router.post("/virements/initier", requireAuth, async (req, res): Promise<void> =
 // POST /api/virements/:id/valider-email — étape 1 : vérification d'identité + complétion immédiate
 router.post("/virements/:id/valider-email", requireAuth, async (req, res): Promise<void> => {
   const userId = req.session.userId!;
-  const virementId = parseInt(req.params.id);
+  const virementId = parseInt(String(req.params.id));
   const { code } = req.body;
 
   const [ulrE] = await db.select({ territoire: usersTable.territoire }).from(usersTable).where(eq(usersTable.id, userId));
@@ -179,7 +179,7 @@ router.post("/virements/:id/valider-email", requireAuth, async (req, res): Promi
 // POST /api/virements/:id/renvoyer-code-email — uniquement étape 1
 router.post("/virements/:id/renvoyer-code-email", requireAuth, async (req, res): Promise<void> => {
   const userId = req.session.userId!;
-  const virementId = parseInt(req.params.id);
+  const virementId = parseInt(String(req.params.id));
 
   const virement = await db.query.virementsTable.findFirst({
     where: and(eq(virementsTable.id, virementId), eq(virementsTable.userId, userId)),
@@ -221,7 +221,7 @@ router.post("/virements/:id/renvoyer-code-email", requireAuth, async (req, res):
 // POST /api/virements/:id/valider-financier — étapes 2, 3, 4 : valider le code envoyé par l'admin
 router.post("/virements/:id/valider-financier", requireAuth, async (req, res): Promise<void> => {
   const userId = req.session.userId!;
-  const virementId = parseInt(req.params.id);
+  const virementId = parseInt(String(req.params.id));
   const { code } = req.body;
 
   const [ulrF] = await db.select({ territoire: usersTable.territoire }).from(usersTable).where(eq(usersTable.id, userId));
@@ -297,7 +297,7 @@ router.post("/virements/:id/valider-financier", requireAuth, async (req, res): P
 // POST /api/virements/:id/annuler — uniquement si étape 1 non complétée
 router.post("/virements/:id/annuler", requireAuth, async (req, res): Promise<void> => {
   const userId = req.session.userId!;
-  const virementId = parseInt(req.params.id);
+  const virementId = parseInt(String(req.params.id));
 
   const virement = await db.query.virementsTable.findFirst({
     where: and(eq(virementsTable.id, virementId), eq(virementsTable.userId, userId)),

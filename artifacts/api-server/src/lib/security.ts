@@ -62,7 +62,7 @@ export const authRateLimit = rateLimit({
   standardHeaders: true,
   legacyHeaders: false,
   message: { error: "Trop de tentatives de connexion. Veuillez réessayer dans 15 minutes." },
-  keyGenerator: (req) => ipKeyGenerator(req),
+  keyGenerator: (req) => String(req.ip ?? req.socket?.remoteAddress ?? "unknown"),
   skip: (req) => req.ip === "127.0.0.1" || req.ip === "::1",
 });
 
@@ -73,7 +73,7 @@ export const otpRateLimit = rateLimit({
   standardHeaders: true,
   legacyHeaders: false,
   message: { error: "Trop de demandes de code. Veuillez patienter 1 heure." },
-  keyGenerator: (req) => ipKeyGenerator(req),
+  keyGenerator: (req) => String(req.ip ?? req.socket?.remoteAddress ?? "unknown"),
   skip: (req) => req.ip === "127.0.0.1" || req.ip === "::1",
 });
 

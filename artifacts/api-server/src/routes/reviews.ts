@@ -80,7 +80,7 @@ router.get("/admin/reviews", requireAdmin, async (_req, res): Promise<void> => {
 });
 
 router.patch("/admin/reviews/:id", requireAdmin, async (req, res): Promise<void> => {
-  const id = parseInt(req.params.id, 10);
+  const id = parseInt(String(req.params.id), 10);
   const { status, adminNote } = req.body;
 
   const allowed = ["pending", "approved", "rejected"];
@@ -107,7 +107,7 @@ router.patch("/admin/reviews/:id", requireAdmin, async (req, res): Promise<void>
 });
 
 router.delete("/admin/reviews/:id", requireAdmin, async (req, res): Promise<void> => {
-  const id = parseInt(req.params.id, 10);
+  const id = parseInt(String(req.params.id), 10);
   await db.delete(reviewsTable).where(eq(reviewsTable.id, id));
   res.json({ ok: true });
 });

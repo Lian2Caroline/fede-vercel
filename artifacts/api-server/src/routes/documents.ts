@@ -82,7 +82,7 @@ async function purgeExpired() {
 // ── GET: list documents for a dossier ─────────────────────────────────────────
 router.get("/dossiers/:id/documents", requireAuth, async (req, res): Promise<void> => {
   const userId = req.session.userId!;
-  const dossierId = parseInt(req.params.id, 10);
+  const dossierId = parseInt(String(req.params.id), 10);
 
   const [dossier] = await db
     .select()
@@ -122,7 +122,7 @@ router.post(
   uploadSingle("file"),
   async (req, res): Promise<void> => {
     const userId = req.session.userId!;
-    const dossierId = parseInt(req.params.id, 10);
+    const dossierId = parseInt(String(req.params.id), 10);
 
     console.log(`[upload] start — dossierId=${dossierId} userId=${userId} file=${req.file?.originalname ?? "none"} size=${req.file?.size ?? 0} mime=${req.file?.mimetype ?? "none"}`);
 
@@ -240,7 +240,7 @@ router.post(
 // ── POST: metadata-only update (backward compat) ──────────────────────────────
 router.post("/dossiers/:id/documents", requireAuth, async (req, res): Promise<void> => {
   const userId = req.session.userId!;
-  const dossierId = parseInt(req.params.id, 10);
+  const dossierId = parseInt(String(req.params.id), 10);
 
   const [dossier] = await db
     .select()
@@ -286,8 +286,8 @@ router.get(
   async (req, res): Promise<void> => {
     const userId = req.session.userId!;
     const isAdmin = req.session.userRole === "admin";
-    const dossierId = parseInt(req.params.dossierId, 10);
-    const docId = parseInt(req.params.docId, 10);
+    const dossierId = parseInt(String(req.params.dossierId), 10);
+    const docId = parseInt(String(req.params.docId), 10);
 
     if (isAdmin) {
       // Admin access requires fresh TOTP verification (same gate as requireAdmin),
@@ -333,8 +333,8 @@ router.delete(
   requireAuth,
   async (req, res): Promise<void> => {
     const userId = req.session.userId!;
-    const dossierId = parseInt(req.params.dossierId, 10);
-    const docId = parseInt(req.params.docId, 10);
+    const dossierId = parseInt(String(req.params.dossierId), 10);
+    const docId = parseInt(String(req.params.docId), 10);
 
     const [dossier] = await db
       .select()
@@ -365,7 +365,7 @@ router.post(
   requireAuth,
   async (req, res): Promise<void> => {
     const userId = req.session.userId!;
-    const dossierId = parseInt(req.params.id, 10);
+    const dossierId = parseInt(String(req.params.id), 10);
 
     const [dossier] = await db
       .select()
@@ -442,8 +442,8 @@ router.patch(
   "/admin/dossiers/:dossierId/documents/:docId",
   requireAdmin,
   async (req, res): Promise<void> => {
-    const dossierId = parseInt(req.params.dossierId, 10);
-    const docId = parseInt(req.params.docId, 10);
+    const dossierId = parseInt(String(req.params.dossierId), 10);
+    const docId = parseInt(String(req.params.docId), 10);
     const { statut, motif } = req.body as { statut?: string; motif?: string };
 
     if (!statut || !["valide", "rejete"].includes(statut)) {
@@ -500,7 +500,7 @@ router.get(
   "/admin/dossiers/:id/documents",
   requireAdmin,
   async (req, res): Promise<void> => {
-    const dossierId = parseInt(req.params.id, 10);
+    const dossierId = parseInt(String(req.params.id), 10);
     const docs = await db.select().from(documentsTable).where(eq(documentsTable.dossierId, dossierId));
     res.json(docs.map(formatDoc));
   }

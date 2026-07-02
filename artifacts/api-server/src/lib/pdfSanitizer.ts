@@ -133,7 +133,7 @@ export function validateFileType(
   mimeType: string
 ): { ok: boolean; error?: string } {
   // Reject obvious executables regardless of declared MIME
-  const exeSigs: [Buffer, string][] = [
+  const exeSigs: [Buffer, string | null][] = [
     [Buffer.from([0x4d, 0x5a]), "EXE/DLL"],
     [Buffer.from([0x7f, 0x45, 0x4c, 0x46]), "ELF executable"],
     [Buffer.from([0xca, 0xfe, 0xba, 0xbe]), "Mach-O executable"],

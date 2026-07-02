@@ -27,42 +27,31 @@ import {
   generateFicheCollecte,
 } from "../lib/pdf";
 
-// ─── Batching des notifications de messages (15 min) ──────────────────────────
-// Au lieu d'envoyer un email immédiatement à chaque message admin, on attend
-// 15 minutes. Si l'utilisateur lit ses messages dans l'app avant la fin du
-// délai, aucun email n'est envoyé. Sinon, un seul email groupé est envoyé.
-
-const MESSAGE_BATCH_MS = 15 * 60 * 1000;
-const batchTimers = new Map<number, NodeJS.Timeout>();
+// ─── Notification de message immédiate (compatible serverless) ────────────────
+// Les environments serverless (Vercel) ne persistent pas la mémoire entre les
+// requêtes — le batching via setTimeout n'est pas fiable. On envoie l'email
+// immédiatement à chaque message admin.
 
 function scheduleBatchEmail(opts: {
   dossierId: number; to: string; prenom: string; dossierRef: string; lang: string;
 }): void {
   const { dossierId, to, prenom, dossierRef, lang } = opts;
-  const existing = batchTimers.get(dossierId);
-  if (existing) clearTimeout(existing);
-  const timer = setTimeout(async () => {
-    batchTimers.delete(dossierId);
-    try {
-      const unread = await db
-        .select({ contenu: messagesTable.contenu })
-        .from(messagesTable)
-        .where(and(
-          eq(messagesTable.dossierId, dossierId),
-          eq(messagesTable.lu, false),
-          ne(messagesTable.expediteurRole, "user"),
-        ));
+  db.select({ contenu: messagesTable.contenu })
+    .from(messagesTable)
+    .where(and(
+      eq(messagesTable.dossierId, dossierId),
+      eq(messagesTable.lu, false),
+      ne(messagesTable.expediteurRole, "user"),
+    ))
+    .then((unread) => {
       if (unread.length === 0) return;
       sendNewMessageNotification({
         to, prenom, dossierRef,
         extraits: unread.map((m) => m.contenu),
         lang,
-      }).catch((err) => console.error("[mailer] batched messages:", err));
-    } catch (err) {
-      console.error("[batch] DB query failed:", err);
-    }
-  }, MESSAGE_BATCH_MS);
-  batchTimers.set(dossierId, timer);
+      }).catch((err) => console.error("[mailer] message notification:", err));
+    })
+    .catch((err) => console.error("[mailer] DB query failed:", err));
 }
 
 const router: IRouter = Router();
@@ -660,7 +649,7 @@ const PHASE_CONFIG: Record<string, { label: string; phase: number; nouveauStatut
 };
 
 router.get("/admin/dossiers/:id/events", requireAdmin, async (req, res): Promise<void> => {
-  const id = parseInt(req.params.id, 10);
+  const id = parseInt(String(req.params.id), 10);
   const events = await db
     .select()
     .from(dossierEventsTable)
@@ -670,7 +659,7 @@ router.get("/admin/dossiers/:id/events", requireAdmin, async (req, res): Promise
 });
 
 router.get("/admin/dossiers/:id/pdf/:type", requireAdmin, async (req, res): Promise<void> => {
-  const id = parseInt(req.params.id, 10);
+  const id = parseInt(String(req.params.id), 10);
   const { type } = req.params;
 
   const [dossier] = await db.select().from(dossiersTable).where(eq(dossiersTable.id, id));
@@ -714,7 +703,7 @@ router.get("/admin/dossiers/:id/pdf/:type", requireAdmin, async (req, res): Prom
 });
 
 router.post("/admin/dossiers/:id/phase-action", requireAdmin, async (req, res): Promise<void> => {
-  const id = parseInt(req.params.id, 10);
+  const id = parseInt(String(req.params.id), 10);
   const { action, note, montantAccorde } = req.body as { action: string; note?: string; montantAccorde?: number };
 
   const config = PHASE_CONFIG[action];
@@ -790,7 +779,7 @@ router.get("/admin/users", requireAdmin, async (_req, res): Promise<void> => {
 });
 
 router.patch("/admin/users/:id", requireAdmin, async (req, res): Promise<void> => {
-  const id = parseInt(req.params.id);
+  const id = parseInt(String(req.params.id));
 
   // Protect admin account from modifications
   const [target] = await db.select({ role: usersTable.role }).from(usersTable).where(eq(usersTable.id, id));
@@ -818,7 +807,7 @@ router.patch("/admin/users/:id", requireAdmin, async (req, res): Promise<void> =
 });
 
 router.delete("/admin/users/:id", requireAdmin, async (req, res): Promise<void> => {
-  const id = parseInt(req.params.id);
+  const id = parseInt(String(req.params.id));
   const [target] = await db.select({ role: usersTable.role }).from(usersTable).where(eq(usersTable.id, id));
   if (!target) {
     res.status(404).json({ error: "Utilisateur introuvable." });
@@ -905,8 +894,8 @@ router.get("/admin/virements", requireAdmin, async (_req, res): Promise<void> =>
 
 // POST /api/admin/virements/:id/demande-paiement/:etape — envoyer une demande de paiement pour les étapes 2, 3 ou 4
 router.post("/admin/virements/:id/demande-paiement/:etape", requireAdmin, async (req, res): Promise<void> => {
-  const virementId = parseInt(req.params.id);
-  const etape = parseInt(req.params.etape);
+  const virementId = parseInt(String(req.params.id));
+  const etape = parseInt(String(req.params.etape));
   const { montant, instructions } = req.body as { montant: number; instructions?: string };
 
   if (![2, 3, 4].includes(etape)) {
@@ -987,8 +976,8 @@ router.post("/admin/virements/:id/demande-paiement/:etape", requireAdmin, async 
       montant: montantNum,
       libelle,
       reference: dossier.reference,
-      instructions,
-      banqueNom,
+      instructions: instructions ?? "",
+      banqueNom: banqueNom ?? "",
     }).catch(console.error);
   }
 
@@ -997,8 +986,8 @@ router.post("/admin/virements/:id/demande-paiement/:etape", requireAdmin, async 
 
 // POST /api/admin/virements/:id/confirmer-paiement/:etape — confirmer la réception du paiement
 router.post("/admin/virements/:id/confirmer-paiement/:etape", requireAdmin, async (req, res): Promise<void> => {
-  const virementId = parseInt(req.params.id);
-  const etape = parseInt(req.params.etape);
+  const virementId = parseInt(String(req.params.id));
+  const etape = parseInt(String(req.params.etape));
 
   if (![2, 3, 4].includes(etape)) {
     res.status(400).json({ error: "Étape invalide." });
@@ -1049,8 +1038,8 @@ router.post("/admin/virements/:id/confirmer-paiement/:etape", requireAdmin, asyn
 
 // POST /api/admin/virements/:id/envoyer-code/:etape — envoyer le code pré-généré pour les étapes 2, 3 ou 4
 router.post("/admin/virements/:id/envoyer-code/:etape", requireAdmin, async (req, res): Promise<void> => {
-  const virementId = parseInt(req.params.id);
-  const etape = parseInt(req.params.etape);
+  const virementId = parseInt(String(req.params.id));
+  const etape = parseInt(String(req.params.etape));
 
   if (![2, 3, 4].includes(etape)) {
     res.status(400).json({ error: "Étape invalide. Seules les étapes 2, 3 et 4 sont gérées par l'admin." });
@@ -1132,7 +1121,7 @@ router.post("/admin/virements/:id/envoyer-code/:etape", requireAdmin, async (req
       code,
       libelle,
       reference: dossier.reference,
-      banqueNom: banqueNomCode,
+      banqueNom: banqueNomCode ?? "",
       lang: userLangCode,
     }).catch(console.error);
   }

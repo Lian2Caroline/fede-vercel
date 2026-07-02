@@ -276,7 +276,7 @@ router.post("/dossiers/:id/submit", requireAuth, async (req, res): Promise<void>
 // GET /dossiers/:id/events — liste des événements de phase (porteur, documents exécutés seulement)
 router.get("/dossiers/:id/events", requireAuth, async (req, res): Promise<void> => {
   const userId = (req.session as any).userId as number;
-  const id = parseInt(req.params.id);
+  const id = parseInt(String(req.params.id));
   if (isNaN(id)) { res.status(400).json({ error: "ID invalide" }); return; }
 
   const [dossier] = await db.select().from(dossiersTable).where(and(eq(dossiersTable.id, id), eq(dossiersTable.userId, userId)));
@@ -289,7 +289,7 @@ router.get("/dossiers/:id/events", requireAuth, async (req, res): Promise<void> 
 // GET /dossiers/:id/pdf/:type — télécharger un document officiel (seulement si l'événement correspondant est exécuté)
 router.get("/dossiers/:id/pdf/:type", requireAuthForPdf, async (req, res): Promise<void> => {
   const userId = (req.session as any).userId as number;
-  const id = parseInt(req.params.id);
+  const id = parseInt(String(req.params.id));
   const { type } = req.params;
   if (isNaN(id)) { res.status(400).json({ error: "ID invalide" }); return; }
 
@@ -305,7 +305,7 @@ router.get("/dossiers/:id/pdf/:type", requireAuthForPdf, async (req, res): Promi
     notification:        "marquer_favorable",
     facture:             "confirmer_paiement",
   };
-  const requiredAction = DOC_TO_ACTION[type];
+  const requiredAction = DOC_TO_ACTION[String(type)];
   if (requiredAction) {
     const events = await db.select().from(dossierEventsTable).where(
       and(eq(dossierEventsTable.dossierId, id), eq(dossierEventsTable.action, requiredAction))
@@ -317,7 +317,7 @@ router.get("/dossiers/:id/pdf/:type", requireAuthForPdf, async (req, res): Promi
   if (!user) { res.status(404).json({ error: "Utilisateur introuvable" }); return; }
 
   try {
-    const d = { reference: dossier.reference, titre: dossier.titre, territoire: dossier.territoire, dispositif: dossier.dispositif ?? "", secteur: dossier.secteur ?? "", montantDemande: dossier.montantDemande ?? 0, description: dossier.description ?? "", expertDesigne: dossier.expertDesigne ?? "", createdAt: dossier.createdAt?.toISOString() ?? new Date().toISOString() };
+    const d = { reference: dossier.reference, titre: dossier.titre, territoire: dossier.territoire, dispositif: dossier.dispositif ?? "", secteur: dossier.secteur ?? "", montantDemande: Number(dossier.montantDemande ?? 0), description: dossier.description ?? "", expertDesigne: dossier.expertDesigne ?? "", createdAt: dossier.createdAt?.toISOString() ?? new Date().toISOString() };
     const u = { prenom: user.prenom, nom: user.nom, email: user.email, telephone: user.telephone ?? "", organisation: user.organisation ?? "", typePorteur: user.typePorteur ?? "" };
     const contactRow = await db.query.settingsTable.findFirst({ where: eq(settingsTable.key, "contact_info") });
     let contact: { telephone?: string; email?: string; adresse?: string } = { telephone: "+33 (0) 800 123 456", email: "support@fede-financement.com", adresse: "Disponible pour toute l'Europe" };
