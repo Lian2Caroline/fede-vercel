@@ -1,6 +1,8 @@
-import app from "../artifacts/api-server/src/app";
-import { ensureSessionTable } from "../artifacts/api-server/src/lib/session";
-import { seedCountriesIfEmpty } from "@workspace/db/seed-utils";
+import {
+  app,
+  ensureSessionTable,
+  seedCountriesIfEmpty,
+} from "../artifacts/api-server/dist/serverless.mjs";
 
 let initDone = false;
 let initError = null;
