@@ -1,0 +1,54 @@
+XHR
+GET
+https://api.capsubvention.com/api/countries
+CORS Missing Allow Origin
+
+XHR
+GET
+https://api.capsubvention.com/api/auth/me
+CORS Missing Allow Origin
+
+Blocage d’une requête multiorigines (Cross-Origin Request) : la politique « Same Origin » ne permet pas de consulter la ressource distante située sur https://api.capsubvention.com/api/countries. Raison : l’en-tête CORS « Access-Control-Allow-Origin » est manquant. Code d’état : 500.
+Blocage d’une requête multiorigines (Cross-Origin Request) : la politique « Same Origin » ne permet pas de consulter la ressource distante située sur https://api.capsubvention.com/api/auth/me. Raison : l’en-tête CORS « Access-Control-Allow-Origin » est manquant. Code d’état : 500.
+XHR
+GET
+https://api.capsubvention.com/api/countries
+CORS Missing Allow Origin
+
+Blocage d’une requête multiorigines (Cross-Origin Request) : la politique « Same Origin » ne permet pas de consulter la ressource distante située sur https://api.capsubvention.com/api/countries. Raison : l’en-tête CORS « Access-Control-Allow-Origin » est manquant. Code d’état : 500.
+XHR
+GET
+https://api.capsubvention.com/api/auth/me
+CORS Missing Allow Origin
+
+XHR
+GET
+https://api.capsubvention.com/api/countries
+CORS Missing Allow Origin
+
+Blocage d’une requête multiorigines (Cross-Origin Request) : la politique « Same Origin » ne permet pas de consulter la ressource distante située sur https://api.capsubvention.com/api/auth/me. Raison : l’en-tête CORS « Access-Control-Allow-Origin » est manquant. Code d’état : 500.
+Blocage d’une requête multiorigines (Cross-Origin Request) : la politique « Same Origin » ne permet pas de consulter la ressource distante située sur https://api.capsubvention.com/api/countries. Raison : l’en-tête CORS « Access-Control-Allow-Origin » est manquant. Code d’état : 500.
+XHR
+GET
+https://api.capsubvention.com/api/countries
+CORS Missing Allow Origin
+
+Blocage d’une requête multiorigines (Cross-Origin Request) : la politique « Same Origin » ne permet pas de consulter la ressource distante située sur https://api.capsubvention.com/api/countries. Raison : l’en-tête CORS « Access-Control-Allow-Origin » est manquant. Code d’état : 500.
+XHR
+GET
+https://api.capsubvention.com/api/auth/me
+CORS Missing Allow Origin
+
+XHR
+GET
+https://api.capsubvention.com/api/countries
+CORS Missing Allow Origin
+
+Blocage d’une requête multiorigines (Cross-Origin Request) : la politique « Same Origin » ne permet pas de consulter la ressource distante située sur https://api.capsubvention.com/api/countries. Raison : l’en-tête CORS « Access-Control-Allow-Origin » est manquant. Code d’état : 500.
+Blocage d’une requête multiorigines (Cross-Origin Request) : la politique « Same Origin » ne permet pas de consulter la ressource distante située sur https://api.capsubvention.com/api/auth/me. Raison : l’en-tête CORS « Access-Control-Allow-Origin » est manquant. Code d’état : 500.
+XHR
+GET
+https://api.capsubvention.com/api/countries
+CORS Missing Allow Origin
+
+Blocage d’une requête multiorigines (Cross-Origin Request) : la politique « Same Origin » ne permet pas de consulter la ressource distante située sur https://api.capsubvention.com/api/countries. Raison : l’en-tête CORS « Access-Control-Allow-Origin » est manquant. Code d’état : 500.
