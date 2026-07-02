@@ -1,5 +1,11 @@
 import { Request, Response, NextFunction } from "express";
 import rateLimit, { ipKeyGenerator } from "express-rate-limit";
+import {
+  redisGlobalRateLimit,
+  redisAuthRateLimit,
+  redisOtpRateLimit,
+  hasRedis,
+} from "./rateLimitRedis";
 
 // ── Scrapers & bots connus à bloquer ────────────────────────────────────────
 const BLOCKED_UA_PATTERNS = [
@@ -27,17 +33,11 @@ const BLOCKED_UA_PATTERNS = [
   /ia_archiver/i,
 ];
 
-// Paths exempt from bot blocking (health probes, platform checks)
 const BOT_BLOCK_EXEMPT_PATHS = ["/api/healthz"];
 
 export function blockBots(req: Request, res: Response, next: NextFunction) {
-  // Always allow exempt paths (health probes, platform monitoring)
-  if (BOT_BLOCK_EXEMPT_PATHS.includes(req.path)) {
-    next();
-    return;
-  }
+  if (BOT_BLOCK_EXEMPT_PATHS.includes(req.path)) { next(); return; }
   const ua = req.headers["user-agent"] ?? "";
-  // Allow empty UA (platform probes, internal tooling) — only block known bad UAs
   if (ua && BLOCKED_UA_PATTERNS.some((p) => p.test(ua))) {
     res.status(403).json({ error: "Accès refusé." });
     return;
@@ -45,9 +45,9 @@ export function blockBots(req: Request, res: Response, next: NextFunction) {
   next();
 }
 
-// ── Rate limiting global ─────────────────────────────────────────────────────
-export const globalRateLimit = rateLimit({
-  windowMs: 15 * 60 * 1000, // 15 minutes
+// ── In-memory fallbacks (développement uniquement) ───────────────────────────
+const inMemoryGlobalRateLimit = rateLimit({
+  windowMs: 15 * 60 * 1000,
   max: 300,
   standardHeaders: true,
   legacyHeaders: false,
@@ -55,27 +55,30 @@ export const globalRateLimit = rateLimit({
   skip: (req) => req.ip === "127.0.0.1" || req.ip === "::1",
 });
 
-// ── Rate limiting strict sur les routes auth ─────────────────────────────────
-export const authRateLimit = rateLimit({
+const inMemoryAuthRateLimit = rateLimit({
   windowMs: 15 * 60 * 1000,
   max: 20,
   standardHeaders: true,
   legacyHeaders: false,
   message: { error: "Trop de tentatives de connexion. Veuillez réessayer dans 15 minutes." },
-  keyGenerator: (req) => String(req.ip ?? req.socket?.remoteAddress ?? "unknown"),
+  keyGenerator: (req) => ipKeyGenerator(req.ip ?? req.socket?.remoteAddress ?? "unknown"),
   skip: (req) => req.ip === "127.0.0.1" || req.ip === "::1",
 });
 
-// ── Rate limiting très strict sur l'envoi de codes OTP ──────────────────────
-export const otpRateLimit = rateLimit({
-  windowMs: 60 * 60 * 1000, // 1 heure
+const inMemoryOtpRateLimit = rateLimit({
+  windowMs: 60 * 60 * 1000,
   max: 5,
   standardHeaders: true,
   legacyHeaders: false,
   message: { error: "Trop de demandes de code. Veuillez patienter 1 heure." },
-  keyGenerator: (req) => String(req.ip ?? req.socket?.remoteAddress ?? "unknown"),
+  keyGenerator: (req) => ipKeyGenerator(req.ip ?? req.socket?.remoteAddress ?? "unknown"),
   skip: (req) => req.ip === "127.0.0.1" || req.ip === "::1",
 });
+
+// ── Exports : Redis en production, in-memory en développement ────────────────
+export const globalRateLimit = hasRedis ? redisGlobalRateLimit : inMemoryGlobalRateLimit;
+export const authRateLimit   = hasRedis ? redisAuthRateLimit   : inMemoryAuthRateLimit;
+export const otpRateLimit    = hasRedis ? redisOtpRateLimit    : inMemoryOtpRateLimit;
 
 // ── En-têtes de sécurité manuels ─────────────────────────────────────────────
 export function securityHeaders(req: Request, res: Response, next: NextFunction) {
