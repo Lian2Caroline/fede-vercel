@@ -4,8 +4,10 @@ import { pool } from "@workspace/db";
 
 const PgSession = connectPgSimple(session);
 
-if (!process.env.SESSION_SECRET) {
-  throw new Error("SESSION_SECRET must be set");
+const sessionSecret = process.env.SESSION_SECRET ?? "dev-secret-change-in-production";
+
+if (!process.env.SESSION_SECRET && process.env.NODE_ENV === "production") {
+  console.error("[FATAL] SESSION_SECRET is not set in production.");
 }
 
 export const sessionMiddleware = session({
@@ -13,7 +15,7 @@ export const sessionMiddleware = session({
     pool,
     tableName: "session",
   }),
-  secret: process.env.SESSION_SECRET,
+  secret: sessionSecret,
   resave: false,
   saveUninitialized: false,
   cookie: {

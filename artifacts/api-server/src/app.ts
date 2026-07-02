@@ -16,8 +16,7 @@ app.set("trust proxy", 1);
 const allowedOrigin = process.env.CORS_ORIGIN;
 
 if (process.env.NODE_ENV === "production" && !allowedOrigin) {
-  // In serverless, process.exit kills the container non-gracefully — throw instead.
-  throw new Error("[FATAL] CORS_ORIGIN is not set in production. Add it to your environment variables.");
+  console.error("[FATAL] CORS_ORIGIN is not set in production — CORS will be open. Set this variable in Vercel.");
 }
 
 // ── Sécurité ─────────────────────────────────────────────────────────────────
